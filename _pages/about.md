@@ -27,6 +27,7 @@ Technical ability and other skills
 **Game Develop**
 1. Skilled: Lua, Python, C#, Unity Engine, UE4 Engine, SVN, Git.
 2. Basic understand: C++, Linux, SQL, other computer science knowledge.
+
 **Other Skill**
 1. Photoshop, AI painting.
 2. Mind map, Excel, Word, etc.
