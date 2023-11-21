@@ -15,12 +15,11 @@ This personal page shows my basic situation, collection of works, skills mastere
 
 Basic Info
 ======
-Chinese Name:王泰淇/Taiqi Wang
-English Name: / Frank
-Male, 25 years old.
-From China, Jilin Province.
-Undergraduate degree.
-Three years of experience as a game programmer.
+1. Name:王泰淇/Taiqi Wang
+2. Male, 25 years old.
+3. From China, Jilin Province.
+4. Undergraduate degree.
+5. Three years of experience as a game programmer.
 
 Technical ability and other skills
 ======
