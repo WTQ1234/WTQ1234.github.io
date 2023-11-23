@@ -1,5 +1,14 @@
 # main links links
 main:
+  - title: "Personal Game Project"
+    url: /personal-game-project/
+
+  - title: "Work Exp"
+    url: /work-exp/
+
+  - title: "Undergraduate Thesis"
+    url: /undergraduate-thesis/
+
   - title: "Publications"
     url: /publications/
 
