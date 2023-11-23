@@ -1,7 +1,7 @@
 ---
 title: "Work Exp 2 - Minecraft ModSDK - Chinese Mobile Version"
-collection: publications
-permalink: /publication/Game-Project-Number-2
+collection: work_exp
+permalink: /work_exp/Game-Project-Number-2
 excerpt: 'This is the game project for my second job, where I worked as a programmer in NetEase, for the Chinese mobile version of Microsoft's 'Minecraft' C++ Edition (distributed by NetEase Interactive Entertainment).'
 ---
   This is the game project for my second job, where I worked as a programmer in NetEase, for the Chinese mobile version of Microsoft's 'Minecraft' C++ Edition (distributed by NetEase Interactive Entertainment).

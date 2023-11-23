@@ -9,6 +9,8 @@ redirect_from:
 
 {% include base_path %}
 
+等待填充内容 \\_pages\cv.md
+
 Education
 ======
 * B.S. in GitHub, GitHub University, 2012
