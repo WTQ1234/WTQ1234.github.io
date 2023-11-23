@@ -1,13 +1,13 @@
 # main links links
 main:
   - title: "Personal Game Project"
-    url: /personal-game-project/
+    url: /personal_game_project/
 
   - title: "Work Exp"
-    url: /work-exp/
+    url: /work_exp/
 
   - title: "Undergraduate Thesis"
-    url: /undergraduate-thesis/
+    url: /undergraduate_thesis/
 
   - title: "Talks"
     url: /talks/    
