@@ -187,6 +187,12 @@ collections:
   talks:
     output: true
     permalink: /:collection/:path/
+  work_exp:
+    output: true
+    permalink: /:collection/:path/
+  personal_game_project:
+    output: true
+    permalink: /:collection/:path/
 
 
 # Defaults
