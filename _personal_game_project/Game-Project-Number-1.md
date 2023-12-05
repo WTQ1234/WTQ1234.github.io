@@ -3,6 +3,8 @@ title: "Game Project Number 1 - 《Touch ⠞⠕⠥⠉⠓》"
 collection: personal_game_project
 permalink: /personal_game_project/Game-Project-Number-1
 excerpt: 'This is the first game project, from the 2023 CIGA 48h Game Jam in Guangzhou-Aikong Station, which secured the third place.'
+date: '2023/7/7-2023/7/9'
+venue: 'the 48h GIGA game jam.'
 ---
 "Touch ⠞⠕⠥⠉⠓" is a 2D top-down, narrative-driven maze exploration game. ⠞⠕⠥⠉⠓ represents "Touch" in Braille.
 
