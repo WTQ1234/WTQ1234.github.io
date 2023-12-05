@@ -178,7 +178,7 @@ collections:
   teaching:
     output: true
     permalink: /:collection/:path/
-  publications:
+  personal_game_project:
     output: true
     permalink: /:collection/:path/
   portfolio:
@@ -224,10 +224,10 @@ defaults:
       author_profile: true
       share: true
       comments: true
-  # _publications
+  # _personal_game_project
   - scope:
       path: ""
-      type: publications
+      type: personal_game_project
     values:
       layout: single
       author_profile: true

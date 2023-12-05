@@ -1,9 +1,8 @@
 # main links links
 main:
 
-  -- 标题为 Personal Game Project, 使用的是publications关键字相关的内容
   - title: "Personal Game Project"
-    url: /publications/
+    url: /personal_game_project/
 
   - title: "CV"
     url: /cv/

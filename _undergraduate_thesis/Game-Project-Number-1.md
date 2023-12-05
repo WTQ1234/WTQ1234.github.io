@@ -1,6 +1,6 @@
 ---
 title: "Work Exp 1 - 3D-MMO Game"
-collection: publications
+collection: personal_game_project
 permalink: /publication/Game-Project-Number-1
 excerpt: 'This is the game project for my first job, a 3D top-down MMO-ARPG game for cell phone, published by ByteDance (TikTok).'
 ---
