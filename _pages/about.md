@@ -10,8 +10,6 @@ redirect_from:
 
 Hi, I am Taiqi Wang, you can also call me Frank. I am a video game programmer with 3 years of experience.
 This site is about my personal information and collection of game production works.
-I graduated from Dalian University of Technology and have 3 years of experience in game program development.
-This personal page shows my basic situation, collection of works, skills mastered, etc.
 
 Basic Info
 ======
@@ -29,9 +27,10 @@ Technical ability and other skills
 
 **Other Skill**
 1. Photoshop, AI painting.
-2. Mind map, Excel, Word, etc.
-3. Chinese: native Chinese speaker.
-4. Engilsh: Scored 99 on the TOEFL English exam.
+2. Video editing(by CapCut).
+3. Mind map, Excel, Word, etc.
+4. Language-Chinese: native Chinese speaker.
+5. Language-Engilsh: Scored 99 on the TOEFL English exam.
 
 Personal timeline
 ======
