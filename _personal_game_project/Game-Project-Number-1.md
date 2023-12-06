@@ -23,8 +23,8 @@ Anxiety Mechanism: While exploring the old city district within memory, each cli
 
 Recollection Mechanism: The paths the player walks are retained. Opening the map allows players to compare "Explored Paths" with "Streets in Memory" to find their location and navigate the maze quickly. When the player becomes anxious, the map opens, compelling them to recollect involuntarily.
 
-View in the youtube: <a href=" https://youtu.be/aUhSHy8n0fw "><u>here</u></a>
+View in the youtube: <a href=" https://youtu.be/aUhSHy8n0fw "></a>
 
-Play by download in google drive: <a href=" https://drive.google.com/file/d/1Psl5TsVDS2LNbXg20RUMdsZbNEvOw5j7/view "><u>here</u></a>
+Play by download in google drive: <a href=" https://drive.google.com/file/d/1Psl5TsVDS2LNbXg20RUMdsZbNEvOw5j7/view "></a>
 
-Get source code:<a href=" https://github.com/WTQ1234/Personal_Game_Project_1_Touch.git "><u>here</u></a>
+Get source code:<a href=" https://github.com/WTQ1234/Personal_Game_Project_1_Touch.git "></a>
