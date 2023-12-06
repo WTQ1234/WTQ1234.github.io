@@ -2,8 +2,7 @@
 title: "Game Project Number 1 - 《Touch ⠞⠕⠥⠉⠓》"
 collection: personal_game_project
 permalink: /personal_game_project/Game-Project-Number-1
-excerpt: 'Touch ⠞⠕⠥⠉⠓" is a 2D top-down, narrative-driven maze exploration game. Players take on the role of a blind character.
-<br/><img src='/images/IMG_Game_Project_Number_1.png'>'
+excerpt: 'Touch ⠞⠕⠥⠉⠓" is a 2D top-down, narrative-driven maze exploration game. Players take on the role of a blind character.<br/><img src="/images/IMG_Game_Project_Number_1.png">'
 
 others: '
 View in the youtube: <a href=" https://youtu.be/aUhSHy8n0fw " target="_blank"><u>https://youtu.be/aUhSHy8n0fw</u></a><br>
