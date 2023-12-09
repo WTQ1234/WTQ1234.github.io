@@ -190,7 +190,7 @@ collections:
   work_exp:
     output: true
     permalink: /:collection/:path/
-  personal_game_project:
+  program_exercises:
     output: true
     permalink: /:collection/:path/
 
@@ -228,6 +228,15 @@ defaults:
   - scope:
       path: ""
       type: personal_game_project
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comments: true
+  # program_exercises
+  - scope:
+      path: ""
+      type: program_exercises
     values:
       layout: single
       author_profile: true
