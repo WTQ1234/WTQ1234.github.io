@@ -13,8 +13,8 @@ main:
   # - title: "Work Exp"
   #   url: /work_exp/
 
-  # - title: "Program exercises"
-  #   url: /program_exercises/
+  - title: "Program exercises"
+    url: /program_exercises/
 
   # - title: "Talks"
   #   url: /talks/    
