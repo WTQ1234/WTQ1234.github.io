@@ -1,7 +1,7 @@
 ---
-title: "Game Project Number 2 - 'DiceFight2D'"
+title: "Game Project Number 02 - 'DiceFight2D'"
 collection: personal_game_project
-permalink: /personal_game_project/Game-Project-Number-2
+permalink: /personal_game_project/Game-Project-Number-02
 excerpt: 'Dice Fight is a 2D platform pvp game, looks like "Ultimate Chicken Horse" or "Stick Fight: The Game". Player place traps to hurt others, and weapons falls from sky.<br/><img src="/images/IMG_Game_Project_2_1.png" style="width: 640px; height: auto;">'
 
 others: '

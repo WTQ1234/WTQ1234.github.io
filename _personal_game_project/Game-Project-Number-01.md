@@ -1,7 +1,7 @@
 ---
-title: "Game Project Number 1 - 'Touch ⠞⠕⠥⠉⠓'"
+title: "Game Project Number 01 - 'Touch ⠞⠕⠥⠉⠓'"
 collection: personal_game_project
-permalink: /personal_game_project/Game-Project-Number-3
+permalink: /personal_game_project/Game-Project-Number-01
 excerpt: '"Touch ⠞⠕⠥⠉⠓" is a 2D top-down, narrative-driven maze exploration game. Players take on the role of a blind character.<br/><img src="/images/IMG_Game_Project_1_1.png" style="width: 640px; height: auto;">'
 
 others: '

@@ -1,7 +1,7 @@
 ---
-title: "Game Project Number 3 - 'FlyingAxe'"
+title: "Game Project Number 03 - 'FlyingAxe'"
 collection: personal_game_project
-permalink: /personal_game_project/Game-Project-Number-1
+permalink: /personal_game_project/Game-Project-Number-03
 excerpt: 'Flying Axe is a 2D platform pve game, looks like "Vampire Survivors". Player throws a flying axe to damage enemies and retrieves the axe by jumping.<br/><img src="/images/IMG_Game_Project_3_1.png" style="width: 640px; height: auto;">'
 
 others: '
