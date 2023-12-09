@@ -11,6 +11,17 @@ redirect_from:
 
 等待填充内容 \\_pages\cv.md
 
+Personal timeline
+======
+2016-2020
+Dalian University of Technology, School of Electronics and Information Technology, Department of Biomedical Engineering.
+
+2020-2022
+Beijing Fancyguo Dynamic Technology Company, Limited
+
+2022-2023
+NetEase-Interactive Entertainment Business Unit-Cooperative Products Division-Next Studio
+
 Education
 ======
 * B.S. in GitHub, GitHub University, 2012

@@ -4,17 +4,17 @@ main:
   - title: "Personal Game Project"
     url: /personal_game_project/
 
-  - title: "CV"
-    url: /cv/
-
-  - title: "Work Exp"
-    url: /work_exp/
-
   - title: "Undergraduate Thesis"
     url: /undergraduate_thesis/
 
-  - title: "Program exercises"
-    url: /program_exercises/
+  # - title: "CV"
+  #   url: /cv/
+
+  # - title: "Work Exp"
+  #   url: /work_exp/
+
+  # - title: "Program exercises"
+  #   url: /program_exercises/
 
   # - title: "Talks"
   #   url: /talks/    

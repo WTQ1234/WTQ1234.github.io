@@ -19,27 +19,35 @@ I made it by myself and not in a game jam.
 <br/><img src="/images/IMG_Game_Project_3_1.png" style="width: 640px; height: auto;">
 
 <!-- 玩法 -->
-<br/><span style="font-weight: bold; font-size: 1.1em;">How to play:</span><br/>
+<br/><span style="font-weight: bold; font-size: 1.2em;">How to play:</span><br/>
 
-Player place traps to hurt others, and weapons falls from sky.
+The player throws a flying axe to damage enemies and retrieves the spinning axe by jumping.
 
-The clock rotating once in the scene changes the number of weapons a player can hold, causing random fluctuations.
+Enemies come in three types: melee, charging melee, and bullet shooters. When enemies die, they drop coins and health points. Collecting coins to upgrade, strengthening the player.
+
+If the player falls, they will respawn at the starting point and lose health.
 
 Controls: Uses WASD to move, click left mouse button to attack, click the right mouse button to dash.
 
 <br/><img src="/images/IMG_Game_Project_3_2.png" style="width: 640px; height: auto;">
 
-The game is played in a best-of-three format. Before each round, players can acquire three traps and strategically place them within the scene. Following this preparation phase, the combat phase begins.
-
-<br/><img src="/images/IMG_Game_Project_3_3.png" style="width: 640px; height: auto;">
-
 <!-- 职责 -->
-<br/><span style="font-weight: bold; font-size: 1.1em;">My part</span><br/>
+<br/><span style="font-weight: bold; font-size: 1.2em;">My part</span><br/>
 
-I made it by myself, but the picture is from internet.
+I design and made it by myself, but the picture is from internet.
+
+<!-- 改进 -->
+<br/><span style="font-weight: bold; font-size: 1.2em;">Playtest and Improve</span><br/>
+The game was playtested and showcased at the game jam site. After the game jam ended, it was also made available online and shared with friends for playtesting. Some feedback was collected, and these were the most frequently mentioned points:
+1. The game's difficulty is quite high.
+2. Upgrades provide weak feedback and there's a lack of attack options.
+3. Limited variation in the map design.
+4. The sprint mechanism is incomplete and often results in collisions with monsters, causing damage.
+Therefore, for future improvements, I might consider the following optimizations: adjusting values to decrease difficulty, reducing the occurrence of monsters (bats) using sprint attacks, introducing more types of axes as upgrades (e.g., axes causing freezing or flame effects), adding a Boss, and altering the map. My current idea involves transforming the map into a tower where players need to continuously jump upward, climbing through layers of the tower. Each ascended layer would be considered a level passed, offering an opportunity for an upgrade.
+
 
 <!-- 链接 -->
-<br/><span style="font-weight: bold; font-size: 1.1em;">Links:</span><br/>
+<br/><span style="font-weight: bold; font-size: 1.2em;">Links:</span><br/>
 
 View in the youtube: <a href=" https://youtu.be/DgpGetbsz1g " target="_blank"><u>https://youtu.be/DgpGetbsz1g</u></a>
 

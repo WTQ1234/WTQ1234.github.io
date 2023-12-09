@@ -19,7 +19,7 @@ I made it in the 3 weeks booom game jam, 2023/9/20-2023/10/11, online. The gamej
 <br/><img src="/images/IMG_Game_Project_2_1.png" style="width: 640px; height: auto;">
 
 <!-- 玩法 -->
-<br/><span style="font-weight: bold; font-size: 1.1em;">How to play:</span><br/>
+<br/><span style="font-weight: bold; font-size: 1.2em;">How to play:</span><br/>
 
 Player place traps to hurt others, and weapons falls from sky.
 
@@ -38,7 +38,7 @@ The player's hands display indicates the maximum number of weapons they can carr
 <br/><img src="/images/IMG_Game_Project_2_4.png" style="width: 640px; height: auto;">
 
 <!-- 职责 -->
-<br/><span style="font-weight: bold; font-size: 1.1em;">My part</span><br/>
+<br/><span style="font-weight: bold; font-size: 1.2em;">My part</span><br/>
 
 There are 6 people in the game jam team: 2 2D-artist, 1 animator(Spine), 1 3D-artist, 1 musician, 2 programmer. Everyone else in the team besides me are students.
 
@@ -46,8 +46,16 @@ I'm one of the programmer, responsible for half of the programming work, mainly 
 
 The game jam cost 3 weeks, due to changing work and moving back home, my actual work time is about one week.
 
+<!-- 改进 -->
+<br/><span style="font-weight: bold; font-size: 1.2em;">Playtest and Improve</span><br/>
+The game was playtested and showcased at the game jam site. After the game jam ended, it was also made available online and shared with friends for playtesting. Some feedback was collected, and these were the most frequently mentioned points:
+1. Insufficient variety in traps and weapons, lacking significant differences between them.
+2. Difficulty in depleting held melee weapons when wanting to switch to better weapons.
+3. Melee weapons are relatively weak and have trouble hitting enemies.
+Therefore, for future improvements, I may consider the following optimizations: enhancing melee weapons by introducing a wider variety with different effects such as explosions, freezing, poisoning, etc. Additionally, adding crates that can be shattered using melee weapons to drop supplies might help players consume unwanted melee weapons they pick up while searching for better options.
+
 <!-- 链接 -->
-<br/><span style="font-weight: bold; font-size: 1.1em;">Links:</span><br/>
+<br/><span style="font-weight: bold; font-size: 1.2em;">Links:</span><br/>
 
 View in the youtube: <a href=" https://youtu.be/4kN-ubTmGEM " target="_blank"><u>https://youtu.be/4kN-ubTmGEM</u></a>
 
