@@ -29,4 +29,4 @@ In this paper, by introducing PPO reinforcement learning and GAIL imitation lear
 
 By generate real-time generation of virtual human actions through AI, the complexity and interactivity of the data has increased, and the motion capture data is transmitted to the virtual reality environment in real time to explore the interactive confrontation between humans and virtual humans.
 
-Key Words：Reinforcement Learning；Imitation Learning；Motion Capture；Physical Simulation
+<br/><span style="font-weight: bold; font-size: 1.2em;">Key Words：Reinforcement Learning；Imitation Learning；Motion Capture；Physical Simulation</span>

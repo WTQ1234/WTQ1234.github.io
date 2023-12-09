@@ -1,7 +1,7 @@
 ---
 title: "Game Project Number 1 - 'Touch ⠞⠕⠥⠉⠓'"
 collection: personal_game_project
-permalink: /personal_game_project/Game-Project-Number-1
+permalink: /personal_game_project/Game-Project-Number-3
 excerpt: '"Touch ⠞⠕⠥⠉⠓" is a 2D top-down, narrative-driven maze exploration game. Players take on the role of a blind character.<br/><img src="/images/IMG_Game_Project_1_1.png" style="width: 640px; height: auto;">'
 
 others: '
@@ -43,6 +43,7 @@ I'm the programmer and also responsible for the foundational design of game mech
 
 <!-- 改进 -->
 <br/><span style="font-weight: bold; font-size: 1.2em;">Playtest and Improve</span><br/>
+
 The game was playtested and showcased at the game jam site. After the game jam ended, it was also made available online and shared with friends for playtesting. Some feedback was collected, and these were the most frequently mentioned points:
 1. The story is short and lacks relevance to puzzle-solving.
 2. Levels are linear, allowing players to reach the end without relying on memory or comparing maps.

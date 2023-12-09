@@ -1,7 +1,7 @@
 ---
 title: "Game Project Number 3 - 'FlyingAxe'"
 collection: personal_game_project
-permalink: /personal_game_project/Game-Project-Number-3
+permalink: /personal_game_project/Game-Project-Number-1
 excerpt: 'Flying Axe is a 2D platform pve game, looks like "Vampire Survivors". Player throws a flying axe to damage enemies and retrieves the axe by jumping.<br/><img src="/images/IMG_Game_Project_3_1.png" style="width: 640px; height: auto;">'
 
 others: '
@@ -9,8 +9,6 @@ View in the youtube: <a href=" https://youtu.be/DgpGetbsz1g " target="_blank"><u
 Play by download in google drive: <a href=" https://drive.google.com/file/d/1jo-t6H5LK5t-DImaYwHhu7Vjwc7GQlw6/view?usp=sharing " target="_blank"><u>https://drive.google.com/file/d/1jo-t6H5LK5t-DImaYwHhu7Vjwc7GQlw6/view?usp=sharing</u></a><br>
 Get source code: <a href=" https://github.com/WTQ1234/Personal_Game_Project_3_FlyingAxe.git " target="_blank"><u>https://github.com/WTQ1234/Personal_Game_Project_3_FlyingAxe.git</u></a>
 '
-
-venue: 'the 3 weeks booom game jam, 2023/9/20-2023/10/11, online'
 ---
 Flying Axe is a 2D platform pve game, looks like "Vampire Survivors".
 
@@ -38,6 +36,7 @@ I design and made it by myself, but the picture is from internet.
 
 <!-- 改进 -->
 <br/><span style="font-weight: bold; font-size: 1.2em;">Playtest and Improve</span><br/>
+
 The game was playtested and showcased at the game jam site. After the game jam ended, it was also made available online and shared with friends for playtesting. Some feedback was collected, and these were the most frequently mentioned points:
 1. The game's difficulty is quite high.
 2. Upgrades provide weak feedback and there's a lack of attack options.

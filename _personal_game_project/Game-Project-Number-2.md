@@ -48,6 +48,7 @@ The game jam cost 3 weeks, due to changing work and moving back home, my actual 
 
 <!-- 改进 -->
 <br/><span style="font-weight: bold; font-size: 1.2em;">Playtest and Improve</span><br/>
+
 The game was playtested and showcased at the game jam site. After the game jam ended, it was also made available online and shared with friends for playtesting. Some feedback was collected, and these were the most frequently mentioned points:
 1. Insufficient variety in traps and weapons, lacking significant differences between them.
 2. Difficulty in depleting held melee weapons when wanting to switch to better weapons.
