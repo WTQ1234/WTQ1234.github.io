@@ -35,7 +35,7 @@ This site is about my personal information and collection of game production wor
 
 <br/><span style="font-weight: bold; font-size: 1.2em;">Links</span><br/>
 The links are same as the buttons on the title.
-About my personal game project:<a href=" https://wtq1234.github.io//personal_game_project/ " target="_blank"><u>https://wtq1234.github.io//personal_game_project/</u></a>
-About my undergraduate thesis:<a href=" https://wtq1234.github.io//undergraduate_thesis/ " target="_blank"><u>https://wtq1234.github.io//undergraduate_thesis/</u></a>
-About my program exercises:<a href=" https://wtq1234.github.io//program_exercises/ " target="_blank"><u>https://wtq1234.github.io//program_exercises/</u></a>
-About my artistic skills and related software:<a href=" https://wtq1234.github.io//program_exeartrcises/ " target="_blank"><u>https://wtq1234.github.io//art/</u></a>
+<br/>About my personal game project:<a href=" https://wtq1234.github.io//personal_game_project/ " target="_blank"><u>https://wtq1234.github.io//personal_game_project/</u></a>
+<br/>About my undergraduate thesis:<a href=" https://wtq1234.github.io//undergraduate_thesis/ " target="_blank"><u>https://wtq1234.github.io//undergraduate_thesis/</u></a>
+<br/>About my program exercises:<a href=" https://wtq1234.github.io//program_exercises/ " target="_blank"><u>https://wtq1234.github.io//program_exercises/</u></a>
+<br/>About my artistic skills and related software:<a href=" https://wtq1234.github.io//program_exeartrcises/ " target="_blank"><u>https://wtq1234.github.io//art/</u></a>
