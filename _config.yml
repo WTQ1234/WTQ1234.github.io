@@ -242,6 +242,15 @@ defaults:
       author_profile: true
       share: true
       comments: true
+  # art
+  - scope:
+      path: ""
+      type: art
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comments: true
   # _portfolio
   - scope:
       path: ""

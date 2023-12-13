@@ -32,5 +32,3 @@ This site is about my personal information and collection of game production wor
 3. Mind map, Excel, Word, etc.
 4. Language-Chinese: native Chinese speaker.
 5. Language-Engilsh: Scored 99 on the TOEFL English exam.
-
-<br/><img src="/images/ART_1.gif" style="width: 400px; height: auto;">
