@@ -4,7 +4,7 @@ title: "Art"
 permalink: /art/
 author_profile: true
 ---
-Hi, this page is about my artistic abilities. I'm not particularly skilled at painting or 3D modeling, but I'm proficient in using software such as edit images by Photoshop / PhotoDemon / Aseprite; make animations or facial rigging system by Unity; edit video by CapCut.
+Hi, this page is about my artistic skills and related software. I'm not particularly skilled at painting or 3D modeling, but I'm proficient in using software such as edit images by Photoshop / PhotoDemon / Aseprite; make animations by Unity; edit video by CapCut, etc.
 
 <!-- 1.Photoshop -->
 <br/><span style="font-weight: bold; font-size: 1.6em;">Photoshop</span><br/>
