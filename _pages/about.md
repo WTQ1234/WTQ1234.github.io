@@ -14,10 +14,10 @@ This site is about my personal information and collection of game production wor
 <!-- 基础介绍 -->
 <br/><span style="font-weight: bold; font-size: 1.2em;">Basic Info</span><br/>
 1. Name:王泰淇/Taiqi Wang/Frank
-2. Male, 25 years old.
+2. Male, Oct 1998.
 3. From China, Jilin Province.
-4. Undergraduate degree.
-5. Three years of experience as a game programmer.
+4. Three years of experience as a game programmer.
+5. Love playing video games, with 200+ Steam games, 2000+ USD recharges, 3000+ hours of gaming time.
 
 <!-- 技能 -->
 <br/><span style="font-weight: bold; font-size: 1.2em;">Skills</span><br/>
@@ -35,6 +35,7 @@ This site is about my personal information and collection of game production wor
 
 <br/><span style="font-weight: bold; font-size: 1.2em;">Links</span><br/>
 The links are same as the buttons on the title.
+<br/>About my resume:<a href=" https://wtq1234.github.io//cv/ " target="_blank"><u>https://wtq1234.github.io//cv/</u></a>
 <br/>About my personal game project:<a href=" https://wtq1234.github.io//personal_game_project/ " target="_blank"><u>https://wtq1234.github.io//personal_game_project/</u></a>
 <br/>About my undergraduate thesis:<a href=" https://wtq1234.github.io//undergraduate_thesis/ " target="_blank"><u>https://wtq1234.github.io//undergraduate_thesis/</u></a>
 <br/>About my program exercises:<a href=" https://wtq1234.github.io//program_exercises/ " target="_blank"><u>https://wtq1234.github.io//program_exercises/</u></a>

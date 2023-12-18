@@ -7,11 +7,11 @@ main:
   - title: "Undergraduate Thesis"
     url: /undergraduate_thesis/
 
-  # - title: "CV"
-  #   url: /cv/
+  - title: "CV"
+    url: /cv/
 
-  # - title: "Work Exp"
-  #   url: /work_exp/
+  - title: "Work Exp"
+    url: /work_exp/
 
   - title: "Program exercises"
     url: /program_exercises/
