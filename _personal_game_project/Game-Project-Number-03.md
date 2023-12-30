@@ -37,12 +37,15 @@ I design and made it by myself, but the picture is from internet.
 <!-- 改进 -->
 <br/><span style="font-weight: bold; font-size: 1.2em;">Playtest and Improve</span><br/>
 
-The game was playtested and showcased at the game jam site. After the game jam ended, it was also made available online and shared with friends for playtesting. Some feedback was collected, and these were the most frequently mentioned points:
+The game was available online and shared with friends for playtesting. Some feedback was collected, and these were the most frequently mentioned points:
 1. The game's difficulty is quite high.
 2. Upgrades provide weak feedback and there's a lack of attack options.
 3. Limited variation in the map design.
 4. The sprint mechanism is incomplete and often results in collisions with monsters, causing damage.
-Therefore, for future improvements, I might consider the following optimizations: adjusting values to decrease difficulty, reducing the occurrence of monsters (bats) using sprint attacks, introducing more types of axes as upgrades (e.g., axes causing freezing or flame effects), adding a Boss, and altering the map. My current idea involves transforming the map into a tower where players need to continuously jump upward, climbing through layers of the tower. Each ascended layer would be considered a level passed, offering an opportunity for an upgrade.
+Therefore, for future improvements, I might consider the following optimizations: 
+1. Adjusting values to decrease difficulty, reducing the occurrence of monsters (bats) using sprint attacks.
+2. introducing more types of axes as upgrades (e.g., axes causing freezing or flame effects).
+3. adding a Boss, and altering the map. My current idea involves transforming the map into a tower where players need to continuously jump upward, climbing through layers of the tower. Each ascended layer would be considered a level passed, offering an opportunity for an upgrade.
 
 
 <!-- 链接 -->

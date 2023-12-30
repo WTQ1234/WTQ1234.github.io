@@ -29,7 +29,7 @@ Work experience
 ======
 * <b>NetEase</b> <em>03/2023 - 10/2023, Guangzhou, China</em>
   * <b>P3-1 Senior Mobile Game Development Engineer</b>
-  * "OASIS" - A 3D mobile party game projects, which NetEase independently developed and featured gameplays similar to "Minecraft Bed Wars", "Among Us", "Racing", "Splatoon", etc.
+  * "OASIS" - A 3D mobile party game project, which NetEase independently developed and featured gameplays similar to "Minecraft Bed Wars", "Among Us", "Racing", "Splatoon", etc.
   * Developed dual-end logic for features such as friends, chat, combat, buffs, homesteads, main cities, dungeons, UI framework, etc
   * Performed system performance testing and optimization, device adaptation, and crash fixes.
   * Collaborated across departments to integrate UniSDK, package-related duties, and the three-end voice SDKs for PC, iOS, and Android.

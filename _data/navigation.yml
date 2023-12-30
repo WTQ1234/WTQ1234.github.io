@@ -1,10 +1,10 @@
 # main links links
 main:
 
-  - title: "Personal Game Project"
+  - title: "Game Project"
     url: /personal_game_project/
 
-  - title: "Undergraduate Thesis"
+  - title: "Thesis"
     url: /undergraduate_thesis/
 
   - title: "CV"

@@ -21,17 +21,20 @@ This site is about my personal information and collection of game production wor
 
 <!-- 技能 -->
 <br/><span style="font-weight: bold; font-size: 1.2em;">Skills</span><br/>
-**Game Develop**
-1. Proficient: Lua, Python, C#, Unity Engine, SVN.
-2. Basic Proficient: C++, UE4 Engine, Git.
-3. Less Proficient: Linux, SQL, html, other computer science knowledge.
-
-**Other Skill**
-1. Photoshop, AI painting.
-2. Video editing(by CapCut).
-3. Mind map, Excel, Word, etc.
-4. Language-Chinese: native Chinese speaker.
-5. Language-Engilsh: Scored 99 on the TOEFL English exam.
+* Software Skills
+  * Game Engine
+    * Unity3D Engine, Unreal4 Engine, RPG Maker
+  * Programming language
+    * C#, Lua, Python, C++, Matlab
+  * Others
+    * Linux, XShell
+    * PostgreSQL, MongoDB
+    * Git, SVN
+* Art
+  * Photoshop, Aseprite, AI painting
+  * Video editing(by CapCut)
+* Others
+  * Mind map, Excel, Word, PowerPoint, etc
 
 <br/><span style="font-weight: bold; font-size: 1.2em;">Links</span><br/>
 The links are same as the buttons on the title.
