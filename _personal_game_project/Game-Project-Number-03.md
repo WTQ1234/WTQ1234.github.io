@@ -29,6 +29,8 @@ Controls: Uses WASD to move, click left mouse button to attack, click the right 
 
 <br/><img src="/images/IMG_Game_Project_3_2.png" style="width: 640px; height: auto;">
 
+<br/><img src="/images/IMG_Game_Project_3_3.png" style="width: 640px; height: auto;">
+
 <!-- 职责 -->
 <br/><span style="font-weight: bold; font-size: 1.2em;">My part</span><br/>
 

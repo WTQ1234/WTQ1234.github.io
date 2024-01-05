@@ -37,6 +37,8 @@ The player's hands display indicates the maximum number of weapons they can carr
 
 <br/><img src="/images/IMG_Game_Project_2_4.png" style="width: 640px; height: auto;">
 
+<br/><img src="/images/IMG_Game_Project_2_5.png" style="width: 640px; height: auto;">
+
 <!-- 职责 -->
 <br/><span style="font-weight: bold; font-size: 1.2em;">My part</span><br/>
 
