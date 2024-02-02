@@ -6,7 +6,7 @@ excerpt: 'Flying Axe is a 2D platform pve game, looks like "Vampire Survivors". 
 
 others: '
 View in the youtube: <a href=" https://youtu.be/DgpGetbsz1g " target="_blank"><u>https://youtu.be/DgpGetbsz1g</u></a><br>
-Play by download in google drive: <a href=" https://drive.google.com/file/d/1jo-t6H5LK5t-DImaYwHhu7Vjwc7GQlw6/view?usp=sharing " target="_blank"><u>https://drive.google.com/file/d/1jo-t6H5LK5t-DImaYwHhu7Vjwc7GQlw6/view?usp=sharing</u></a><br>
+Download in google drive: <a href=" https://drive.google.com/file/d/1jo-t6H5LK5t-DImaYwHhu7Vjwc7GQlw6/view " target="_blank"><u>https://drive.google.com/file/d/1jo-t6H5LK5t-DImaYwHhu7Vjwc7GQlw6/view</u></a><br>
 Get source code: <a href=" https://github.com/WTQ1234/Personal_Game_Project_3_FlyingAxe.git " target="_blank"><u>https://github.com/WTQ1234/Personal_Game_Project_3_FlyingAxe.git</u></a>
 '
 ---
@@ -55,6 +55,6 @@ Therefore, for future improvements, I might consider the following optimizations
 
 View in the youtube: <a href=" https://youtu.be/DgpGetbsz1g " target="_blank"><u>https://youtu.be/DgpGetbsz1g</u></a>
 
-Play by download in google drive: <a href=" https://drive.google.com/file/d/1jo-t6H5LK5t-DImaYwHhu7Vjwc7GQlw6/view?usp=sharing " target="_blank"><u>https://drive.google.com/file/d/1jo-t6H5LK5t-DImaYwHhu7Vjwc7GQlw6/view?usp=sharing</u></a>
+Download in google drive: <a href=" https://drive.google.com/file/d/1jo-t6H5LK5t-DImaYwHhu7Vjwc7GQlw6/view " target="_blank"><u>https://drive.google.com/file/d/1jo-t6H5LK5t-DImaYwHhu7Vjwc7GQlw6/view</u></a>
 
 Get source code:<a href=" https://github.com/WTQ1234/Personal_Game_Project_3_FlyingAxe.git " target="_blank"><u>https://github.com/WTQ1234/Personal_Game_Project_3_FlyingAxe.git</u></a>

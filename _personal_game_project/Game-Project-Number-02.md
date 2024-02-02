@@ -6,7 +6,7 @@ excerpt: 'Dice Fight is a 2D platform pvp game, looks like "Ultimate Chicken Hor
 
 others: '
 View in the youtube: <a href=" https://youtu.be/4kN-ubTmGEM " target="_blank"><u>https://youtu.be/4kN-ubTmGEM</u></a><br>
-Play by download in google drive: <a href=" https://drive.google.com/file/d/15pTn2z-RLUVNeBW8rqLa-5zurQUp-6ml/view?usp=sharing " target="_blank"><u>https://drive.google.com/file/d/15pTn2z-RLUVNeBW8rqLa-5zurQUp-6ml/view?usp=sharing</u></a><br>
+Download in google drive: <a href=" https://drive.google.com/file/d/15pTn2z-RLUVNeBW8rqLa-5zurQUp-6ml/view " target="_blank"><u>https://drive.google.com/file/d/15pTn2z-RLUVNeBW8rqLa-5zurQUp-6ml/view</u></a><br>
 Get source code: <a href=" https://github.com/WTQ1234/Personal_Game_Project_2_DiceFight2D.git " target="_blank"><u>https://github.com/WTQ1234/Personal_Game_Project_2_DiceFight2D.git</u></a>
 '
 
@@ -62,6 +62,6 @@ Therefore, for future improvements, I may consider the following optimizations: 
 
 View in the youtube: <a href=" https://youtu.be/4kN-ubTmGEM " target="_blank"><u>https://youtu.be/4kN-ubTmGEM</u></a>
 
-Play by download in google drive: <a href=" https://drive.google.com/file/d/15pTn2z-RLUVNeBW8rqLa-5zurQUp-6ml/view?usp=sharing " target="_blank"><u>https://drive.google.com/file/d/15pTn2z-RLUVNeBW8rqLa-5zurQUp-6ml/view?usp=sharing</u></a>
+Download in google drive: <a href=" https://drive.google.com/file/d/15pTn2z-RLUVNeBW8rqLa-5zurQUp-6ml/view " target="_blank"><u>https://drive.google.com/file/d/15pTn2z-RLUVNeBW8rqLa-5zurQUp-6ml/view</u></a>
 
 Get source code:<a href=" https://github.com/WTQ1234/Personal_Game_Project_2_DiceFight2D.git " target="_blank"><u>https://github.com/WTQ1234/Personal_Game_Project_2_DiceFight2D.git</u></a>

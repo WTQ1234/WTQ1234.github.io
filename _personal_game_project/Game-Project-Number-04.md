@@ -6,7 +6,7 @@ excerpt: 'ZumaCard is a 2D strategy pve game. Enemies are automatically generate
 
 others: '
 View in the youtube: <a href=" https://youtu.be/2WfUHhO6nis " target="_blank"><u>https://youtu.be/2WfUHhO6nis</u></a><br>
-Play by download in google drive: <a href=" https://drive.google.com/file/d/1Ug6qSai7-asTtAxwUSEwrwCBZ0HzyU-_/view?usp=sharing " target="_blank"><u>https://drive.google.com/file/d/1Ug6qSai7-asTtAxwUSEwrwCBZ0HzyU-_/view?usp=sharing</u></a><br>
+Download in google drive: <a href=" https://drive.google.com/file/d/1Ug6qSai7-asTtAxwUSEwrwCBZ0HzyU-_/view " target="_blank"><u>https://drive.google.com/file/d/1Ug6qSai7-asTtAxwUSEwrwCBZ0HzyU-_/view</u></a><br>
 Get source code: <a href=" https://github.com/WTQ1234/Personal_Game_Project_4_ZumaCard.git " target="_blank"><u>https://github.com/WTQ1234/Personal_Game_Project_4_ZumaCard.git</u></a>
 '
 ---
@@ -49,6 +49,6 @@ Therefore, for future improvements, I might consider the following optimizations
 
 View in the youtube: <a href=" https://youtu.be/2WfUHhO6nis " target="_blank"><u>https://youtu.be/2WfUHhO6nis</u></a>
 
-Play by download in google drive: <a href=" https://drive.google.com/file/d/1Ug6qSai7-asTtAxwUSEwrwCBZ0HzyU-_/view?usp=sharing " target="_blank"><u>https://drive.google.com/file/d/1Ug6qSai7-asTtAxwUSEwrwCBZ0HzyU-_/view?usp=sharing</u></a>
+Download in google drive: <a href=" https://drive.google.com/file/d/1Ug6qSai7-asTtAxwUSEwrwCBZ0HzyU-_/view " target="_blank"><u>https://drive.google.com/file/d/1Ug6qSai7-asTtAxwUSEwrwCBZ0HzyU-_/view</u></a>
 
 Get source code:<a href=" https://github.com/WTQ1234/Personal_Game_Project_4_ZumaCard.git " target="_blank"><u>https://github.com/WTQ1234/Personal_Game_Project_4_ZumaCard.git</u></a>

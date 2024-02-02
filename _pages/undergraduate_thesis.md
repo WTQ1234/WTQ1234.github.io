@@ -17,7 +17,7 @@ By PPO reinforcement learning and GAIL imitation methods, a deep reinforcement l
 
 View in the youtube: <a href=" https://youtu.be/qJfW_Aatnto " target="_blank"><u>https://youtu.be/qJfW_Aatnto</u></a>
 
-Download this undergraduate thesis: <a href=" https://drive.google.com/file/d/1IjCD1ZQgyiDycJgsHez39TiOoFXB2XoC/view?usp=sharing " target="_blank"><u>https://drive.google.com/file/d/1IjCD1ZQgyiDycJgsHez39TiOoFXB2XoC/view?usp=sharing</u></a>
+Download this undergraduate thesis: <a href=" https://drive.google.com/file/d/1IjCD1ZQgyiDycJgsHez39TiOoFXB2XoC/view " target="_blank"><u>https://drive.google.com/file/d/1IjCD1ZQgyiDycJgsHez39TiOoFXB2XoC/view</u></a>
 
 <br/><span style="font-weight: bold; font-size: 1.2em;">Abstract</span><br/>
 

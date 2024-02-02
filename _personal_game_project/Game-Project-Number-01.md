@@ -6,7 +6,7 @@ excerpt: '"Touch ⠞⠕⠥⠉⠓" is a 2D top-down, narrative-driven maze explor
 
 others: '
 View in the youtube: <a href=" https://youtu.be/aUhSHy8n0fw " target="_blank"><u>https://youtu.be/aUhSHy8n0fw</u></a><br>
-Play by download in google drive: <a href=" https://drive.google.com/file/d/1Psl5TsVDS2LNbXg20RUMdsZbNEvOw5j7/view " target="_blank"><u>https://drive.google.com/file/d/1Psl5TsVDS2LNbXg20RUMdsZbNEvOw5j7/view</u></a><br>
+Download in google drive: <a href=" https://drive.google.com/file/d/1Psl5TsVDS2LNbXg20RUMdsZbNEvOw5j7/view " target="_blank"><u>https://drive.google.com/file/d/1Psl5TsVDS2LNbXg20RUMdsZbNEvOw5j7/view</u></a><br>
 Get source code: <a href=" https://github.com/WTQ1234/Personal_Game_Project_1_Touch.git " target="_blank"><u>https://github.com/WTQ1234/Personal_Game_Project_1_Touch.git</u></a>
 '
 venue: 'the 48h GIGA game jam, 2023/7/7-2023/7/9, in China GuangZhou-TianHe'
@@ -57,6 +57,6 @@ Therefore, for future improvements, I may consider the following optimizations: 
 
 View in the youtube: <a href=" https://youtu.be/aUhSHy8n0fw " target="_blank"><u>https://youtu.be/aUhSHy8n0fw</u></a>
 
-Play by download in google drive: <a href=" https://drive.google.com/file/d/1Psl5TsVDS2LNbXg20RUMdsZbNEvOw5j7/view " target="_blank"><u>https://drive.google.com/file/d/1Psl5TsVDS2LNbXg20RUMdsZbNEvOw5j7/view</u></a>
+Download in google drive: <a href=" https://drive.google.com/file/d/1Psl5TsVDS2LNbXg20RUMdsZbNEvOw5j7/view " target="_blank"><u>https://drive.google.com/file/d/1Psl5TsVDS2LNbXg20RUMdsZbNEvOw5j7/view</u></a>
 
 Get source code:<a href=" https://github.com/WTQ1234/Personal_Game_Project_1_Touch.git " target="_blank"><u>https://github.com/WTQ1234/Personal_Game_Project_1_Touch.git</u></a>
