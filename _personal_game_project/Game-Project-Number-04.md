@@ -9,6 +9,7 @@ View in the youtube: <a href=" https://youtu.be/2WfUHhO6nis " target="_blank"><u
 Download in google drive: <a href=" https://drive.google.com/file/d/1Ug6qSai7-asTtAxwUSEwrwCBZ0HzyU-_/view " target="_blank"><u>https://drive.google.com/file/d/1Ug6qSai7-asTtAxwUSEwrwCBZ0HzyU-_/view</u></a><br>
 Get source code: <a href=" https://github.com/WTQ1234/Personal_Game_Project_4_ZumaCard.git " target="_blank"><u>https://github.com/WTQ1234/Personal_Game_Project_4_ZumaCard.git</u></a>
 '
+venue: 'Made by my self, about 3 weeks.'
 ---
 ZumaCard is a 2D strategy pve game. Enemies are automatically generated through tracks and move toward the player. The player releases spells to incite the enemy to help him fight.
 

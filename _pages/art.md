@@ -24,7 +24,7 @@ Here is some image I paint by Aseprite.
 <img src="/images/ASEPRITE_2.png">
 <img src="/images/ASEPRITE_3.png">
 <img src="/images/ASEPRITE_4.png">
-
+<img src="/images/ASEPRITE_5.png">
 <!-- 3.Animation -->
 <br/><span style="font-weight: bold; font-size: 1.6em;">Animation</span><br/>
 Here is some animation I make by Unity Engine.

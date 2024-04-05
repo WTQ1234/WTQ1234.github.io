@@ -9,6 +9,7 @@ View in the youtube: <a href=" https://youtu.be/DgpGetbsz1g " target="_blank"><u
 Download in google drive: <a href=" https://drive.google.com/file/d/1jo-t6H5LK5t-DImaYwHhu7Vjwc7GQlw6/view " target="_blank"><u>https://drive.google.com/file/d/1jo-t6H5LK5t-DImaYwHhu7Vjwc7GQlw6/view</u></a><br>
 Get source code: <a href=" https://github.com/WTQ1234/Personal_Game_Project_3_FlyingAxe.git " target="_blank"><u>https://github.com/WTQ1234/Personal_Game_Project_3_FlyingAxe.git</u></a>
 '
+venue: 'Made by my self, about 2 weeks.'
 ---
 Flying Axe is a 2D platform pve game, looks like "Vampire Survivors".
 

@@ -24,6 +24,8 @@ author_profile: true
   * Conducted performance analysis and optimization, version maintenance, git and packaging duties, and addressed crash fixes.
   * <em>related Skills: C++, Python, Git</em>
   * <em>View my work in youtube: <a href=" https://youtu.be/5zfgWXZQZko " target="_blank"><u>https://youtu.be/5zfgWXZQZko</u></a></em>
+  * <iframe width="560" height="315" src="https://www.youtube.com/embed/5zfgWXZQZko?si=DKrHpDUEOE4Qyk6B" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <img src="/images/WORK_EXP_1.png" style="width: 640px; height: auto;">
 
 * <b>FancyGuo</b> <em>06/2020 - 04/2022, Beijing, China</em>
   * <b>Mobile Game Development Engineer</b>
@@ -33,6 +35,7 @@ author_profile: true
   * Collaborated with the engine department by proposing expansion feature requirements, writing test cases, reporting, and assisting in the resolution of engine-related bugs
   * <em>related Skills: Lua, PostgreSQL, Linux, FariyGUI</em>
   * <em>View my work in youtube: <a href=" https://youtu.be/AXPAR3cICJg " target="_blank"><u>https://youtu.be/AXPAR3cICJg</u></a></em>
+  <img src="/images/WORK_EXP_2.png" style="width: 640px; height: auto;">
 
 * <b>BOE</b> <em>06/2019 - 10/2019, Beijing, China</em>
   * <b>Intern, Unity Program Development Engineer</b>
@@ -41,4 +44,5 @@ author_profile: true
   * Implemented the interpolation of various body parameters such as height, weight, and waist circumference from multiple humanoid models under the Unity engine; Displayed these models on the homepage of the Digital Human App
   * <em>related Skills: C++, Unity, C#, Linux</em>
   * <em>View my work in youtube: <a href=" https://youtu.be/kKinkCXZ7O4 " target="_blank"><u>https://youtu.be/kKinkCXZ7O4</u></a></em>
-
+  <img src="/images/WORK_EXP_3_1.png" style="width: auto; height: 640px;">
+  <img src="/images/WORK_EXP_3_2.png" style="width: 640px; height: auto;">
