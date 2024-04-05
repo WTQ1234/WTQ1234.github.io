@@ -45,5 +45,5 @@ author_profile: true
   * Implemented the interpolation of various body parameters such as height, weight, and waist circumference from multiple humanoid models under the Unity engine; Displayed these models on the homepage of the Digital Human App
   * <em>related Skills: C++, Unity, C#, Linux</em>
   * <em>View my work in youtube: <a href=" https://youtu.be/kKinkCXZ7O4 " target="_blank"><u>https://youtu.be/kKinkCXZ7O4</u></a></em>
-  <img src="/images/WORK_EXP_3_1.png" style="width: auto; height: 400px;">
-  <img src="/images/WORK_EXP_3_2.png" style="width: 400px; height: auto;">
+  * <img src="/images/WORK_EXP_3_2.png" style="width: 400px; height: auto;">
+  * <img src="/images/WORK_EXP_3_1.png" style="width: auto; height: 400px;">
