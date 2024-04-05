@@ -15,6 +15,7 @@ author_profile: true
   * Collaborated across departments to integrate UniSDK, package-related duties, and the three-end voice SDKs for PC, iOS, and Android.
   * <em>Transitioning from the previous work project to a different project within the same studio.</em>
   * <em>related Skills: Unreal 4 Engine, C++, Lua, Git</em>
+  * <em>Project is still under development. Due to confidentiality agreement, I cannot post pictures or videos here.</em>
 
 * <b>NetEase</b> <em>06/2022 - 03/2023, Guangzhou, China</em>
   * <b>P2-3 Intermediate Game Development Engineer</b>
@@ -24,8 +25,8 @@ author_profile: true
   * Conducted performance analysis and optimization, version maintenance, git and packaging duties, and addressed crash fixes.
   * <em>related Skills: C++, Python, Git</em>
   * <em>View my work in youtube: <a href=" https://youtu.be/5zfgWXZQZko " target="_blank"><u>https://youtu.be/5zfgWXZQZko</u></a></em>
-  * <iframe width="560" height="315" src="https://www.youtube.com/embed/5zfgWXZQZko?si=DKrHpDUEOE4Qyk6B" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
   <img src="/images/WORK_EXP_1.png" style="width: 640px; height: auto;">
+  * <iframe width="400" height="225" src="https://www.youtube.com/embed/5zfgWXZQZko?si=DKrHpDUEOE4Qyk6B" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 * <b>FancyGuo</b> <em>06/2020 - 04/2022, Beijing, China</em>
   * <b>Mobile Game Development Engineer</b>
@@ -44,5 +45,5 @@ author_profile: true
   * Implemented the interpolation of various body parameters such as height, weight, and waist circumference from multiple humanoid models under the Unity engine; Displayed these models on the homepage of the Digital Human App
   * <em>related Skills: C++, Unity, C#, Linux</em>
   * <em>View my work in youtube: <a href=" https://youtu.be/kKinkCXZ7O4 " target="_blank"><u>https://youtu.be/kKinkCXZ7O4</u></a></em>
-  <img src="/images/WORK_EXP_3_1.png" style="width: auto; height: 640px;">
-  <img src="/images/WORK_EXP_3_2.png" style="width: 640px; height: auto;">
+  <img src="/images/WORK_EXP_3_1.png" style="width: auto; height: 400px;">
+  <img src="/images/WORK_EXP_3_2.png" style="width: 400px; height: auto;">
