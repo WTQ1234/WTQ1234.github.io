@@ -10,7 +10,7 @@ redirect_from:
 {% include base_path %}
 
 <b>Taiqi Wang</b>
-<em>Male, Oct 1998 | wtq3555@gmail.com | Hollywood FL</em>
+<em>He/His | wtq3555@gmail.com | 9297663555</em>
 
 SUMMARY
 ======
@@ -24,6 +24,11 @@ Education
 09/2016 - 06/2020<br>
 BEng in Biomedical Engineering<br>
 <em>Main Courses: Database Technology, Medical Image Processing, Digital Signal Processing, Signals and Systems, Biological System Modeling</em>
+
+<b>Savannah College of Art and Design</b> <em>Savannah, GA, US</em><br>
+09/2024 - 03/2025<br>
+Game Development<br>
+<em>Main Courses: UE5 Engine, Maya 3D Molding, Substance Painter</em>
 
 Work experience
 ======
@@ -77,14 +82,15 @@ Skills
 ======
 * Software Skills
   * Game Engine
-    * Unity3D Engine, Unreal4 Engine, RPG Maker
+    * Unity3D Engine, Unreal5 Engine, RPG Maker
   * Programming language
-    * C#, Lua, Python, C++, Matlab
+    * C#, Lua, Python, C++, Matlab, JavaScript, PHP
   * Others
     * Linux, XShell
     * PostgreSQL, MongoDB
     * Git, SVN
 * Art
+  * Maya, Substance Painter, Substance Designer
   * Photoshop, Aseprite, AI painting
   * Video editing(by CapCut)
 * Others
