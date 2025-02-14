@@ -20,15 +20,15 @@ SUMMARY
 
 Education
 ======
-<b>Dalian University of Technology</b> <em>Dalian, China</em><br>
-09/2016 - 06/2020<br>
-BEng in Biomedical Engineering<br>
-<em>Main Courses: Database Technology, Medical Image Processing, Digital Signal Processing, Signals and Systems, Biological System Modeling</em>
-
 <b>Savannah College of Art and Design</b> <em>Savannah, GA, US</em><br>
 09/2024 - 03/2025<br>
 Game Development<br>
 <em>Main Courses: UE5 Engine, Maya 3D Molding, Substance Painter</em>
+
+<b>Dalian University of Technology</b> <em>Dalian, China</em><br>
+09/2016 - 06/2020<br>
+BEng in Biomedical Engineering<br>
+<em>Main Courses: Database Technology, Medical Image Processing, Digital Signal Processing, Signals and Systems, Biological System Modeling</em>
 
 Work experience
 ======
