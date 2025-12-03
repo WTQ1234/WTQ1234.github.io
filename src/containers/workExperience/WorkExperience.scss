@@ -1,7 +1,24 @@
+// .experience-cards-div {
+//   display: grid;
+//   grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+//   gap: 1rem 1rem;
+// }
+
 .experience-cards-div {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
-  gap: 1rem 1rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr)); // 一行两列
+  gap: 1rem 1rem; // 卡片之间的间距
+}
+
+/* 小屏时自动变成一列，防止挤爆 */
+@media (max-width: 768px) {
+  .experience-cards-div {
+    grid-template-columns: 1fr;
+  }
+}
+
+.experience-card {
+  width: 90%;         // 只占格子宽度的 90%
 }
 
 .experience-heading {

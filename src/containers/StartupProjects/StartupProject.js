@@ -1,6 +1,7 @@
 import React, {useContext} from "react";
 import "./StartupProjects.scss";
-import {bigProjects} from "../../portfolio";
+import {bigProjects, gameProjects} from "../../portfolio";
+import GameGallery from "../../components/GameGallery/GameGallery";
 import {Fade} from "react-reveal";
 import StyleContext from "../../contexts/StyleContext";
 

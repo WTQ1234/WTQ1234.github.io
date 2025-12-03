@@ -1,31 +1,59 @@
+// src/components/softwareSkills/SoftwareSkill.scss
 @import "../../_globalColor";
 
-.dev-icons {
-  padding-left: 0;
-  list-style: none;
-  font-size: 3rem;
-  margin-bottom: 0px;
-  margin-top: 0px;
+.software-skills-main-div {
   text-align: center;
 }
 
-.software-skill-inline {
-  display: inline-block;
-  margin-right: 20px;
-  margin-bottom: 20px;
+/* 每一行的容器 */
+.dev-icons.software-skill-row {
+  padding-left: 0;
+  list-style: none;
+  margin: 0 0 12px 0;
 }
 
+/* 单个技能项 */
+.software-skill-inline {
+  display: inline-block;
+  margin: 0 20px 16px;
+  text-align: center;
+}
+
+/* 自定义 logo 图片 */
+.software-skill-icon {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto 8px auto;
+}
+
+/* Font Awesome 图标（旧逻辑） */
 .software-skill-inline > i {
+  font-size: 3rem;
   color: $subTitle;
+  display: block;
+  margin-bottom: 8px;
 }
 
 .software-skill-inline > i:hover {
   color: $skillsColor;
 }
+
+/* 文本 */
 .software-skill-inline > p {
   color: $subTitle;
   font-size: 10px;
+  margin: 0;
 }
-.software-skill-inline > i:hover ~ p {
+
+/* hover 时文字跟着变色 */
+.software-skill-inline:hover > p {
   color: $skillsColor;
+}
+
+/* 图片 hover 效果（可选） */
+.software-skill-inline:hover .software-skill-icon {
+  transform: scale(1.06);
+  transition: transform 0.15s ease;
 }

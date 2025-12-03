@@ -15,6 +15,7 @@
 
 .greeting-main {
   display: flex;
+  align-items: center;
 }
 
 .subTitle {
@@ -49,8 +50,9 @@
 }
 
 .greeting-text-p {
-  font-size: 30px;
-  line-height: 40px;
+  font-size: 25px;      // ← 改成你想要的字号
+  line-height: 1.7;     // 行距
+  white-space: pre-wrap;
 }
 
 .greeting-image-div > img {
@@ -96,7 +98,8 @@
     font-size: 50px;
   }
   .greeting-text-p {
-    font-size: 20px;
+    font-size: 17px;
+    white-space: pre-wrap;
   }
 }
 @media (max-width: 768px) {

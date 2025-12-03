@@ -1,5 +1,3 @@
-/* Change this file to get your personal Portfolio */
-
 // To change portfolio colors globally go to the  _globalColor.scss file
 
 import emoji from "react-easy-emoji";
@@ -20,10 +18,13 @@ const illustration = {
 };
 
 const greeting = {
-  username: "Saad Pasta",
-  title: "Hi all, I'm Saad",
+  username: "Taiqi Wang",
+  title: "Hi all, I'm Taiqi",
   subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
+    `        A passionate video game developer with 3 years of experience. 🎮
+        Specializes in gameplay features programming, performance optimization 🛡️, and live-service bug fixing. ⚔️ 
+        Strong team player who boosts productivity with plugins, tools, and clear documentation. 🎶
+        My goal: Game programmer 🤖 & System Designer ✨ & Technical Designer 🛠️`
   ),
   resumeLink:
     "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
@@ -35,11 +36,11 @@ const greeting = {
 const socialMediaLinks = {
   github: "https://github.com/saadpasta",
   linkedin: "https://www.linkedin.com/in/saadpasta/",
-  gmail: "saadpasta70@gmail.com",
-  gitlab: "https://gitlab.com/saadpasta",
-  facebook: "https://www.facebook.com/saad.pasta7",
-  medium: "https://medium.com/@saadpasta",
-  stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
+  gmail: "wtq3555@gmail.com",
+  gitlab: "",
+  facebook: "",
+  medium: "",
+  stackoverflow: "",
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false
@@ -49,74 +50,94 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  subTitle: "Flexible Video Game Developer with Multi-Disciplinary Skills",
   skills: [
     emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
+      "⚡ Implement robust gameplay systems and diverse player-facing features"
     ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
     emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
+      "⚡ Write clear, detailed feature documentation and build handy tools to streamline development"
+    ),
+    emoji(
+      "⚡ Collaborate efficiently with designers, artists, and QA to iterate and ship high-quality game content"
     )
+
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
-https://fontawesome.com/icons?d=gallery */
+  https://fontawesome.com/icons?d=gallery */
+  softwareSkillRows: [
+      // 第 1 行：引擎
+      [
+        {
+          skillName: "Unreal Engine 5",
+          iconUrl: "/logos/ue5.svg" // 对应 public/logos/ue5.png
+        },
+        {
+          skillName: "Unity",
+          fontAwesomeClassname: "fab fa-unity"
+          // fontAwesomeClassname: "fab fa-unity"
+        }
+      ],
 
-  softwareSkills: [
-    {
-      skillName: "html-5",
-      fontAwesomeClassname: "fab fa-html5"
-    },
-    {
-      skillName: "css3",
-      fontAwesomeClassname: "fab fa-css3-alt"
-    },
-    {
-      skillName: "sass",
-      fontAwesomeClassname: "fab fa-sass"
-    },
-    {
-      skillName: "JavaScript",
-      fontAwesomeClassname: "fab fa-js"
-    },
-    {
-      skillName: "reactjs",
-      fontAwesomeClassname: "fab fa-react"
-    },
-    {
-      skillName: "nodejs",
-      fontAwesomeClassname: "fab fa-node"
-    },
-    {
-      skillName: "swift",
-      fontAwesomeClassname: "fab fa-swift"
-    },
-    {
-      skillName: "npm",
-      fontAwesomeClassname: "fab fa-npm"
-    },
-    {
-      skillName: "sql-database",
-      fontAwesomeClassname: "fas fa-database"
-    },
-    {
-      skillName: "aws",
-      fontAwesomeClassname: "fab fa-aws"
-    },
-    {
-      skillName: "firebase",
-      fontAwesomeClassname: "fas fa-fire"
-    },
-    {
-      skillName: "python",
-      fontAwesomeClassname: "fab fa-python"
-    },
-    {
-      skillName: "docker",
-      fontAwesomeClassname: "fab fa-docker"
-    }
-  ],
+      [
+        {
+          skillName: "Git",
+          fontAwesomeClassname: "fab fa-git-alt"
+        },
+        {
+          skillName: "Svn",
+          fontAwesomeClassname: "fab fa-git-alt"
+        },
+        {
+          skillName: "Perforce",
+          fontAwesomeClassname: "fab fa-git-alt"
+        }
+      ],
+
+      // 第 3 行：2D / 其他
+      [
+
+        {
+          skillName: "C++",
+          fontAwesomeClassname: "fas fa-code"
+        },
+        {
+          skillName: "C#",
+          fontAwesomeClassname: "fas fa-code"
+        },
+        {
+          skillName: "Lua",
+          fontAwesomeClassname: "fas fa-code"
+        },
+        {
+          skillName: "Python",
+          fontAwesomeClassname: "fas fa-code"
+        },
+        {
+          skillName: "HTML",
+          fontAwesomeClassname: "fas fa-code"
+        },
+      ],
+
+            // 第 2 行：3D / 材质
+      [
+        {
+          skillName: "Maya",
+          iconUrl: "/logos/maya.png"
+        },
+        {
+          skillName: "Substance Painter",
+          iconUrl: "/logos/substance-painter.png"
+        },
+        {
+          skillName: "Photoshop",
+          iconUrl: "/logos/photoshop.png"
+        },
+      ],
+    ],
+
+  softwareSkills: [],
   display: true // Set false to hide this section, defaults to true
 };
 
@@ -126,23 +147,23 @@ const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
     {
-      schoolName: "Harvard University",
-      logo: require("./assets/images/harvardLogo.png"),
-      subHeader: "Master of Science in Computer Science",
-      duration: "September 2017 - April 2019",
-      desc: "Participated in the research of XXX and published 3 papers.",
+      schoolName: "Savannah College of Art and Design",
+      logo: require("./assets/images/ScadLogo.png"),
+      subHeader: "Master of Arts (M.A.) in Game Development",
+      duration: "September 2024 - November 2025",
+      desc: "Graduate program in Game Development with a focus on game art and technical design.",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Coursework: Unreal Engine 5, Game System Design, Game UI Design, 3D Modeling By Maya & Substance Painter"
       ]
     },
     {
       schoolName: "Stanford University",
-      logo: require("./assets/images/stanfordLogo.png"),
-      subHeader: "Bachelor of Science in Computer Science",
-      duration: "September 2013 - April 2017",
-      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
+      logo: require("./assets/images/DalianLigongLogo.png"),
+      subHeader: "Bachelor of Engineering (B.Eng.) in Biomedical Engineering",
+      duration: "September 2016 - July 2020",
+      desc: "Medical instrument programming, electronic circuits, and software–hardware integration.",
+      descBullets: [
+        "Coursework: C++ programming, SQL databases, Linux systems",]
     }
   ]
 };
@@ -153,17 +174,26 @@ const techStack = {
   viewSkillBars: true, //Set it to true to show Proficiency Section
   experience: [
     {
-      Stack: "Frontend/Design", //Insert stack or technology you have experience in
+      Stack: "Gameplay Features Programming", //Insert stack or technology you have experience in
       progressPercentage: "90%" //Insert relative proficiency in percentage
     },
+
     {
-      Stack: "Backend",
+      Stack: "System Designing",
       progressPercentage: "70%"
     },
     {
-      Stack: "Programming",
+      Stack: "Building Plugin and Tools",
       progressPercentage: "60%"
-    }
+    },
+    {
+      Stack: "3D Modeling", //Insert stack or technology you have experience in
+      progressPercentage: "30%" //Insert relative proficiency in percentage
+    },
+    {
+      Stack: "Web Development", //Insert stack or technology you have experience in
+      progressPercentage: "30%" //Insert relative proficiency in percentage
+    },
   ],
   displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
 };
@@ -173,31 +203,59 @@ const techStack = {
 const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
+
     {
-      role: "Software Engineer",
-      company: "Facebook",
-      companylogo: require("./assets/images/facebookLogo.png"),
-      date: "June 2018 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      role: "Senior Game Development Engineer",
+      company: "KF Flooring",
+      companylogo: require("./assets/images/KFFlooringLogo.png"),
+      date: "03/2023 - 10/2023",
+      desc: `"OASIS" - 3D mobile party game`,
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Developed dual-end logic for features such as friends, chat, combat, buffs, homesteads, main cities, dungeons, UI framework, etc",
+        "Performed system performance testing and optimization, device adaptation, and crash fixes.",
+        "Collaborated across departments to integrate UniSDK, package-related duties, and the three-end voice SDKs for PC, iOS, and Android.",
+        "related Skills: Unreal 4 Engine, C++, Lua, Git",
       ]
     },
     {
-      role: "Front-End Developer",
-      company: "Quora",
-      companylogo: require("./assets/images/quoraLogo.png"),
-      date: "May 2017 – May 2018",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "Senior Game Development Engineer",
+      company: "NetEase",
+      companylogo: require("./assets/images/NeteaseLogo.png"),
+      date: "03/2023 - 10/2023",
+      desc: `"OASIS" - 3D mobile party game`,
+      descBullets: [
+        "Developed dual-end logic for features such as friends, chat, combat, buffs, homesteads, main cities, dungeons, UI framework, etc",
+        "Performed system performance testing and optimization, device adaptation, and crash fixes.",
+        "Collaborated across departments to integrate UniSDK, package-related duties, and the three-end voice SDKs for PC, iOS, and Android.",
+        "related Skills: Unreal 4 Engine, C++, Lua, Git",
+      ]
     },
     {
-      role: "Software Engineer Intern",
-      company: "Airbnb",
-      companylogo: require("./assets/images/airbnbLogo.png"),
-      date: "Jan 2015 – Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    }
+      role: "Intermediate Game Development Engineer",
+      company: "NetEase",
+      companylogo: require("./assets/images/MineCraftLogo.png"),
+      date: "06/2022 - 03/2023",
+      desc: `"Minecraft" - 3D sandbox Game Mobile Chinese version`,
+      descBullets: [
+        "Developed official mods for the NetEase version of Minecraft mobile game and other user-generated content (UGC) gameplay.",
+        `Worked on the official Mod SDK based on Python. Features like backpack interface, log storage, UI debugging, etc.`,
+        "Conducted performance analysis and optimization, version maintenance, git and packaging duties, and addressed crash fixes.",
+        "Related Skills: C++, Python, Git",
+      ]
+    },
+    {
+      role: "Mobile Game Development Engineer",
+      company: "Fancy Guo",
+      companylogo: require("./assets/images/QingGuoLogo.gif"),
+      date: "06/2020 - 04/2022",
+      desc: `"Dark Nemesis: Infinite Quest" - 3D MMO ARPG Mobile Game`,
+      descBullets: [
+        "Developed dual-end logic, encompassing features like abilities, dungeons, quests, guilds, teams, AI, skills, buffs, and several more topics.",
+        "Implemented data tracking, adjusted for different device models, developed GM commands, fixed live issues, performed live updates, and optimized performance",
+        "Collaborated with the engine department by proposing expansion feature requirements, writing test cases, reporting, and assisting in the resolution of engine-related bugs",
+        "related Skills: Lua, PostgreSQL, Linux, FariyGUI"
+      ]
+    },
   ]
 };
 
@@ -206,7 +264,7 @@ To know how to get github key look at readme.md */
 
 const openSource = {
   showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Some big projects you have worked on
@@ -300,7 +358,7 @@ const achievementSection = {
       ]
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Blogs Section
@@ -324,7 +382,7 @@ const blogSection = {
         "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Talks Sections
@@ -343,7 +401,7 @@ const talkSection = {
       event_url: "https://www.facebook.com/events/2339906106275053/"
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Podcast Section
@@ -356,7 +414,7 @@ const podcastSection = {
   podcast: [
     "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Resume Section
@@ -372,18 +430,18 @@ const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
     "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+92-0000000000",
-  email_address: "saadpasta70@gmail.com"
+  number: "+1 929-766-3555",
+  email_address: "wtq3555@gmail.com"
 };
 
 // Twitter Section
 
 const twitterDetails = {
   userName: "twitter", //Replace "twitter" with your twitter username without @
-  display: true // Set true to display this section, defaults to false
+  display: false // Set true to display this section, defaults to false
 };
 
-const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
+const isHireable = true; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
 
 export {
   illustration,
