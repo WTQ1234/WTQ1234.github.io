@@ -9,6 +9,11 @@
 
 .skills-text-div {
   margin-left: 50px;
+  flex: 1 1 90%;   // 大约 60% 宽，可按需要调
+}
+
+.skills-image-div {
+  flex: 1 1 40%;
 }
 
 .skills-main-div > * {

@@ -4,13 +4,13 @@
   width: 90%;
   padding: 20px 10px;
   margin: 0px auto;
-  margin-top: 4rem;
+  margin-top: 0.4rem;
 }
 .greet-main {
   width: 90%;
   padding: 20px 10px;
   margin: 0px auto;
-  margin-top: 2rem;
+  margin-top: 0.2rem;
 }
 
 .greeting-main {
@@ -37,22 +37,37 @@
 
 .button-greeting-div {
   display: flex;
-  margin-top: 40px;
+  flex-wrap: wrap;
+  align-items: center;
 }
+
+/* 新增：两份简历按钮的横向排列 */
+.resume-download-group {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .download-link-button {
   text-decoration: none;
 }
 
 .greeting-text {
-  font-size: 70px;
+  font-size: 50;
   line-height: 1.1;
   color: $textColor !important;
 }
 
 .greeting-text-p {
-  font-size: 25px;      // ← 改成你想要的字号
+  font-size: 20px;      // ← 改成你想要的字号
   line-height: 1.7;     // 行距
   white-space: pre-wrap;
+}
+
+.greeting-text-div {
+  flex: 1 1 60%;   // 大约 60% 宽，可按需要调
+}
+.greeting-image-div {
+  flex: 1 1 40%;
 }
 
 .greeting-image-div > img {
