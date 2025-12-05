@@ -1,109 +1,115 @@
-@import "../../_globalColor";
+/* 背景遮罩 + 模糊 */
+.exp-modal__backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999; // 确保在所有内容上面
+}
 
-.switch {
+/* 中间 80% 尺寸的浮层 */
+.exp-modal {
+  width: 80vw;
+  max-width: 1100px;
+  max-height: 80vh;
+  background: #111;
+  color: #fff;
+  border-radius: 16px;
+  padding: 24px 28px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
   position: relative;
-  display: inline-block;
-  width: 50px;
-  height: 26px;
+  overflow-y: auto;
 }
 
-/* Fix visible slider checkbox */
-input {
-  transform: scale(0.5);
-}
-
-.slider {
+/* 右上角关闭按钮 */
+.exp-modal__close {
   position: absolute;
+  top: 10px;
+  right: 14px;
+  border: none;
+  background: transparent;
+  color: #fff;
+  font-size: 1.6rem;
   cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: $toggleSwitchSliderBG;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
 }
 
-.slider::before {
-  position: absolute;
-  content: "";
-  height: 26px;
-  width: 28px;
-  left: 0;
-  bottom: 0;
-  background-color: $textColorDark;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
+/* 标题、副标题、meta 信息 */
+.exp-modal__title {
+  margin-bottom: 4px;
+  font-size: 1.4rem;
 }
 
-input:checked + .slider {
-  background-color: $toggleCheck;
+.exp-modal__subtitle {
+  margin-top: 0;
+  margin-bottom: 8px;
+  opacity: 0.8;
 }
 
-input:focus + .slider {
-  box-shadow: $toggleCheck;
-}
-
-input:checked + .slider::before,
-input:checked + .slider > .emoji {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
-}
-
-/* Rounded sliders */
-.slider.round {
-  border-radius: 34px;
+.exp-modal__meta {
   display: flex;
-  align-items: center;
+  gap: 12px;
+  font-size: 0.9rem;
+  opacity: 0.8;
+  margin-bottom: 16px;
 }
 
-.slider.round::before {
-  border-radius: 50%;
+/* 主体布局：左右两列 */
+.exp-modal__body {
   display: grid;
-  place-items: center;
+  grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+  gap: 20px;
 }
 
-.slider::after {
-  display: inline;
-  position: absolute;
-  right: 9.3%;
-  bottom: 17.5%;
+.exp-modal__paragraph {
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+  line-height: 1.6;
 }
 
-input:checked + .slider::after {
-  display: inline;
-  position: absolute;
-  right: 56.3%;
-  bottom: 14.5%;
+.exp-modal__section h4 {
+  margin-bottom: 6px;
 }
 
-.emoji {
-  z-index: 10;
-  display: flex;
-  align-items: center;
-  margin-left: 2px;
+.exp-modal__section ul {
+  padding-left: 18px;
 }
 
-@media all and (max-width: 786px) and (min-width: 425px) {
-  input:checked + .slider::after {
-    right: 60.3%;
-    bottom: 20.5%;
+.exp-modal__technologies {
+  margin-top: 10px;
+  font-size: 0.9rem;
+}
+
+/* 右侧图片 / 视频链接 */
+.exp-modal__image-wrapper img {
+  width: 100%;
+  border-radius: 8px;
+  display: block;
+}
+
+.exp-modal__video-link {
+  margin-top: 12px;
+
+  a {
+    display: inline-block;
+    padding: 8px 12px;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    font-size: 0.85rem;
   }
-  .slider::after {
-    right: 15.3%;
-    bottom: 22.5%;
-  }
 }
 
-@media all and (max-width: 2560px) and (min-width: 1552px) {
-  .slider::after {
-    bottom: 12.5% !important;
+/* 小屏幕自适应 */
+@media (max-width: 768px) {
+  .exp-modal {
+    width: 94vw;
+    max-height: 88vh;
+    padding: 18px 16px;
   }
-}
 
-@media all and (max-width: 1552px) and (min-width: 1440px) {
-  .slider::after {
-    bottom: 7.5% !important;
+  .exp-modal__body {
+    grid-template-columns: 1fr;
   }
 }

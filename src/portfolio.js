@@ -203,19 +203,34 @@ const techStack = {
 const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
-
     {
-      role: "Senior Game Development Engineer",
+      role: "Web Developer",
       company: "KF Flooring",
       companylogo: require("./assets/images/KFFlooringLogo.png"),
-      date: "03/2023 - 10/2023",
-      desc: `"OASIS" - 3D mobile party game`,
+      date: "Apr 2024 - Jan 2025",
+      desc: `KF Flooring Internal Web System`,
       descBullets: [
-        "Developed dual-end logic for features such as friends, chat, combat, buffs, homesteads, main cities, dungeons, UI framework, etc",
-        "Performed system performance testing and optimization, device adaptation, and crash fixes.",
-        "Collaborated across departments to integrate UniSDK, package-related duties, and the three-end voice SDKs for PC, iOS, and Android.",
-        "related Skills: Unreal 4 Engine, C++, Lua, Git",
-      ]
+        "Built and maintained an internal web system for cabinet trading and shipping.",
+        "Developed admin tools for order, inventory, and delivery management.",
+      ],
+      // ------- 详情配置 -------
+      details: {
+        title: "KF Flooring Inc. — Web Developer",
+        projectName: "KF Flooring Internal Web System",
+        overview: [
+          "Built and maintained an internal web system for cabinet trading and shipping."
+        ],
+        responsibilities: [
+          "Developed admin tools for order, inventory, and delivery management to support daily back-office operations."
+        ],
+        technologies: "JavaScript, PHP, HTML/CSS, MySQL, Excel (VBA), SVN",
+        youtubeUrl: "", // 如果有视频，填完整链接，例如 "https://www.youtube.com/watch?v=XXXXXXXX"
+        images: [
+          // 可选：放几张截图路径（public 下）
+          // "/images/experience/kf_oasis_1.jpg",
+          // "/images/experience/kf_oasis_2.jpg"
+        ]
+      }
     },
     {
       role: "Senior Game Development Engineer",
@@ -224,11 +239,31 @@ const workExperiences = {
       date: "03/2023 - 10/2023",
       desc: `"OASIS" - 3D mobile party game`,
       descBullets: [
-        "Developed dual-end logic for features such as friends, chat, combat, buffs, homesteads, main cities, dungeons, UI framework, etc",
-        "Performed system performance testing and optimization, device adaptation, and crash fixes.",
-        "Collaborated across departments to integrate UniSDK, package-related duties, and the three-end voice SDKs for PC, iOS, and Android.",
-        "related Skills: Unreal 4 Engine, C++, Lua, Git",
-      ]
+        "“OASIS” – 3D mobile party game, similar to “Minecraft Bed Wars” and “Among Us”.",
+        "Implemented gameplay systems such as friends, chat, combat, buffs, guild, etc.",
+        "Optimized performance and device compatibility (UI & SDK), diagnosed crashes, and maintained iOS/Android UE build pipelines (packaging, signing, release).",
+      ],
+      // ------- 详情配置 -------
+      details: {
+        title: "NetEase Inc. — Web Developer",
+        projectName: `"OASIS" - 3D mobile party game`,
+        overview: [
+          "Built and maintained an internal web system for cabinet trading and shipping."
+        ],
+        responsibilities: [
+          "Implemented client- and server-side logic for core systems such as friends, chat, combat, buffs, player housing, hub cities, dungeons, and UI framework.",
+          "Optimized performance, device compatibility adaptation (UI, SDK), and crash diagnosis and fixes across a wide range of mobile devices.",
+          "Collaborated with SDK, QA, and Operations teams to integrate internal SDKs and voice services.",
+          "Built and maintained Unreal Engine mobile build pipelines for iOS and Android, including packaging, signing, and release builds."
+        ],
+        technologies: "Unreal Engine 4, C++, Lua, SVN, iOS/Android build & release",
+        youtubeUrl: "", // 如果有视频，填完整链接，例如 "https://www.youtube.com/watch?v=XXXXXXXX"
+        images: [
+          // 可选：放几张截图路径（public 下）
+          // "/images/experience/kf_oasis_1.jpg",
+          // "/images/experience/kf_oasis_2.jpg"
+        ]
+      }
     },
     {
       role: "Intermediate Game Development Engineer",

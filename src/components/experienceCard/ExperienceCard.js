@@ -1,18 +1,26 @@
-import React, {useState, createRef} from "react";
+import React, { useState, useRef } from "react";
 import "./ExperienceCard.scss";
 import ColorThief from "colorthief";
 
-export default function ExperienceCard({cardInfo, isDark}) {
+export default function ExperienceCard({ cardInfo, isDark, onOpenDetails }) {
   const [colorArrays, setColorArrays] = useState([]);
-  const imgRef = createRef();
+  const imgRef = useRef(null);
 
   function getColorArrays() {
-    const colorThief = new ColorThief();
-    setColorArrays(colorThief.getColor(imgRef.current));
+    try {
+      const colorThief = new ColorThief();
+      if (imgRef.current && imgRef.current.complete) {
+        const color = colorThief.getColor(imgRef.current);
+        setColorArrays(color);
+      }
+    } catch (e) {
+      // 如果跨域或者其它问题，失败也无所谓，只是没有自动配色
+      console.warn("ColorThief failed:", e);
+    }
   }
 
   function rgb(values) {
-    return typeof values === "undefined"
+    return !values || values.length !== 3
       ? null
       : "rgb(" + values.join(", ") + ")";
   }
@@ -30,23 +38,40 @@ export default function ExperienceCard({cardInfo, isDark}) {
       : null;
   };
 
+  const handleClick = () => {
+    if (onOpenDetails) {
+      onOpenDetails();
+    }
+  };
+
   return (
-    <div className={isDark ? "experience-card-dark" : "experience-card"}>
-      <div style={{background: rgb(colorArrays)}} className="experience-banner">
-        <div className="experience-blurred_div"></div>
+    <div
+      className={
+        isDark ? "experience-card experience-card-dark" : "experience-card"
+      }
+      onClick={handleClick}
+    >
+      {/* 顶部 banner 区（自动取 logo 主色作为背景） */}
+      <div
+        style={{ background: rgb(colorArrays) || undefined }}
+        className="experience-banner"
+      >
+        <div className="experience-blurred_div" />
         <div className="experience-div-company">
           <h5 className="experience-text-company">{cardInfo.company}</h5>
         </div>
 
         <img
-          crossOrigin={"anonymous"}
+          crossOrigin="anonymous"
           ref={imgRef}
           className="experience-roundedimg"
           src={cardInfo.companylogo}
           alt={cardInfo.company}
-          onLoad={() => getColorArrays()}
+          onLoad={getColorArrays}
         />
       </div>
+
+      {/* 文本内容 */}
       <div className="experience-text-details">
         <h5
           className={
@@ -78,6 +103,19 @@ export default function ExperienceCard({cardInfo, isDark}) {
         <ul>
           <GetDescBullets descBullets={cardInfo.descBullets} isDark={isDark} />
         </ul>
+      </div>
+
+      {/* 底部按钮（居中），点击不会触发多次 */}
+      <div className="experience-card-footer">
+        <button
+          className="experience-card-detail-button"
+          onClick={(e) => {
+            e.stopPropagation(); // 防止冒泡到整卡的 onClick
+            handleClick();
+          }}
+        >
+          View details
+        </button>
       </div>
     </div>
   );

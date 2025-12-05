@@ -1,26 +1,31 @@
-// src/components/WorkExperienceDetail/WorkExperienceDetail.jsx
+// src/components/WorkExperienceDetail/WorkExperienceDetail.js
 import React from "react";
 import "./WorkExperienceDetail.scss";
 
 export default function WorkExperienceDetail({ experience, onClose }) {
-  if (!experience || !experience.details) return null;
+  if (!experience) return null;
 
-  const { details } = experience;
+  // 允许没有 details 字段，也能展示基础信息
+  const details = experience.details || {};
 
   return (
     <div className="exp-modal__backdrop" onClick={onClose}>
       <div
         className="exp-modal"
-        onClick={(e) => e.stopPropagation()} // prevent closing when clicking inside
+        onClick={(e) => e.stopPropagation()} // 阻止点击内容冒泡到背景
       >
         <button className="exp-modal__close" onClick={onClose}>
           ×
         </button>
 
-        <h2 className="exp-modal__title">{details.title || experience.role}</h2>
+        <h2 className="exp-modal__title">
+          {details.title || `${experience.company} — ${experience.role}`}
+        </h2>
+
         {details.projectName && (
           <h3 className="exp-modal__subtitle">{details.projectName}</h3>
         )}
+
         <div className="exp-modal__meta">
           <span>{experience.company}</span>
           <span>{experience.date}</span>
@@ -28,7 +33,7 @@ export default function WorkExperienceDetail({ experience, onClose }) {
 
         <div className="exp-modal__body">
           <div className="exp-modal__left">
-            {/* Overview paragraphs */}
+            {/* Overview 段落 */}
             {Array.isArray(details.overview) &&
               details.overview.map((p, idx) => (
                 <p key={`ov-${idx}`} className="exp-modal__paragraph">
@@ -36,7 +41,7 @@ export default function WorkExperienceDetail({ experience, onClose }) {
                 </p>
               ))}
 
-            {/* Responsibilities bullets */}
+            {/* Responsibilities 列表 */}
             {Array.isArray(details.responsibilities) &&
               details.responsibilities.length > 0 && (
                 <div className="exp-modal__section">
@@ -55,10 +60,24 @@ export default function WorkExperienceDetail({ experience, onClose }) {
                 <strong>Technologies:</strong> {details.technologies}
               </p>
             )}
+
+            {/* 如果你暂时没写 details，也至少展示原来的 descBullets */}
+            {!details.overview &&
+              !details.responsibilities &&
+              experience.descBullets && (
+                <div className="exp-modal__section">
+                  <h4>Highlights</h4>
+                  <ul>
+                    {experience.descBullets.map((b, i) => (
+                      <li key={`hb-${i}`}>{b}</li>
+                    ))}
+                  </ul>
+                </div>
+              )}
           </div>
 
           <div className="exp-modal__right">
-            {/* Large image / gallery: 这里只简单展示第一张 */}
+            {/* 大图（可选） */}
             {Array.isArray(details.images) && details.images[0] && (
               <div className="exp-modal__image-wrapper">
                 <img
@@ -68,7 +87,7 @@ export default function WorkExperienceDetail({ experience, onClose }) {
               </div>
             )}
 
-            {/* YouTube link：这里只给按钮，避免一上来全是 iframe */}
+            {/* YouTube 链接（用按钮打开新标签，避免首页加载 iframe） */}
             {details.youtubeUrl && (
               <div className="exp-modal__video-link">
                 <a
