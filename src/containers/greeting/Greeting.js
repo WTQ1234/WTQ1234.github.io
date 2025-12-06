@@ -1,5 +1,5 @@
-import React, {useContext} from "react";
-import {Fade} from "react-reveal";
+import React, {createRef, useContext} from "react";
+import {Fade, Slide} from "react-reveal";
 import emoji from "react-easy-emoji";
 import "./Greeting.scss";
 import landingPerson from "../../assets/lottie/landingPerson";

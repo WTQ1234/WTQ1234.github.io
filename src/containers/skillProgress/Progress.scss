@@ -1,7 +1,7 @@
 @import "../../_globalColor";
 
 .meter {
-  height: 20px;
+  height: 1rem;
   position: relative;
   background: $progressBarBackground;
   -moz-border-radius: 25px;
@@ -11,6 +11,7 @@
 .meter > span {
   display: block;
   height: 100%;
+  
   border-top-right-radius: 6px;
   border-bottom-right-radius: 6px;
   border-top-left-radius: 20px;
@@ -20,18 +21,30 @@
   overflow: hidden;
 }
 .skill {
-  line-height: 3.5vw;
+  // margin-top: 0.2rem;
+  // line-height: 2vw;
 }
 .skill-bars {
-  font-size: 28px;
+  font-size: 2rem;
   width: 40%;
+  // gap: 2.75rem !important;
 }
+
+.skills-bar-name{
+  margin-top: 1.35rem;
+  margin-bottom: 0.3rem;
+  font-size: 1.35rem;      // ← 改成你想要的字号
+  line-height: 1.7;     // 行距
+  white-space: pre-wrap;
+  color: $subTitle !important;
+}
+
 .skills-container {
   display: flex;
   width: 90%;
   padding: 20px 10px;
   margin: 0px auto;
-  margin-top: 2rem;
+  margin-top: 0.2rem;
   align-items: center;
 }
 .skills-container > * {
@@ -42,6 +55,15 @@
   margin-left: 80px;
   max-width: 90%;
   height: auto;
+}
+
+.skills-bar {
+  // margin-left: 50px;
+  flex: 1 1 60%;   // 大约 60% 宽，可按需要调
+}
+
+.skills-image {
+  flex: 1 1 40%;
 }
 
 /* Media Query */
@@ -68,4 +90,12 @@
     display: none;
     order: 2;
   }
+}
+
+.img-divider {
+  display: block;
+  width: 80%;      // 占满当前容器宽度
+  margin: 1rem auto;
+  height: 0.2rem;
+  opacity: 0.5;
 }

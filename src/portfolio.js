@@ -50,16 +50,16 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "How I Build Games & Tools",
-  subTitle: "Flexible Video Game Developer with Multi-Disciplinary Skills",
+  subTitle: "I am a Flexible Video Game Developer with Multi-Disciplinary Skills.",
   skills: [
     emoji(
-      "⚡ Implement robust gameplay systems and diverse player-facing features"
+      "⚡ Implement robust gameplay systems and diverse player-facing features."
     ),
     emoji(
-      "⚡ Write clear, detailed feature documentation and build handy tools to streamline development"
+      "⚡ Write clear, detailed feature documentation and build handy tools to streamline development."
     ),
     emoji(
-      "⚡ Collaborate efficiently with designers, artists, and QA to iterate and ship high-quality game content"
+      "⚡ Collaborate efficiently with designers, artists, and QA to iterate and ship high-quality game content."
     )
 
   ],
@@ -134,6 +134,10 @@ const skillsSection = {
           skillName: "Photoshop",
           iconUrl: "/logos/photoshop.png"
         },
+        {
+          skillName: "Figma",
+          iconUrl: "/logos/Figma.svg"
+        },
       ],
     ],
 
@@ -153,7 +157,8 @@ const educationInfo = {
       duration: "September 2024 - November 2025",
       desc: "Graduate program in Game Development with a focus on game art and system design.",
       descBullets: [
-        "Coursework: Unreal Engine 5, Game System Design, Game UI Design, 3D Modeling By Maya & Substance Painter"
+        "Coursework: Unreal Engine 5, Game System Design, Game UI Design",
+        "Coursework: 3D Modeling By Maya & Substance Painter",
       ]
     },
     {
@@ -177,10 +182,9 @@ const techStack = {
       Stack: "Gameplay Features Programming", //Insert stack or technology you have experience in
       progressPercentage: "90%" //Insert relative proficiency in percentage
     },
-
     {
-      Stack: "System Designing",
-      progressPercentage: "70%"
+      Stack: "Gameplay System Designing",
+      progressPercentage: "60%"
     },
     {
       Stack: "Building Plugin and Tools",

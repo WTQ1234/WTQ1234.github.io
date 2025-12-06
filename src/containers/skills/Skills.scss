@@ -10,7 +10,7 @@
 .skills-main-div {
   padding: 20px 10px;
   margin: 0px auto;
-  margin-top: 0.2rem;
+  // margin-top: 0.2rem;
 
   display: flex;
   width: 100%;
@@ -29,7 +29,7 @@
 
 .skills-main-div > * {
   // flex: 1;
-  margin-bottom: 30px;
+  // margin-bottom: 30px;
 }
 
 .skills-image-div > img {
@@ -39,7 +39,7 @@
 
 .skills-heading {
   font-size: 2rem;
-  line-height: 1.1;
+  line-height: 1.1rem;
   color: $textColor !important;
 }
 
@@ -80,4 +80,12 @@
     /* display: none; */
     order: 2;
   }
+}
+
+.img-divider {
+  display: block;
+  width: 80%;      // 占满当前容器宽度
+  margin: 1rem auto;
+  height: 0.2rem;
+  opacity: 0.5;
 }
