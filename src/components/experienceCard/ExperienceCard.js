@@ -5,6 +5,7 @@ import ColorThief from "colorthief";
 export default function ExperienceCard({ cardInfo, isDark, onOpenDetails }) {
   const [colorArrays, setColorArrays] = useState([]);
   const imgRef = useRef(null);
+  const rootRef = useRef(null);
 
   function getColorArrays() {
     try {
@@ -14,7 +15,6 @@ export default function ExperienceCard({ cardInfo, isDark, onOpenDetails }) {
         setColorArrays(color);
       }
     } catch (e) {
-      // 如果跨域或者其它问题，失败也无所谓，只是没有自动配色
       console.warn("ColorThief failed:", e);
     }
   }
@@ -25,7 +25,7 @@ export default function ExperienceCard({ cardInfo, isDark, onOpenDetails }) {
       : "rgb(" + values.join(", ") + ")";
   }
 
-  const GetDescBullets = ({descBullets, isDark}) => {
+  const GetDescBullets = ({ descBullets, isDark }) => {
     return descBullets
       ? descBullets.map((item, i) => (
           <li
@@ -40,18 +40,20 @@ export default function ExperienceCard({ cardInfo, isDark, onOpenDetails }) {
 
   const handleClick = () => {
     if (onOpenDetails) {
-      onOpenDetails();
+      const bannerColor = rgb(colorArrays);
+      onOpenDetails({ bannerColor });
     }
   };
 
   return (
     <div
+      ref={rootRef}
       className={
         isDark ? "experience-card experience-card-dark" : "experience-card"
       }
       onClick={handleClick}
     >
-      {/* 顶部 banner 区（自动取 logo 主色作为背景） */}
+      {/* 顶部 banner */}
       <div
         style={{ background: rgb(colorArrays) || undefined }}
         className="experience-banner"
@@ -105,12 +107,12 @@ export default function ExperienceCard({ cardInfo, isDark, onOpenDetails }) {
         </ul>
       </div>
 
-      {/* 底部按钮（居中），点击不会触发多次 */}
+      {/* 底部按钮 */}
       <div className="experience-card-footer">
         <button
           className="experience-card-detail-button"
           onClick={(e) => {
-            e.stopPropagation(); // 防止冒泡到整卡的 onClick
+            e.stopPropagation();
             handleClick();
           }}
         >

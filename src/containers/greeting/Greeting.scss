@@ -18,13 +18,9 @@
   align-items: center;
 }
 
-.subTitle {
-  color: $subTitle !important;
-}
-
-.greeting-main {
-  display: flex;
-}
+// .subTitle {
+//   color: $subTitle !important;
+// }
 
 .greeting-main > * {
   flex: 1;
@@ -52,15 +48,16 @@
 }
 
 .greeting-text {
-  font-size: 50;
+  font-size: 2.5rem;
   line-height: 1.1;
   color: $textColor !important;
 }
 
 .greeting-text-p {
-  font-size: 20px;      // ← 改成你想要的字号
+  font-size: 1.35rem;      // ← 改成你想要的字号
   line-height: 1.7;     // 行距
   white-space: pre-wrap;
+  color: $subTitle !important;
 }
 
 .greeting-text-div {
@@ -142,4 +139,12 @@
   .main {
     width: auto;
   }
+}
+
+.img-divider {
+  display: block;
+  width: 75%;      // 占满当前容器宽度
+  max-width: 600px; // 可以给个上限，防止超宽
+  margin: 40px auto;
+  height: auto;     // 自动按原图比例
 }

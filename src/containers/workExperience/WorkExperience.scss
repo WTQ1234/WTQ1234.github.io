@@ -52,3 +52,114 @@
     text-align: center;
   }
 }
+/* 背景模糊层保持不变 */
+.exp-expanded-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(5px);
+  z-index: 998;
+}
+
+/* 放大的卡片：用更高优先级覆盖 .experience-card 里的 position/margin */
+.experience-card.exp-expanded-card {
+  position: fixed !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) scale(0.9);
+  opacity: 0;
+  z-index: 999;
+  max-width: 1200px;
+  width: 80vw;
+  max-height: 80vh;
+  overflow-y: auto;
+  margin: 0 !important;         /* 覆盖原来的 margin: 20px auto 之类的 */
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease;
+}
+
+/* 动画结束态 */
+.experience-card.exp-expanded-card.exp-expanded-card--visible {
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+}
+
+/* 正文额外间距等，保留原来那几段 */
+.exp-expanded-content {
+  padding-bottom: 20px;
+}
+
+.exp-expanded-paragraph {
+  margin-top: 6px;
+  margin-bottom: 6px;
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.exp-expanded-media {
+  margin-top: 16px;
+}
+
+.exp-expanded-media img {
+  width: 50%;
+  height: auto;
+  border-radius: 12px;
+  display: block;
+  align-items: center;
+}
+
+.exp-expanded-video-link {
+  margin-top: 12px;
+}
+
+.exp-expanded-video-link a {
+  display: inline-block;
+  padding: 8px 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  font-size: 0.85rem;
+  text-decoration: none;
+}
+
+.exp-expanded-section {
+  margin-top: 12px;
+
+  h4 {
+    margin: 0 0 6px;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+  ul {
+    padding-left: 20px;
+    margin: 0;
+  }
+
+  li {
+    margin-bottom: 4px;
+  }
+}
+
+.exp-expanded-technologies {
+  margin-top: 10px;
+  font-size: 0.9rem;
+}
+
+.exp-expanded-close {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  border: none;
+  background: transparent;
+  color: #ffffff;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .experience-card.exp-expanded-card {
+    width: 94vw;
+    max-height: 88vh;
+  }
+}

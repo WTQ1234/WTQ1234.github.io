@@ -49,7 +49,7 @@ const socialMediaLinks = {
 // Skills Section
 
 const skillsSection = {
-  title: "What I do",
+  title: "How I Build Games & Tools",
   subTitle: "Flexible Video Game Developer with Multi-Disciplinary Skills",
   skills: [
     emoji(
@@ -151,7 +151,7 @@ const educationInfo = {
       logo: require("./assets/images/ScadLogo.png"),
       subHeader: "Master of Arts (M.A.) in Game Development",
       duration: "September 2024 - November 2025",
-      desc: "Graduate program in Game Development with a focus on game art and technical design.",
+      desc: "Graduate program in Game Development with a focus on game art and system design.",
       descBullets: [
         "Coursework: Unreal Engine 5, Game System Design, Game UI Design, 3D Modeling By Maya & Substance Painter"
       ]
@@ -216,7 +216,7 @@ const workExperiences = {
       // ------- 详情配置 -------
       details: {
         title: "KF Flooring Inc. — Web Developer",
-        projectName: "KF Flooring Internal Web System",
+        projectName: "Internal Web System",
         overview: [
           "Built and maintained an internal web system for cabinet trading and shipping."
         ],
@@ -228,27 +228,25 @@ const workExperiences = {
         images: [
           // 可选：放几张截图路径（public 下）
           // "/images/experience/kf_oasis_1.jpg",
-          // "/images/experience/kf_oasis_2.jpg"
         ]
       }
     },
     {
       role: "Senior Game Development Engineer",
-      company: "NetEase",
-      companylogo: require("./assets/images/NeteaseLogo.png"),
-      date: "03/2023 - 10/2023",
-      desc: `"OASIS" - 3D mobile party game`,
+      company: "NetEase Games Inc. ",
+      companylogo: require("./assets/images/NeteaseLogo2.png"),
+      date: "Jun 2023 - Oct 2023",
+      desc: `"Powerdise" - 3D Mobile Party Game`,
       descBullets: [
-        "“OASIS” – 3D mobile party game, similar to “Minecraft Bed Wars” and “Among Us”.",
-        "Implemented gameplay systems such as friends, chat, combat, buffs, guild, etc.",
-        "Optimized performance and device compatibility (UI & SDK), diagnosed crashes, and maintained iOS/Android UE build pipelines (packaging, signing, release).",
+        "Implemented gameplay systems and optimized device compatibility (UI & SDK).",
+        "Maintained iOS/Android UE build pipelines (packaging, signing, release).",
       ],
       // ------- 详情配置 -------
       details: {
-        title: "NetEase Inc. — Web Developer",
-        projectName: `"OASIS" - 3D mobile party game`,
+        title: "NetEase Games Inc. — Senior Game Development Engineer",
+        projectName: `"Powerdise" - 3D Mobile Party Game`,
         overview: [
-          "Built and maintained an internal web system for cabinet trading and shipping."
+          `Built and maintained the Game Logic and device compatibility.`
         ],
         responsibilities: [
           "Implemented client- and server-side logic for core systems such as friends, chat, combat, buffs, player housing, hub cities, dungeons, and UI framework.",
@@ -260,36 +258,69 @@ const workExperiences = {
         youtubeUrl: "", // 如果有视频，填完整链接，例如 "https://www.youtube.com/watch?v=XXXXXXXX"
         images: [
           // 可选：放几张截图路径（public 下）
-          // "/images/experience/kf_oasis_1.jpg",
-          // "/images/experience/kf_oasis_2.jpg"
+          "/images/WorkExp3.png",
         ]
       }
     },
     {
       role: "Intermediate Game Development Engineer",
-      company: "NetEase",
+      company: "NetEase Games Inc.",
       companylogo: require("./assets/images/MineCraftLogo.png"),
-      date: "06/2022 - 03/2023",
-      desc: `"Minecraft" - 3D sandbox Game Mobile Chinese version`,
+      date: "Jun 2022 - Jun 2023",
+      desc: `"Minecraft" - 3D Sandbox Game Mobile Chinese Version`,
       descBullets: [
-        "Developed official mods for the NetEase version of Minecraft mobile game and other user-generated content (UGC) gameplay.",
-        `Worked on the official Mod SDK based on Python. Features like backpack interface, log storage, UI debugging, etc.`,
-        "Conducted performance analysis and optimization, version maintenance, git and packaging duties, and addressed crash fixes.",
-        "Related Skills: C++, Python, Git",
-      ]
+        "Developed official mods and UGC features base on the Mod SDK.",
+        `Extended the Python-based Mod SDK (inventory UI, logging, debugging tools).`,
+      ],
+      // ------- 详情配置 -------
+      details: {
+        title: "NetEase Games Inc. — Intermediate Game Development Engineer",
+        projectName: `"Minecraft" - 3D Sandbox Game Mobile Chinese Version`,
+        overview: [
+          `Developed official mods and maintained mod SDK for mods developer`
+        ],
+        responsibilities: [
+          "Developed official mods for the NetEase mobile version of Minecraft and supported other user-generated content (UGC) features.",
+          "Contributed to the official Python-based Mod SDK, implementing systems such as the backpack interface, log storage, and UI debugging tools.",
+          "Optimized performance, handled version maintenance, Git and packaging tasks, and fixed crashes across live builds.",
+        ],
+        technologies: "C++, Python, Git, iOS/Android build & release",
+        youtubeUrl: "", // 如果有视频，填完整链接，例如 "https://www.youtube.com/watch?v=XXXXXXXX"
+        images: [
+          // 可选：放几张截图路径（public 下）
+          "/images/WorkExp2.png",
+        ]
+      }
     },
     {
       role: "Mobile Game Development Engineer",
-      company: "Fancy Guo",
+      company: "Fancy Guo Games Inc.",
       companylogo: require("./assets/images/QingGuoLogo.gif"),
-      date: "06/2020 - 04/2022",
+      date: "Jun 2020 - Apr 2022",
       desc: `"Dark Nemesis: Infinite Quest" - 3D MMO ARPG Mobile Game`,
       descBullets: [
-        "Developed dual-end logic, encompassing features like abilities, dungeons, quests, guilds, teams, AI, skills, buffs, and several more topics.",
-        "Implemented data tracking, adjusted for different device models, developed GM commands, fixed live issues, performed live updates, and optimized performance",
-        "Collaborated with the engine department by proposing expansion feature requirements, writing test cases, reporting, and assisting in the resolution of engine-related bugs",
-        "related Skills: Lua, PostgreSQL, Linux, FariyGUI"
-      ]
+        "Implemented client- and server-side gameplay systems.",
+        "Added data tracking and GM tools, and optimized performance."
+      ],
+      // ------- 详情配置 -------
+      details: {
+        title: "Fancy Guo Games Inc. — Intermediate Game Development Engineer",
+        projectName: `"Dark Nemesis: Infinite Quest" - 3D MMO ARPG Mobile Game`,
+        overview: [
+          `Built and maintained the game logic, GM tools and device compatibility`
+        ],
+        responsibilities: [
+          "Implemented client- and server-side gameplay systems including abilities, dungeons, quests, guilds, team play, AI, skills, buffs, and player guide.",
+          "Implemented data tracking, adapted the game for different device models, added GM tools/commands, fixed live issues, and optimized performance.",
+          "Worked closely with the engine team to define feature requirements, write and execute test cases, and debug engine-related issues.",
+        ],
+        technologies: "Lua, SVN, iOS/Android build & release",
+        youtubeUrl: "", // 如果有视频，填完整链接，例如 "https://www.youtube.com/watch?v=XXXXXXXX"
+        images: [
+          // 可选：放几张截图路径（public 下）
+          "/images/WorkExp1.png",
+        ]
+      }
     },
   ]
 };

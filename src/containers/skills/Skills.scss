@@ -1,6 +1,17 @@
 @import "../../_globalColor";
 
+.main {
+  width: 90%;
+  padding: 20px 10px;
+  margin: 0px auto;
+  // margin-top: 0.4rem;
+}
+
 .skills-main-div {
+  padding: 20px 10px;
+  margin: 0px auto;
+  margin-top: 0.2rem;
+
   display: flex;
   width: 100%;
   overflow: hidden;
@@ -8,8 +19,8 @@
 }
 
 .skills-text-div {
-  margin-left: 50px;
-  flex: 1 1 90%;   // 大约 60% 宽，可按需要调
+  // margin-left: 50px;
+  flex: 1 1 60%;   // 大约 60% 宽，可按需要调
 }
 
 .skills-image-div {
@@ -17,7 +28,7 @@
 }
 
 .skills-main-div > * {
-  flex: 1;
+  // flex: 1;
   margin-bottom: 30px;
 }
 
@@ -27,9 +38,11 @@
 }
 
 .skills-heading {
-  font-size: 56px;
-  font-weight: 400;
+  font-size: 2rem;
+  line-height: 1.1;
+  color: $textColor !important;
 }
+
 .subTitle {
   color: $subTitle;
 }

@@ -13,21 +13,9 @@ export default function Skills() {
     return null;
   }
   return (
-    <div className={isDark ? "dark-mode main" : "main"} id="skills">
-      <div className="skills-main-div">
-        <Fade left duration={1000}>
-          <div className="skills-image-div">
-            {illustration.animated ? (
-              <DisplayLottie animationData={codingPerson} />
-            ) : (
-              <img
-                alt="Man Working"
-                src={require("../../assets/images/developerActivity.svg")}
-              ></img>
-            )}
-          </div>
-        </Fade>
-        <Fade right duration={1000}>
+    <Fade bottom duration={1000}>
+      <div className={isDark ? "dark-mode main" : "main"} id="skills">
+        <div className="skills-main-div">
           <div className="skills-text-div">
             <h1
               className={isDark ? "dark-mode skills-heading" : "skills-heading"}
@@ -61,8 +49,19 @@ export default function Skills() {
               })}
             </div>
           </div>
-        </Fade>
+          <div className="skills-image-div">
+            {illustration.animated ? (
+              <DisplayLottie animationData={codingPerson} />
+            ) : (
+              <img
+                alt="Man Working"
+                src={require("../../assets/images/developerActivity.svg")}
+              ></img>
+            )}
+          </div>
+
+        </div>
       </div>
-    </div>
+    </Fade>
   );
 }

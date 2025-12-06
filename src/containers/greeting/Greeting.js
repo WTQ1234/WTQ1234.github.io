@@ -74,6 +74,7 @@ export default function Greeting() {
             )}
           </div>
         </div>
+        <img src="/img/divider.png" alt="divider" className="img-divider" />
       </div>
     </Fade>
   );
