@@ -13,14 +13,16 @@
 }
 
 .contact-title {
-  font-size: 65px;
   font-weight: 400;
+  font-size: 3rem;
+  line-height: 1.1;
+  color: $textColor !important;
 }
 
 .contact-detail,
 .contact-detail-email {
   margin-top: 20px;
-  font-size: 40px;
+  font-size: 3rem;
   font-weight: 400;
   color: $subTitle;
   text-decoration: none;

@@ -36,6 +36,9 @@ const greeting = {
 const socialMediaLinks = {
   github: "https://github.com/saadpasta",
   linkedin: "https://www.linkedin.com/in/saadpasta/",
+  youtube: "https://www.youtube.com/@wtq3555",
+  fab: "https://www.fab.com/sellers/Taiqi",
+  artstation: "https://www.artstation.com/wtq3555",
   gmail: "wtq3555@gmail.com",
   gitlab: "",
   facebook: "",
@@ -56,10 +59,10 @@ const skillsSection = {
       "⚡ Implement robust gameplay systems and diverse player-facing features."
     ),
     emoji(
-      "⚡ Write clear, detailed feature documentation and build handy tools to streamline development."
+      "⚡ Write clear, detailed feature documentation."
     ),
     emoji(
-      "⚡ Collaborate efficiently with designers, artists, and QA to iterate and ship high-quality game content."
+      "⚡ Build handy tools, plugins and GM commands to streamline development."
     )
 
   ],
@@ -115,7 +118,7 @@ const skillsSection = {
           fontAwesomeClassname: "fas fa-code"
         },
         {
-          skillName: "HTML",
+          skillName: "JavaScript",
           fontAwesomeClassname: "fas fa-code"
         },
       ],
@@ -137,6 +140,10 @@ const skillsSection = {
         {
           skillName: "Figma",
           iconUrl: "/logos/Figma.svg"
+        },
+        {
+          skillName: "CapCut",
+          iconUrl: "/logos/CapCut.svg"
         },
       ],
     ],
@@ -162,13 +169,13 @@ const educationInfo = {
       ]
     },
     {
-      schoolName: "Stanford University",
+      schoolName: "Dalian University of Technology",
       logo: require("./assets/images/DalianLigongLogo.png"),
       subHeader: "Bachelor of Engineering (B.Eng.) in Biomedical Engineering",
       duration: "September 2016 - July 2020",
       desc: "Medical instrument programming, electronic circuits, and software–hardware integration.",
       descBullets: [
-        "Coursework: C++ programming, SQL databases, Linux systems",]
+        "Coursework: C++, MySQL, Linux",]
     }
   ]
 };
@@ -259,7 +266,7 @@ const workExperiences = {
           "Built and maintained Unreal Engine mobile build pipelines for iOS and Android, including packaging, signing, and release builds."
         ],
         technologies: "Unreal Engine 4, C++, Lua, SVN, iOS/Android build & release",
-        youtubeUrl: "", // 如果有视频，填完整链接，例如 "https://www.youtube.com/watch?v=XXXXXXXX"
+        youtubeUrl: "https://www.youtube.com/watch?v=reNmH-TyAUE", // 如果有视频，填完整链接，例如 "https://www.youtube.com/watch?v=XXXXXXXX"
         images: [
           // 可选：放几张截图路径（public 下）
           "/images/WorkExp3.png",

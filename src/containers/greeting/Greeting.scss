@@ -143,8 +143,8 @@
 
 .img-divider {
   display: block;
-  width: 75%;      // 占满当前容器宽度
-  max-width: 600px; // 可以给个上限，防止超宽
-  margin: 40px auto;
-  height: auto;     // 自动按原图比例
+  width: 80%;      // 占满当前容器宽度
+  margin: 2rem auto;
+  height: 0.2rem;     // 自动按原图比例
+  opacity: 0.5;
 }

@@ -31,6 +31,54 @@ export default function socialMedia() {
           <span></span>
         </a>
       ) : null}
+      
+      {socialMediaLinks.youtube ? (
+        <a
+          href={socialMediaLinks.youtube}
+          className="icon-button youtube"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="/logos/Youtube.svg"   // 你的 logo 路径
+            alt="Youtube"
+            className="icon-img"
+          />
+          <span></span>
+        </a>
+      ) : null}
+
+      {socialMediaLinks.fab ? (
+        <a
+          href={socialMediaLinks.fab}
+          className="icon-button fabstore"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="/logos/FAB.png"   // 你的 logo 路径
+            alt="artstation"
+            className="icon-img"
+          />
+          <span></span>
+        </a>
+      ) : null}
+      
+      {socialMediaLinks.artstation ? (
+        <a
+          href={socialMediaLinks.artstation}
+          className="icon-button artstation"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="/logos/artstation.png"   // 你的 logo 路径
+            alt="artstation"
+            className="icon-img"
+          />
+          <span></span>
+        </a>
+      ) : null}
 
       {socialMediaLinks.gmail ? (
         <a

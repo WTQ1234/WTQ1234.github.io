@@ -2,10 +2,26 @@
 
 .social-media-div {
   font-size: 2em;
+  display: flex;
 }
 
 .icon-button {
-  margin-bottom: 10px;
+  display: inline-flex;          // 关键：变成 flex 容器
+  align-items: center;           // 垂直居中儿子（icon-img）
+  justify-content: center;       // 水平居中儿子
+  margin: 0 0.5rem;
+  width: 3rem;                   // 按需要调：外框大小
+  height: 3rem;
+  border-radius: 50%;            // 如果你想要圆形按钮
+  overflow: hidden;              // 防止图片溢出
+
+  .icon-img {
+    width: 2.6rem;   // 按需要调
+    height: 2.6rem;
+    object-fit: contain;
+    display: block;
+    align-items: center;
+  }
 }
 
 .icon-button i {
@@ -24,7 +40,7 @@
   -ms-user-select: none;
   user-select: none;
   width: 2.6rem;
-  margin-bottom: 10px;
+  // margin-bottom: 10px;
   transition: 0.2s ease-in;
 }
 

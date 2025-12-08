@@ -51,7 +51,7 @@ export default function WorkExperience() {
 
   return (
     <div id="experience">
-      <Fade bottom duration={1000} distance="20px">
+      <Fade left duration={1000} distance="10rem">
         <div className="experience-container" id="workExperience">
           <div>
             <h1 className="experience-heading">Work Experiences</h1>
@@ -74,7 +74,10 @@ export default function WorkExperience() {
               ))}
             </div>
           </div>
+          
         </div>
+        <div className="experience-container" id="1">
+        <img src="/images/divider.png" alt="divider" className="img-divider" /></div>
       </Fade>
 
       {/* Overlay：视口居中 + 缩放动画 */}

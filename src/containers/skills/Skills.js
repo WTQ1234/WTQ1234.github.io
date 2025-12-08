@@ -13,7 +13,7 @@ export default function Skills() {
     return null;
   }
   return (
-    <Fade bottom duration={1000}>
+    <Fade left duration={1000} distance="20rem">
       <div className={isDark ? "dark-mode main" : "main"} id="skills">
         <div className="skills-main-div">
           <div className="skills-text-div">

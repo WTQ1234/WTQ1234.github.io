@@ -15,7 +15,7 @@ export default function Greeting() {
     return null;
   }
   return (
-    <Fade bottom duration={1000} distance="40px">
+    <Fade left duration={1000} distance="20rem">
       <div className="greet-main" id="greeting">
         <div className="greeting-main">
           <div className="greeting-text-div">
@@ -74,7 +74,7 @@ export default function Greeting() {
             )}
           </div>
         </div>
-        <img src="/img/divider.png" alt="divider" className="img-divider" />
+        <img src="/images/divider.png" alt="divider" className="img-divider" />
       </div>
     </Fade>
   );
