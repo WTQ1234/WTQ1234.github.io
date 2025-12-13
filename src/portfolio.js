@@ -164,8 +164,8 @@ const educationInfo = {
       duration: "September 2024 - November 2025",
       desc: "Graduate program in Game Development with a focus on game art and system design.",
       descBullets: [
-        "Coursework: Unreal Engine 5, Game System Design, Game UI Design",
-        "Coursework: 3D Modeling By Maya & Substance Painter",
+        "Relevant Coursework: Unreal Engine 5, Game System Design, Game UI Design",
+        "Relevant Coursework: 3D Modeling By Maya & Substance Painter",
       ]
     },
     {
@@ -175,7 +175,7 @@ const educationInfo = {
       duration: "September 2016 - July 2020",
       desc: "Medical instrument programming, electronic circuits, and software–hardware integration.",
       descBullets: [
-        "Coursework: C++, MySQL, Linux",]
+        "Relevant Coursework: C++, MySQL, Linux",]
     }
   ]
 };
@@ -186,15 +186,15 @@ const techStack = {
   viewSkillBars: true, //Set it to true to show Proficiency Section
   experience: [
     {
-      Stack: "Gameplay Features Programming", //Insert stack or technology you have experience in
+      Stack: "Gameplay Programming", //Insert stack or technology you have experience in
       progressPercentage: "90%" //Insert relative proficiency in percentage
     },
     {
-      Stack: "Gameplay System Designing",
+      Stack: "Gameplay System Design",
       progressPercentage: "60%"
     },
     {
-      Stack: "Building Plugin and Tools",
+      Stack: "Build Plugins and Tools",
       progressPercentage: "60%"
     },
     {
