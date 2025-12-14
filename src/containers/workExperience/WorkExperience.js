@@ -5,6 +5,24 @@ import { workExperiences } from "../../portfolio";
 import { Fade } from "react-reveal";
 import StyleContext from "../../contexts/StyleContext";
 
+// Helper: convert normal YouTube URLs to embed URL
+function getYoutubeEmbedUrl(youtubeUrl) {
+  if (!youtubeUrl) return null;
+  try {
+    const watchMatch = youtubeUrl.match(/[?&]v=([^&#]+)/);
+    const shortMatch = youtubeUrl.match(/youtu\.be\/([^?&#]+)/);
+    const embedMatch = youtubeUrl.match(/youtube\.com\/embed\/([^?&#]+)/);
+    const videoId =
+      (watchMatch && watchMatch[1]) ||
+      (shortMatch && shortMatch[1]) ||
+      (embedMatch && embedMatch[1]);
+    if (!videoId) return null;
+    return `https://www.youtube.com/embed/${videoId}?rel=0`;
+  } catch (e) {
+    return null;
+  }
+}
+
 export default function WorkExperience() {
   const { isDark } = useContext(StyleContext);
 
@@ -40,7 +58,7 @@ export default function WorkExperience() {
   const handleOpenDetails = (card, extra) => {
     setExpanded({
       card,
-      bannerColor: extra?.bannerColor || null
+      bannerColor: extra?.bannerColor || null,
     });
   };
 
@@ -48,6 +66,18 @@ export default function WorkExperience() {
     // 先触发缩小动画，真正卸载由上面的 useEffect 处理
     setShowExpanded(false);
   };
+
+  // 当前展开卡片的详情 & 媒体信息
+  const currentDetails = expanded?.card?.details || null;
+  const images =
+    currentDetails && Array.isArray(currentDetails.images)
+      ? currentDetails.images.filter(Boolean)
+      : [];
+  const hasImages = images.length > 0;
+  const youtubeEmbedUrl = currentDetails?.youtubeUrl
+    ? getYoutubeEmbedUrl(currentDetails.youtubeUrl)
+    : null;
+  const hasYoutube = !!youtubeEmbedUrl;
 
   return (
     <div id="experience">
@@ -67,17 +97,23 @@ export default function WorkExperience() {
                     companylogo: card.companylogo,
                     role: card.role,
                     descBullets: card.descBullets,
-                    details: card.details
+                    details: card.details,
                   }}
                   onOpenDetails={(extra) => handleOpenDetails(card, extra)}
                 />
               ))}
             </div>
           </div>
-          
         </div>
-        <div className="experience-container" id="1">
-        <img src="/images/divider.png" alt="divider" className="img-divider" /></div>
+
+        {/* 分割线图片 */}
+        <div className="experience-container" id="experience-divider">
+          <img
+            src="/images/divider.png"
+            alt="divider"
+            className="img-divider"
+          />
+        </div>
       </Fade>
 
       {/* Overlay：视口居中 + 缩放动画 */}
@@ -96,11 +132,11 @@ export default function WorkExperience() {
               (showExpanded ? "exp-expanded-card--visible" : "")
             }
           >
-            {/* 顶部 banner + logo */}
+            {/* 顶部 banner + logo（固定高度，在 ExperienceCard.scss 里已经写 height: 90px） */}
             <div
               className="experience-banner"
               style={{
-                background: expanded.bannerColor || "#222"
+                background: expanded.bannerColor || "#222",
               }}
             >
               <div className="experience-blurred_div" />
@@ -131,9 +167,9 @@ export default function WorkExperience() {
               </p>
 
               {/* overview */}
-              {expanded.card.details &&
-                Array.isArray(expanded.card.details.overview) &&
-                expanded.card.details.overview.map((p, idx) => (
+              {currentDetails &&
+                Array.isArray(currentDetails.overview) &&
+                currentDetails.overview.map((p, idx) => (
                   <p
                     key={`ov-${idx}`}
                     className="exp-expanded-paragraph"
@@ -143,71 +179,108 @@ export default function WorkExperience() {
                 ))}
 
               {/* responsibilities */}
-              {expanded.card.details &&
-                Array.isArray(expanded.card.details.responsibilities) &&
-                expanded.card.details.responsibilities.length > 0 && (
+              {currentDetails &&
+                Array.isArray(currentDetails.responsibilities) &&
+                currentDetails.responsibilities.length > 0 && (
                   <section className="exp-expanded-section">
                     <h4>Key responsibilities</h4>
                     <ul>
-                      {expanded.card.details.responsibilities.map(
-                        (item, idx) => (
-                          <li key={`resp-${idx}`}>{item}</li>
-                        )
-                      )}
-                    </ul>
-                  </section>
-                )}
-
-              {/* Technologies */}
-              {expanded.card.details &&
-                expanded.card.details.technologies && (
-                  <p className="exp-expanded-technologies">
-                    <strong>Technologies:&nbsp;</strong>
-                    {expanded.card.details.technologies}
-                  </p>
-                )}
-
-              {/* fallback：没写 details 就用 bullets */}
-              {!expanded.card.details &&
-                expanded.card.descBullets && (
-                  <section className="exp-expanded-section">
-                    <h4>Highlights</h4>
-                    <ul>
-                      {expanded.card.descBullets.map((b, i) => (
-                        <li key={`hb-${i}`}>{b}</li>
+                      {currentDetails.responsibilities.map((item, idx) => (
+                        <li key={`resp-${idx}`}>{item}</li>
                       ))}
                     </ul>
                   </section>
                 )}
 
-              {/* 可选：项目截图（只显示第1张，够当大预览了） */}
-              {expanded.card.details &&
-                Array.isArray(expanded.card.details.images) &&
-                expanded.card.details.images[0] && (
-                  <div className="exp-expanded-media">
-                    <img
-                      src={expanded.card.details.images[0]}
-                      alt={
-                        expanded.card.details.projectName ||
-                        expanded.card.company
-                      }
-                    />
-                  </div>
-                )}
+              {/* Technologies */}
+              {currentDetails && currentDetails.technologies && (
+                <p className="exp-expanded-technologies">
+                  <strong>Technologies:&nbsp;</strong>
+                  {currentDetails.technologies}
+                </p>
+              )}
 
-              {/* 可选：YouTube 链接按钮（不嵌 iframe，避免首页预加载视频） */}
-              {expanded.card.details &&
-                expanded.card.details.youtubeUrl && (
-                  <div className="exp-expanded-video-link">
-                    <a
-                      href={expanded.card.details.youtubeUrl}
-                      target="_blank"
-                      rel="noreferrer"
+              {/* fallback：没写 details 就用 bullets */}
+              {!currentDetails && expanded.card.descBullets && (
+                <section className="exp-expanded-section">
+                  <h4>Highlights</h4>
+                  <ul>
+                    {expanded.card.descBullets.map((b, i) => (
+                      <li key={`hb-${i}`}>{b}</li>
+                    ))}
+                  </ul>
+                </section>
+              )}
+
+              {/* 媒体区：YouTube + 图片 Grid */}
+              {(hasYoutube || hasImages) && (
+                <section className="exp-expanded-media-section">
+                  {hasYoutube && (
+                    <div className="exp-expanded-media-video">
+                      <div className="exp-expanded-video-wrapper">
+                        <iframe
+                          src={youtubeEmbedUrl}
+                          title={
+                            currentDetails?.projectName ||
+                            expanded.card.company
+                          }
+                          frameBorder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allowFullScreen
+                          loading="lazy"
+                        />
+                      </div>
+                      <p className="exp-expanded-video-caption">
+                        Gameplay / trailer preview
+                      </p>
+                    </div>
+                  )}
+
+                  {hasImages && (
+                    <div
+                      className={
+                        "exp-expanded-media-grid " +
+                        (images.length === 1
+                          ? "exp-expanded-media-grid--single"
+                          : "")
+                      }
                     >
-                      ▶ Watch gameplay / trailer on YouTube
-                    </a>
-                  </div>
-                )}
+                      {images.map((src, idx) => (
+                        <button
+                          key={`img-${idx}`}
+                          type="button"
+                          className="exp-expanded-media-item"
+                          onClick={() => window.open(src, "_blank")}
+                        >
+                          <img
+                            src={src}
+                            alt={
+                              currentDetails?.projectName ||
+                              `${expanded.card.company} screenshot ${
+                                idx + 1
+                              }`
+                            }
+                            loading="lazy"
+                          />
+                        </button>
+                      ))}
+                    </div>
+                  )}
+
+                  {/* 外链按钮：打开 YouTube（可选） */}
+                  {hasYoutube && (
+                    <div className="exp-expanded-video-link">
+                      <a
+                        href={currentDetails.youtubeUrl}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        ▶ Open this video on YouTube
+                      </a>
+                    </div>
+                  )}
+                </section>
+              )}
             </div>
 
             <button
@@ -219,7 +292,6 @@ export default function WorkExperience() {
           </div>
         </>
       )}
-
     </div>
   );
 }

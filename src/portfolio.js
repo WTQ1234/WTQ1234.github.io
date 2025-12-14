@@ -32,7 +32,6 @@ const greeting = {
 };
 
 // Social Media Links
-
 const socialMediaLinks = {
   github: "https://github.com/saadpasta",
   linkedin: "https://www.linkedin.com/in/saadpasta/",
@@ -50,7 +49,6 @@ const socialMediaLinks = {
 };
 
 // Skills Section
-
 const skillsSection = {
   title: "How I Build Games & Tools",
   subTitle: "I am a Flexible Video Game Developer with Multi-Disciplinary Skills.",
@@ -153,7 +151,6 @@ const skillsSection = {
 };
 
 // Education Section
-
 const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
@@ -181,7 +178,6 @@ const educationInfo = {
 };
 
 // Your top 3 proficient stacks/tech experience
-
 const techStack = {
   viewSkillBars: true, //Set it to true to show Proficiency Section
   experience: [
@@ -210,12 +206,11 @@ const techStack = {
 };
 
 // Work experience section
-
 const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Web Developer",
+      role: "Web Developer (Part-time, Hybrid)",
       company: "KF Flooring",
       companylogo: require("./assets/images/KFFlooringLogo.png"),
       date: "Apr 2024 - Jan 2025",
@@ -338,14 +333,12 @@ const workExperiences = {
 
 /* Your Open Source Section to View Your Github Pinned Projects
 To know how to get github key look at readme.md */
-
 const openSource = {
   showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
   display: false // Set false to hide this section, defaults to true
 };
 
 // Some big projects you have worked on
-
 const bigProjects = {
   title: "Big Projects",
   subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
@@ -374,12 +367,115 @@ const bigProjects = {
       ]
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
+
+
+
+const bigProjectShowcaseDesign = {
+  display: true,
+  title: "Personal Projects – Design",
+  subtitle: "Selected gameplay / system prototypes.",
+  projects: [
+    {
+      id: "swarm-system",
+      bannerTitle: "UE5 Prototype",
+      bannerColor: "#6b4ce6",
+      logo: "/images/swarm-logo.png",
+      title: "AI Swarm Stealth System",
+      subtitle: "3D stealth gameplay prototype with multi-layer AI.",
+      coverImage: "/images/swarm-cover.gif", // 卡片上的主图 / GIF
+      details: {
+        title: "AI Swarm Stealth System",
+        overview: [
+          "Short intro paragraph 1",
+          "Short intro paragraph 2"
+        ],
+        bullets: [
+          "What you did / contributions ...",
+          "Another key bullet ..."
+        ],
+        technologies: "Unreal Engine 5, C++, Behavior Tree",
+        youtubeUrl: "https://www.youtube.com/watch?v=XXXXXXXXXXX",
+        images: [
+          "/images/WorkExp3.png",
+          "/images/WorkExp3.png",
+        ]
+      }
+    }
+  ]
+}
+
+const bigProjectShowcaseProgramming = {
+  display: true,
+  title: "Personal Projects – Programming",
+  subtitle: "Selected gameplay / system prototypes.",
+  projects: [
+    {
+      id: "swarm-system",
+      bannerTitle: "AI Swarm Stealth System",
+      bannerColor: "#6b4ce6",
+      title: "",
+      subtitle: "",
+      coverImage: "/images/WorkExp3.png", // 卡片上的主图 / GIF
+      details: {
+        title: "AI Swarm Stealth System",
+        overview: [
+          "Short intro paragraph 1",
+          "Short intro paragraph 2"
+        ],
+        bullets: [
+          "What you did / contributions ...",
+          "Another key bullet ..."
+        ],
+        technologies: "Unreal Engine 5, C++, Behavior Tree",
+        youtubeUrl: "https://www.youtube.com/watch?v=XXXXXXXXXXX",
+        images: [
+          "/images/WorkExp3.png",
+          "/images/swarm-shot-2.png"
+        ]
+      }
+    }
+  ]
+}
+
+const bigProjectShowcaseArt = {
+  display: true,
+  title: "Personal Projects – Art",
+  subtitle: "Selected gameplay / system prototypes.",
+  projects: [
+    {
+      id: "swarm-system",
+      bannerTitle: "UE5 Prototype",
+      bannerColor: "#6b4ce6",
+      logo: "/images/swarm-logo.png",
+      title: "AI Swarm Stealth System",
+      subtitle: "3D stealth gameplay prototype with multi-layer AI.",
+      coverImage: "/images/swarm-cover.gif", // 卡片上的主图 / GIF
+      details: {
+        title: "AI Swarm Stealth System",
+        overview: [
+          "Short intro paragraph 1",
+          "Short intro paragraph 2"
+        ],
+        bullets: [
+          "What you did / contributions ...",
+          "Another key bullet ..."
+        ],
+        technologies: "Unreal Engine 5, C++, Behavior Tree",
+        youtubeUrl: "https://www.youtube.com/watch?v=XXXXXXXXXXX",
+        images: [
+          "/images/swarm-shot-1.png",
+          "/images/swarm-shot-2.png"
+        ]
+      }
+    }
+  ]
+}
+
 
 // Achievement Section
 // Include certificates, talks etc
-
 const achievementSection = {
   title: emoji("Achievements And Certifications 🏆 "),
   subtitle:
@@ -439,7 +535,6 @@ const achievementSection = {
 };
 
 // Blogs Section
-
 const blogSection = {
   title: "Blogs",
   subtitle:
@@ -463,7 +558,6 @@ const blogSection = {
 };
 
 // Talks Sections
-
 const talkSection = {
   title: "TALKS",
   subtitle: emoji(
@@ -482,7 +576,6 @@ const talkSection = {
 };
 
 // Podcast Section
-
 const podcastSection = {
   title: emoji("Podcast 🎙️"),
   subtitle: "I LOVE TO TALK ABOUT MYSELF AND TECHNOLOGY",
@@ -512,7 +605,6 @@ const contactInfo = {
 };
 
 // Twitter Section
-
 const twitterDetails = {
   userName: "twitter", //Replace "twitter" with your twitter username without @
   display: false // Set true to display this section, defaults to false
@@ -531,6 +623,9 @@ export {
   workExperiences,
   openSource,
   bigProjects,
+  bigProjectShowcaseDesign,
+  bigProjectShowcaseProgramming,
+  bigProjectShowcaseArt,
   achievementSection,
   blogSection,
   talkSection,
