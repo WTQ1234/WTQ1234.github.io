@@ -1,9 +1,12 @@
 // src/components/softwareSkills/SoftwareSkill.js
-import React from "react";
+import React, {useContext} from "react";
 import "./SoftwareSkill.scss";
 import { skillsSection } from "../../portfolio";
+import StyleContext from "../../contexts/StyleContext";
 
 export default function SoftwareSkill() {
+  const {isDark} = useContext(StyleContext);
+
   // 没开这个 section 就不渲染
   if (!skillsSection.display) {
     return null;
@@ -42,8 +45,8 @@ export default function SoftwareSkill() {
                   ) : skill.fontAwesomeClassname ? (
                     <i className={skill.fontAwesomeClassname}></i>
                   ) : null}
-
-                  <p>{skill.skillName}</p>
+                  {/* <h1 className={isDark ? "dark-mode software-skills-name" : "software-skills-name"} >{skill.skillName}</h1> */}
+                  <p className={isDark ? "dark-mode software-skills-name" : "software-skills-name"}>{skill.skillName}</p>
                 </li>
               );
             })}

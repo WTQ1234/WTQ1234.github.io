@@ -21,6 +21,13 @@
   text-align: center;
 }
 
+.software-skills-name {
+  // font-size: 16px;
+  font-size: 0.75rem !important;
+  // line-height: 1.1rem;
+  color: $textColor !important;
+}
+
 /* 自定义 logo 图片 */
 .software-skill-icon {
   width: 40px;
