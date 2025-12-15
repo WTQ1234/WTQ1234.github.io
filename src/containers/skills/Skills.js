@@ -61,8 +61,8 @@ export default function Skills() {
           </div>
 
         </div>
-        <img src="/images/divider.png" alt="divider" className="img-divider" />
       </div>
+      <img src="/images/divider.png" alt="divider" className="img-divider" />
     </Fade>
   );
 }

@@ -18,7 +18,9 @@ export default function Education() {
               <EducationCard key={index} school={school} />
             ))}
           </div>
+          {/* <img src="/images/divider.png" alt="divider" className="img-divider" /> */}
         </div>
+        <img src="/images/divider.png" alt="divider" className="img-divider-edu" />
       </Fade>
     );
   }

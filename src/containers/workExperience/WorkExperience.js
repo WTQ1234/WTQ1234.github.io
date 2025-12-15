@@ -24,6 +24,7 @@ function getYoutubeEmbedUrl(youtubeUrl) {
 }
 
 export default function WorkExperience() {
+  
   const { isDark } = useContext(StyleContext);
 
   // 展开中的卡片 & 是否播放“显示动画”
@@ -98,7 +99,7 @@ export default function WorkExperience() {
       <Fade left duration={1000} distance="10rem">
         <div className="experience-container" id="workExperience">
           <div>
-            <h1 className="experience-heading">Work Experiences</h1>
+            <h1 className={isDark ? "dark-mode experience-heading" : "experience-heading"}>Work Experiences</h1>
             <div className="experience-cards-div">
               {workExperiences.experience.map((card, i) => (
                 <ExperienceCard
@@ -121,13 +122,14 @@ export default function WorkExperience() {
         </div>
 
         {/* 分割线图片 */}
-        <div className="experience-container" id="experience-divider">
+        {/* <div className="experience-container" id="experience-divider">
           <img
             src="/images/divider.png"
             alt="divider"
             className="img-divider"
           />
-        </div>
+        </div> */}
+        <img src="/images/divider.png" alt="divider" className="img-divider" />
       </Fade>
 
       {/* Overlay：视口居中 + 缩放动画 */}

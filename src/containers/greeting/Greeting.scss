@@ -142,9 +142,10 @@
 }
 
 .img-divider {
-  display: block;
-  width: 80%;      // 占满当前容器宽度
-  margin: 2rem auto;
-  height: 0.2rem;     // 自动按原图比例
-  opacity: 0.5;
+  // align-items: center;
+  display: block !important;
+  width: 90% !important;      // 占满当前容器宽度
+  margin: 1rem auto !important;
+  height: 0.15rem !important;     // 自动按原图比例
+  opacity: 0.4 !important;
 }

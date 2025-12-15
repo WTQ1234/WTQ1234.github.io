@@ -373,6 +373,7 @@ export default function ProjectShowcase() {
         config={bigProjectShowcaseProgramming}
         sectionId="big-projects-programming"
       />
+      <img src="/images/divider.png" alt="divider" className="img-divider" />
 
       {/* 策划区 */}
       <SingleProjectSection
@@ -380,11 +381,15 @@ export default function ProjectShowcase() {
         sectionId="big-projects-design"
       />
 
+      <img src="/images/divider.png" alt="divider" className="img-divider" />
+      
       {/* 美术区 */}
       <SingleProjectSection
         config={bigProjectShowcaseArt}
         sectionId="big-projects-art"
       />
+
+      <img src="/images/divider.png" alt="divider" className="img-divider" />
     </>
   );
 }

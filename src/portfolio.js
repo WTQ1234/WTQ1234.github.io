@@ -24,7 +24,7 @@ const greeting = {
     `        A passionate video game developer with 3 years of experience. 🎮
         Specializes in gameplay features programming, performance optimization 🛡️, and live-service bug fixing. ⚔️ 
         Strong team player who boosts productivity with plugins, tools, and clear documentation. 🎶
-        My goal: Game programmer 🤖 & System Designer ✨ & Technical Designer 🛠️`
+        My goal: Game programmer 🤖 & Technical Designer 🛠️`
   ),
   resumeLink:
     "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
@@ -161,7 +161,7 @@ const educationInfo = {
       duration: "September 2024 - November 2025",
       desc: "Graduate program in Game Development with a focus on game art and system design.",
       descBullets: [
-        "Relevant Coursework: Unreal Engine 5, Game System Design, Game UI Design",
+        "Relevant Coursework: Unreal Engine 5 (C++ & Blueprint), Game System Design, Game UI Design",
         "Relevant Coursework: 3D Modeling By Maya & Substance Painter",
       ]
     },

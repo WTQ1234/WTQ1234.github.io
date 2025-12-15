@@ -1,24 +1,37 @@
 @import "../../_globalColor";
 
 .education-heading {
-  font-weight: 400;
-  font-size: 2.5rem;
-  line-height: 1.1;
-  color: $textColor !important;
+  font-size: 2rem;
+  line-height: 1.1rem;
+  line-height: 1.5;
+  // color: $textColor !important; // 会和dark mode冲突
 }
 
 .education-section {
   display: flex;
   flex-direction: column;
   width: 90%;
-  padding: 20px 0px;
   margin: 0px auto;
-  margin-top: 0.2rem;
 }
 
-.education-section > * {
+.education-section > *:not(:last-child) {
   flex: 1;
-  margin-bottom: 30px;
+  margin-bottom: 1rem;
+}
+
+.education-section > :last-child {
+  flex: 1;
+  margin-bottom: 0; /* 或者你要的值 */
+}
+
+.img-divider-edu {
+  // align-items: center;
+  display: block !important;
+  width: 90% !important;      // 占满当前容器宽度
+  margin: 1rem auto !important;
+  margin-top: 0rem;
+  height: 0.15rem !important;     // 自动按原图比例
+  opacity: 0.4 !important;
 }
 
 .education-card-container {

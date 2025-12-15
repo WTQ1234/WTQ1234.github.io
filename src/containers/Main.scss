@@ -1,7 +1,7 @@
 @import "../_globalColor";
 
 .dark-mode {
-  background-color: $darkBackground;
-  color: white;
+  background-color: $darkBackground !important;
+  color: white !important;
   transition: "0.1s";
 }
