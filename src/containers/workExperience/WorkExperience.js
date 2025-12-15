@@ -69,15 +69,29 @@ export default function WorkExperience() {
 
   // 当前展开卡片的详情 & 媒体信息
   const currentDetails = expanded?.card?.details || null;
-  const images =
+
+  // 原始图片数组
+  const rawImages =
     currentDetails && Array.isArray(currentDetails.images)
       ? currentDetails.images.filter(Boolean)
       : [];
-  const hasImages = images.length > 0;
-  const youtubeEmbedUrl = currentDetails?.youtubeUrl
-    ? getYoutubeEmbedUrl(currentDetails.youtubeUrl)
-    : null;
-  const hasYoutube = !!youtubeEmbedUrl;
+
+  // YouTube embed 链接
+  const youtubeEmbedUrl =
+    currentDetails && currentDetails.youtubeUrl
+      ? getYoutubeEmbedUrl(currentDetails.youtubeUrl)
+      : null;
+
+  // 统一媒体 items：如果有视频就放在第一个，后面是图片
+  const mediaItems = [];
+  if (youtubeEmbedUrl) {
+    mediaItems.push({ type: "video", key: "video" });
+  }
+  rawImages.forEach((src, idx) => {
+    mediaItems.push({ type: "image", src, key: `img-${idx}` });
+  });
+
+  const hasMedia = mediaItems.length > 0;
 
   return (
     <div id="experience">
@@ -132,7 +146,7 @@ export default function WorkExperience() {
               (showExpanded ? "exp-expanded-card--visible" : "")
             }
           >
-            {/* 顶部 banner + logo（固定高度，在 ExperienceCard.scss 里已经写 height: 90px） */}
+            {/* 顶部 banner + logo（固定高度） */}
             <div
               className="experience-banner"
               style={{
@@ -212,73 +226,75 @@ export default function WorkExperience() {
                 </section>
               )}
 
-              {/* 媒体区：YouTube + 图片 Grid */}
-              {(hasYoutube || hasImages) && (
+              {/* 媒体区：YouTube + 图片统一 Grid（视频在第一个） */}
+              {hasMedia && (
                 <section className="exp-expanded-media-section">
-                  {hasYoutube && (
-                    <div className="exp-expanded-media-video">
-                      <div className="exp-expanded-video-wrapper">
-                        <iframe
-                          src={youtubeEmbedUrl}
-                          title={
-                            currentDetails?.projectName ||
-                            expanded.card.company
-                          }
-                          frameBorder="0"
-                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                          allowFullScreen
-                          loading="lazy"
-                        />
-                      </div>
-                      <p className="exp-expanded-video-caption">
-                        Gameplay / trailer preview
-                      </p>
-                    </div>
-                  )}
+                  <div
+                    className={
+                      "exp-expanded-media-grid " +
+                      (mediaItems.length === 1
+                        ? "exp-expanded-media-grid--single"
+                        : "")
+                    }
+                  >
+                    {mediaItems.map((item, index) => {
+                      if (item.type === "video") {
+                        return (
+                          <div className='exp-expanded-media-itemlink'>
+                          <div
+                            key={item.key}
+                            className="exp-expanded-media-item exp-expanded-media-item--video"
+                          >
+                            <div className="exp-expanded-video-wrapper">
+                              <iframe
+                                src={youtubeEmbedUrl}
+                                title={
+                                  currentDetails?.projectName ||
+                                  expanded.card.company
+                                }
+                                frameBorder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowFullScreen
+                                loading="lazy"
+                              />
+                            </div>
+                            {/* 外链按钮：打开 YouTube（可选） */}
+                            {currentDetails?.youtubeUrl && (
+                              <div className="exp-expanded-video-link">
+                                <a
+                                  href={currentDetails.youtubeUrl}
+                                  target="_blank"
+                                  rel="noreferrer"
+                                >
+                                  ▶ Open this video on YouTube
+                                </a>
+                              </div>
+                            )}
+                          </div>
 
-                  {hasImages && (
-                    <div
-                      className={
-                        "exp-expanded-media-grid " +
-                        (images.length === 1
-                          ? "exp-expanded-media-grid--single"
-                          : "")
+                          </div>
+                        );
                       }
-                    >
-                      {images.map((src, idx) => (
-                        <button
-                          key={`img-${idx}`}
-                          type="button"
-                          className="exp-expanded-media-item"
-                          onClick={() => window.open(src, "_blank")}
+
+                      return (
+                        <div
+                          key={item.key}
+                          className="exp-expanded-media-item exp-expanded-media-item--image"
                         >
                           <img
-                            src={src}
+                            src={item.src}
                             alt={
                               currentDetails?.projectName ||
                               `${expanded.card.company} screenshot ${
-                                idx + 1
+                                index
                               }`
                             }
                             loading="lazy"
                           />
-                        </button>
-                      ))}
-                    </div>
-                  )}
-
-                  {/* 外链按钮：打开 YouTube（可选） */}
-                  {hasYoutube && (
-                    <div className="exp-expanded-video-link">
-                      <a
-                        href={currentDetails.youtubeUrl}
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        ▶ Open this video on YouTube
-                      </a>
-                    </div>
-                  )}
+                        </div>
+                      );
+                    })}
+                  </div>
                 </section>
               )}
             </div>

@@ -291,7 +291,7 @@ const workExperiences = {
           "Optimized performance, handled version maintenance, Git and packaging tasks, and fixed crashes across live builds.",
         ],
         technologies: "C++, Python, Git, iOS/Android build & release",
-        youtubeUrl: "", // 如果有视频，填完整链接，例如 "https://www.youtube.com/watch?v=XXXXXXXX"
+        youtubeUrl: "https://youtu.be/5zfgWXZQZko", // 如果有视频，填完整链接，例如 "https://www.youtube.com/watch?v=XXXXXXXX"
         images: [
           // 可选：放几张截图路径（public 下）
           "/images/WorkExp2.png",
@@ -321,7 +321,7 @@ const workExperiences = {
           "Worked closely with the engine team to define feature requirements, write and execute test cases, and debug engine-related issues.",
         ],
         technologies: "Lua, SVN, iOS/Android build & release",
-        youtubeUrl: "", // 如果有视频，填完整链接，例如 "https://www.youtube.com/watch?v=XXXXXXXX"
+        youtubeUrl: "https://youtu.be/AXPAR3cICJg", // 如果有视频，填完整链接，例如 "https://www.youtube.com/watch?v=XXXXXXXX"
         images: [
           // 可选：放几张截图路径（public 下）
           "/images/WorkExp1.png",
@@ -375,28 +375,28 @@ const bigProjects = {
 const bigProjectShowcaseDesign = {
   display: true,
   title: "Personal Projects – Design",
-  subtitle: "Selected gameplay / system prototypes.",
+  subtitle: "Personal Gameplay / System / Level Design and Prototypes.",
   projects: [
     {
       id: "swarm-system",
-      bannerTitle: "UE5 Prototype",
+      bannerTitle: "SIFI Hacking System",
       bannerColor: "#6b4ce6",
-      logo: "/images/swarm-logo.png",
-      title: "AI Swarm Stealth System",
-      subtitle: "3D stealth gameplay prototype with multi-layer AI.",
-      coverImage: "/images/swarm-cover.gif", // 卡片上的主图 / GIF
+      logo: "/images/WorkExp3.png",
+      // title: "SIFI Hacking System with Swarm Stealth Mini Game",
+      // subtitle: "3D stealth gameplay prototype with multi-layer AI.",
+      coverImage: "/images/WorkExp3.png", // 卡片上的主图 / GIF
       details: {
-        title: "AI Swarm Stealth System",
+        title: "SIFI Hacking System with Swarm Stealth Mini Game",
         overview: [
           "Short intro paragraph 1",
           "Short intro paragraph 2"
         ],
         bullets: [
-          "What you did / contributions ...",
-          "Another key bullet ..."
+          "Design the system",
+          "Do it in the UE5 with C++ and Blueprint"
         ],
-        technologies: "Unreal Engine 5, C++, Behavior Tree",
-        youtubeUrl: "https://www.youtube.com/watch?v=XXXXXXXXXXX",
+        technologies: "Unreal Engine 5, C++, Blueprint, Git",
+        youtubeUrl: "",
         images: [
           "/images/WorkExp3.png",
           "/images/WorkExp3.png",
@@ -409,7 +409,7 @@ const bigProjectShowcaseDesign = {
 const bigProjectShowcaseProgramming = {
   display: true,
   title: "Personal Projects – Programming",
-  subtitle: "Selected gameplay / system prototypes.",
+  subtitle: "Programming examples in game jam",
   projects: [
     {
       id: "swarm-system",
@@ -442,7 +442,7 @@ const bigProjectShowcaseProgramming = {
 const bigProjectShowcaseArt = {
   display: true,
   title: "Personal Projects – Art",
-  subtitle: "Selected gameplay / system prototypes.",
+  subtitle: "3D Modeling Practice in SCAD",
   projects: [
     {
       id: "swarm-system",

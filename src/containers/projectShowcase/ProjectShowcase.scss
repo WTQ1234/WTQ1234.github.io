@@ -264,23 +264,47 @@
   font-size: 0.9rem;
 }
 
-/* 媒体区 */
+/* ===================== 媒体区：视频 + 图片统一 Grid ===================== */
+
 .project-modal__media-section {
   margin-top: 18px;
   border-top: 1px solid rgba(255, 255, 255, 0.08);
   padding-top: 14px;
 }
 
-.project-modal__media-video {
+.project-modal__media-grid {
   max-width: 900px;
-  margin: 0 auto 12px;
+  margin: 8px auto 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+/* 只有一个媒体（只有视频或只有一张图）时居中展示 */
+.project-modal__media-grid--single {
+  max-width: 600px;
+  grid-template-columns: minmax(0, 1fr);
+}
+
+/* 单个媒体格子：不再可点击，只保留 hover 效果 */
+.project-modal__media-item {
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  background: #000;
+}
+
+/* 视频格子：内部用 iframe wrapper */
+.project-modal__media-item--video {
+  display: flex;
+  flex-direction: column;
 }
 
 .project-modal__video-wrapper {
   position: relative;
   width: 100%;
   padding-top: 56.25%; /* 16:9 */
-  border-radius: 12px;
+  border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 12px 32px rgba(0, 0, 0, 0.5);
 }
@@ -294,36 +318,13 @@
 }
 
 .project-modal__video-caption {
-  margin-top: 8px;
+  margin-top: 6px;
   font-size: 0.85rem;
   opacity: 0.8;
 }
 
-/* 图片 grid：1 张居中，多张两列 */
-.project-modal__media-grid {
-  max-width: 900px;
-  margin: 8px auto 0;
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 10px;
-}
-
-.project-modal__media-grid--single {
-  max-width: 600px;
-  grid-template-columns: minmax(0, 1fr);
-}
-
-.project-modal__media-item {
-  border: none;
-  padding: 0;
-  background: transparent;
-  cursor: pointer;
-  border-radius: 10px;
-  overflow: hidden;
-  position: relative;
-}
-
-.project-modal__media-item img {
+/* 图片格子：只有 hover 缩放，没有点击 */
+.project-modal__media-item--image img {
   width: 100%;
   height: 100%;
   display: block;
@@ -331,27 +332,12 @@
   transition: transform 0.18s ease, box-shadow 0.18s ease;
 }
 
-.project-modal__media-item::after {
-  content: "🔍";
-  position: absolute;
-  right: 10px;
-  bottom: 8px;
-  font-size: 1rem;
-  opacity: 0;
-  transform: translateY(4px);
-  transition: opacity 0.18s ease, transform 0.18s ease;
-}
-
-.project-modal__media-item:hover img {
+.project-modal__media-item--image:hover img {
   transform: scale(1.03);
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.45);
 }
 
-.project-modal__media-item:hover::after {
-  opacity: 0.9;
-  transform: translateY(0);
-}
-
+/* 外链按钮 */
 .project-modal__video-link {
   margin-top: 10px;
 }
@@ -366,7 +352,7 @@
   text-decoration: underline;
 }
 
-/* 响应式 */
+/* 响应式：小屏幕媒体单列 */
 @media (max-width: 768px) {
   .project-section {
     margin-top: 60px;

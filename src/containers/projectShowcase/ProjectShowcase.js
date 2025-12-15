@@ -4,14 +4,16 @@ import React, { useContext, useState, useEffect } from "react";
 import "./ProjectShowcase.scss";
 import { Fade } from "react-reveal";
 import StyleContext from "../../contexts/StyleContext";
-// import { bigProjectShowcase } from "../../portfolio";
-// import { bigProjectShowcaseDesign as bigProjectShowcase } from "../../portfolio";
-import { bigProjectShowcaseDesign, bigProjectShowcaseProgramming, bigProjectShowcaseArt } from "../../portfolio";
+import {
+  bigProjectShowcaseDesign,
+  bigProjectShowcaseProgramming,
+  bigProjectShowcaseArt,
+} from "../../portfolio";
 
 /**
  * 期望的 bigProjectShowcase 数据结构（在 portfolio.js 里定义）：
  *
- * export const bigProjectShowcase = {
+ * export const bigProjectShowcaseProgramming = {
  *   display: true,
  *   title: "Big Projects – Programming",
  *   subtitle: "Selected gameplay / system prototypes.",
@@ -19,22 +21,16 @@ import { bigProjectShowcaseDesign, bigProjectShowcaseProgramming, bigProjectShow
  *     {
  *       id: "swarm-system",
  *       bannerTitle: "UE5 Prototype",
- *       bannerColor: "#6b4ce6",         // 可选，不填就用默认渐变
- *       logo: "/images/swarm-logo.png", // 可选，小圆图标（类似公司 logo）
+ *       bannerColor: "#6b4ce6",
+ *       logo: "/images/swarm-logo.png",
  *       title: "AI Swarm Stealth System",
  *       subtitle: "3D stealth gameplay prototype with multi-layer AI.",
- *       coverImage: "/images/swarm-cover.gif", // 卡片上的主图 / GIF
+ *       coverImage: "/images/swarm-cover.gif",
  *
  *       details: {
  *         title: "AI Swarm Stealth System",
- *         overview: [
- *           "Short intro paragraph 1",
- *           "Short intro paragraph 2"
- *         ],
- *         bullets: [
- *           "What you did / contributions ...",
- *           "Another key bullet ..."
- *         ],
+ *         overview: [...],
+ *         bullets: [...],
  *         technologies: "Unreal Engine 5, C++, Behavior Tree",
  *         youtubeUrl: "https://www.youtube.com/watch?v=XXXXXXXXXXX",
  *         images: [
@@ -65,6 +61,9 @@ function getYoutubeEmbedUrl(youtubeUrl) {
   }
 }
 
+/**
+ * 单个大项目 Section，可复用三次
+ */
 function SingleProjectSection({ config, sectionId }) {
   const { isDark } = useContext(StyleContext);
   const [activeProject, setActiveProject] = useState(null);
@@ -97,19 +96,32 @@ function SingleProjectSection({ config, sectionId }) {
     setShowModal(false);
   };
 
-  const details = activeProject?.details;
-  const images =
+  const details = activeProject?.details || null;
+
+  // 原始图片数组
+  const rawImages =
     details && Array.isArray(details.images)
       ? details.images.filter(Boolean)
       : [];
-  const hasImages = images.length > 0;
 
-  const youtubeEmbedUrl =
+  // YouTube embed 链接
+  const embedUrl =
     details && details.youtubeUrl
       ? getYoutubeEmbedUrl(details.youtubeUrl)
       : null;
-  const hasYoutube = !!youtubeEmbedUrl;
 
+  // 统一媒体 items：视频在前，后面是图片
+  const mediaItems = [];
+  if (embedUrl) {
+    mediaItems.push({ type: "video", key: "video" });
+  }
+  rawImages.forEach((src, idx) => {
+    mediaItems.push({ type: "image", src, key: `img-${idx}` });
+  });
+
+  const hasMedia = mediaItems.length > 0;
+
+  // 文本部分
   const overview =
     details && Array.isArray(details.overview) ? details.overview : [];
   const bullets =
@@ -277,55 +289,60 @@ function SingleProjectSection({ config, sectionId }) {
                   </p>
                 )}
 
-                {(hasYoutube || hasImages) && (
+                {/* 统一媒体 Grid：第一个是视频，其余是图片；图片只有 hover 没有点击 */}
+                {hasMedia && (
                   <section className="project-modal__media-section">
-                    {hasYoutube && (
-                      <div className="project-modal__media-video">
-                        <div className="project-modal__video-wrapper">
-                          <iframe
-                            src={youtubeEmbedUrl}
-                            title={details?.title || activeProject.title}
-                            frameBorder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowFullScreen
-                            loading="lazy"
-                          />
-                        </div>
-                        <p className="project-modal__video-caption">
-                          Gameplay / trailer preview
-                        </p>
-                      </div>
-                    )}
-
-                    {hasImages && (
-                      <div
-                        className={
-                          "project-modal__media-grid " +
-                          (images.length === 1
-                            ? "project-modal__media-grid--single"
-                            : "")
+                    <div
+                      className={
+                        "project-modal__media-grid " +
+                        (mediaItems.length === 1
+                          ? "project-modal__media-grid--single"
+                          : "")
+                      }
+                    >
+                      {mediaItems.map((item, index) => {
+                        if (item.type === "video") {
+                          return (
+                            <div
+                              key={item.key}
+                              className="project-modal__media-item project-modal__media-item--video"
+                            >
+                              <div className="project-modal__video-wrapper">
+                                <iframe
+                                  src={embedUrl}
+                                  title={details?.title || activeProject.title}
+                                  frameBorder="0"
+                                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                  allowFullScreen
+                                  loading="lazy"
+                                />
+                              </div>
+                              <p className="project-modal__video-caption">
+                                Gameplay / trailer
+                              </p>
+                            </div>
+                          );
                         }
-                      >
-                        {images.map((src, idx) => (
-                          <button
-                            key={`img-${idx}`}
-                            type="button"
-                            className="project-modal__media-item"
-                            onClick={() => window.open(src, "_blank")}
+
+                        return (
+                          <div
+                            key={item.key}
+                            className="project-modal__media-item project-modal__media-item--image"
                           >
                             <img
-                              src={src}
+                              src={item.src}
                               alt={`${activeProject.title} screenshot ${
-                                idx + 1
+                                index
                               }`}
                               loading="lazy"
                             />
-                          </button>
-                        ))}
-                      </div>
-                    )}
+                          </div>
+                        );
+                      })}
+                    </div>
 
-                    {hasYoutube && details?.youtubeUrl && (
+                    {/* 保留一个外链按钮到 YouTube */}
+                    {details?.youtubeUrl && (
                       <div className="project-modal__video-link">
                         <a
                           href={details.youtubeUrl}
@@ -347,6 +364,7 @@ function SingleProjectSection({ config, sectionId }) {
   );
 }
 
+/** 默认导出：一次性渲染三块 section */
 export default function ProjectShowcase() {
   return (
     <>
