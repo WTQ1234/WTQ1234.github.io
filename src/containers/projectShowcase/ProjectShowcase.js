@@ -130,7 +130,7 @@ function SingleProjectSection({ config, sectionId }) {
 
   return (
     <section id={sectionId} className="project-section">
-      <Fade bottom duration={1000} distance="10rem">
+      <Fade left duration={1000} distance="20rem">
         <div className="project-section__inner">
           <h1 className="project-section__title">
             {config.title || "Big Projects"}

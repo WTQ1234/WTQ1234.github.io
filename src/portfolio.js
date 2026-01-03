@@ -2,6 +2,7 @@
 
 import emoji from "react-easy-emoji";
 import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your file name for custom animation
+import React from "react";
 
 // Splash Screen
 
@@ -221,7 +222,6 @@ const workExperiences = {
       ],
       // ------- 详情配置 -------
       details: {
-        title: "KF Flooring Inc. — Web Developer",
         projectName: "Internal Web System",
         overview: [
           "Built and maintained an internal web system for cabinet trading and shipping."
@@ -239,7 +239,7 @@ const workExperiences = {
     },
     {
       role: "Senior Game Development Engineer",
-      company: "NetEase Games Inc. ",
+      company: "NetEase Games",
       companylogo: require("./assets/images/NeteaseLogo2.png"),
       date: "Jun 2023 - Oct 2023",
       desc: `"Powerdise" - 3D Mobile Party Game`,
@@ -249,7 +249,6 @@ const workExperiences = {
       ],
       // ------- 详情配置 -------
       details: {
-        title: "NetEase Games Inc. — Senior Game Development Engineer",
         projectName: `"Powerdise" - 3D Mobile Party Game`,
         overview: [
           `Built and maintained the Game Logic and device compatibility.`
@@ -270,7 +269,7 @@ const workExperiences = {
     },
     {
       role: "Intermediate Game Development Engineer",
-      company: "NetEase Games Inc.",
+      company: "NetEase Games",
       companylogo: require("./assets/images/MineCraftLogo.png"),
       date: "Jun 2022 - Jun 2023",
       desc: `"Minecraft" - 3D Sandbox Game Mobile Chinese Version`,
@@ -280,7 +279,6 @@ const workExperiences = {
       ],
       // ------- 详情配置 -------
       details: {
-        title: "NetEase Games Inc. — Intermediate Game Development Engineer",
         projectName: `"Minecraft" - 3D Sandbox Game Mobile Chinese Version`,
         overview: [
           `Developed official mods and maintained mod SDK for mods developer`
@@ -289,6 +287,12 @@ const workExperiences = {
           "Developed official mods for the NetEase mobile version of Minecraft and supported other user-generated content (UGC) features.",
           "Contributed to the official Python-based Mod SDK, implementing systems such as the backpack interface, log storage, and UI debugging tools.",
           "Optimized performance, handled version maintenance, Git and packaging tasks, and fixed crashes across live builds.",
+          <>
+            View the Mod SDK website:{" "}
+            <a href="https://mc.163.com/dev/apidocs.html" target="_blank" rel="noreferrer" >
+               https://mc.163.com/dev/apidocs.html
+            </a>
+          </>,
         ],
         technologies: "C++, Python, Git, iOS/Android build & release",
         youtubeUrl: "https://youtu.be/5zfgWXZQZko", // 如果有视频，填完整链接，例如 "https://www.youtube.com/watch?v=XXXXXXXX"
@@ -300,7 +304,7 @@ const workExperiences = {
     },
     {
       role: "Mobile Game Development Engineer",
-      company: "Fancy Guo Games Inc.",
+      company: "Fancy Guo Games",
       companylogo: require("./assets/images/QingGuoLogo.gif"),
       date: "Jun 2020 - Apr 2022",
       desc: `"Dark Nemesis: Infinite Quest" - 3D MMO ARPG Mobile Game`,
@@ -310,7 +314,6 @@ const workExperiences = {
       ],
       // ------- 详情配置 -------
       details: {
-        title: "Fancy Guo Games Inc. — Intermediate Game Development Engineer",
         projectName: `"Dark Nemesis: Infinite Quest" - 3D MMO ARPG Mobile Game`,
         overview: [
           `Built and maintained the game logic, GM tools and device compatibility`
@@ -325,6 +328,34 @@ const workExperiences = {
         images: [
           // 可选：放几张截图路径（public 下）
           "/images/WorkExp1.png",
+        ]
+      }
+    },
+    {
+      role: "Unity Development Engineer (Intern)",
+      company: "BOE Technology Group",
+      companylogo: require("./assets/images/BOELogo.png"),
+      date: "Jun 2019 - Oct 2019",
+      desc: `KF Flooring Internal Web System`,
+      descBullets: [
+        "Built and maintained an internal web system for cabinet trading and shipping.",
+        "Developed admin tools for order, inventory, and delivery management.",
+      ],
+      // ------- 详情配置 -------
+      details: {
+        projectName: "Internal Web System",
+        overview: [
+          "Built and maintained an internal web system for cabinet trading and shipping."
+        ],
+        responsibilities: [
+          "Developed admin tools for order, inventory, and delivery management to support daily back-office operations."
+        ],
+        technologies: "C++, Unity, C#, Linux",
+        youtubeUrl: "https://youtu.be/kKinkCXZ7O4", // 如果有视频，填完整链接，例如 "https://www.youtube.com/watch?v=XXXXXXXX"
+        images: [
+          // 可选：放几张截图路径（public 下）
+          "/images/WorkExp_Intern01.png",
+          "/images/WorkExp_Intern02.png",
         ]
       }
     },

@@ -9,7 +9,8 @@
 .experience-cards-div {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr)); // 一行两列
-  gap: 1rem 1rem; // 卡片之间的间距
+  gap: 2rem 0rem; // 卡片之间的间距
+  margin-bottom: 2rem;
 }
 
 /* 小屏时自动变成一列，防止挤爆 */
@@ -108,6 +109,7 @@
 .exp-expanded-media img {
   width: 50%;
   height: auto;
+  // max-height: 5rem;
   border-radius: 12px;
   display: block;
   align-items: center;
@@ -118,6 +120,8 @@
   flex-direction: column;   /* 上下排列 */
   align-items: center;      /* 水平居中两个子元素 */
   justify-content: space-between; /* 上下撑开 */
+
+  
 }
 
 .exp-expanded-video-link {
@@ -207,6 +211,11 @@
 
   width: 90%;
   height: auto;
+  // max-height: 10rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .exp-expanded-media-item:hover {
@@ -238,10 +247,11 @@
 
 /* 图片格子：只有 hover 缩放，没有点击 */
 .exp-expanded-media-item--image img {
-  width: 100%;
-  height: 100%;
+  width: auto;
+  // height: 100%;
+  max-height: 25rem;
   display: block;
-  object-fit: cover;
+  object-fit: contain;
   transition: transform 0.18s ease, box-shadow 0.18s ease;
 }
 
