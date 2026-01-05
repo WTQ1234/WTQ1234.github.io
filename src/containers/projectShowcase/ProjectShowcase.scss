@@ -1,7 +1,7 @@
 // src/containers/projectShowcase/ProjectShowcase.scss
 @import "../../_globalColor";
 
-/* 整个大项目区块 */
+/* æ•´ä¸ªå¤§é¡¹ç›®åŒºå— */
 .project-section {
   // margin-top: 80px;
   // margin-bottom: 40px;
@@ -30,7 +30,7 @@
   opacity: 0.85;
 }
 
-/* 卡片网格，一行最多两张，移动端自动一列 */
+/* å¡ç‰‡ç½‘æ ¼ï¼Œä¸€è¡Œæœ€å¤šä¸¤å¼ ï¼Œç§»åŠ¨ç«¯è‡ªåŠ¨ä¸€åˆ— */
 .project-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -43,7 +43,7 @@
   }
 }
 
-/* 单个项目卡片 */
+/* å•ä¸ªé¡¹ç›®å¡ç‰‡ */
 .project-card {
   position: relative;
   display: flex;
@@ -69,7 +69,7 @@
   box-shadow: 0 18px 40px rgba(0, 0, 0, 0.3);
 }
 
-/* 顶部 banner 区，固定高度 */
+/* é¡¶éƒ¨ banner åŒºï¼Œå›ºå®šé«˜åº¦ */
 .project-card__banner {
   position: relative;
   height: 3rem;
@@ -89,7 +89,7 @@
   font-weight: 600;
 }
 
-/* 圆形小图标 */
+/* åœ†å½¢å°å›¾æ ‡ */
 .project-card__logo {
   width: 76px;
   height: 76px;
@@ -99,7 +99,7 @@
   margin-top: 16px;
 }
 
-/* 标题 + 封面图 */
+/* æ ‡é¢˜ + å°é¢å›¾ */
 .project-card__body {
   padding: 18px 22px 20px;
 }
@@ -115,7 +115,7 @@
   margin-bottom: 12px;
 }
 
-/* 封面图 / GIF */
+/* å°é¢å›¾ / GIF */
 .project-card__cover-wrapper {
   position: relative;
   width: 100%;
@@ -144,7 +144,7 @@
   z-index: 80;
 }
 
-/* 整个 modal：居中容器 */
+/* æ•´ä¸ª modalï¼šå±…ä¸­å®¹å™¨ */
 .project-modal {
   position: fixed;
   inset: 0;
@@ -152,7 +152,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  pointer-events: none; /* 由内部内容接收点击 */
+  pointer-events: none; /* ç”±å†…éƒ¨å†…å®¹æŽ¥æ”¶ç‚¹å‡» */
 }
 
 .project-modal--visible .project-modal__content {
@@ -160,19 +160,20 @@
   transform: scale(1);
 }
 
-/* 实际的卡片容器 */
+/* å®žé™…çš„å¡ç‰‡å®¹å™¨ */
 .project-modal__content {
   position: relative;
   background: #ffffff;
   color: #111111;
-  border-radius: 18px;
+  border-radius: 20px;
   width: 90vw;
   max-width: 1100px;
   max-height: 90vh;
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  box-shadow: 0 22px 60px rgba(0, 0, 0, 0.55);
+  box-shadow: 0 26px 70px rgba(0, 0, 0, 0.55);
+  border: 1px solid rgba(0, 0, 0, 0.04);
   pointer-events: auto;
   opacity: 0;
   transform: scale(0.96);
@@ -187,12 +188,16 @@
 /* Header banner */
 .project-modal__banner {
   flex: 0 0 auto;
+  flex-shrink: 0;
+  height: 5rem;
+  min-height: 5rem;
+  box-shadow: 0 10px 32px rgba(0, 0, 0, 0.15);
 }
 
 .project-modal__banner-inner {
   position: relative;
-  height: 90px;
-  padding: 18px 24px;
+  height: 5rem;
+  padding: 0 24px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -200,8 +205,10 @@
 }
 
 .project-modal__company {
-  font-size: 1rem;
-  font-weight: 600;
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
 }
 
 .project-modal__logo {
@@ -213,63 +220,96 @@
   margin-top: 22px;
 }
 
-/* 关闭按钮 */
+/* å…³é—­æŒ‰é’® */
 .project-modal__close {
   position: absolute;
   top: 12px;
   right: 18px;
   z-index: 3;
-  border: none;
-  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  background: rgba(0, 0, 0, 0.1);
   color: #ffffff;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   cursor: pointer;
+  width: 36px;
+  height: 36px;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  transition: background 0.15s ease, transform 0.15s ease;
 }
 
-/* 正文滚动区域 */
+.project-modal__close:hover {
+  background: rgba(0, 0, 0, 0.2);
+  transform: translateY(-1px);
+}
+
+/* æ­£æ–‡æ»šåŠ¨åŒºåŸŸ */
 .project-modal__body {
   flex: 1 1 auto;
-  padding: 24px 28px 20px;
+  padding: 28px 32px 22px;
   overflow-y: auto;
+  display: grid;
+  gap: 12px;
 }
 
 .project-modal__title {
-  font-size: 1.4rem;
-  margin-bottom: 4px;
+  font-size: 1.6rem;
+  margin-bottom: 6px;
+  letter-spacing: -0.01em;
 }
 
 .project-modal__subtitle {
-  font-size: 0.95rem;
+  font-size: 1rem;
   opacity: 0.9;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
+  line-height: 1.7;
 }
 
 .project-modal__paragraph {
-  font-size: 0.95rem;
-  line-height: 1.6;
-  margin-bottom: 8px;
+  font-size: 0.97rem;
+  line-height: 1.7;
+  margin: 0;
 }
 
 .project-modal__section {
   margin-top: 14px;
-  margin-bottom: 8px;
+  margin-bottom: 4px;
 }
 
 .project-modal__section h4 {
   margin-bottom: 6px;
+  letter-spacing: 0.01em;
 }
 
 .project-modal__technologies {
   margin-top: 10px;
   font-size: 0.9rem;
+  background: #f7f9fb;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.04);
 }
 
-/* ===================== 媒体区：视频 + 图片统一 Grid ===================== */
+.project-modal--dark .project-modal__technologies {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.18);
+}
+
+/* ===================== åª’ä½“åŒºï¼šè§†é¢‘ + å›¾ç‰‡ç»Ÿä¸€ Grid ===================== */
 
 .project-modal__media-section {
-  margin-top: 18px;
+  margin-top: 12px;
   border-top: 1px solid rgba(255, 255, 255, 0.08);
   padding-top: 14px;
+  background: #fafafa;
+  border-radius: 14px;
+  padding: 16px;
+}
+
+.project-modal--dark .project-modal__media-section {
+  background: rgba(255, 255, 255, 0.03);
+  border-color: rgba(255, 255, 255, 0.05);
 }
 
 .project-modal__media-grid {
@@ -277,24 +317,28 @@
   margin: 8px auto 0;
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 10px;
+  gap: 12px;
+  align-items: start;
 }
 
-/* 只有一个媒体（只有视频或只有一张图）时居中展示 */
+/* åªæœ‰ä¸€ä¸ªåª’ä½“ï¼ˆåªæœ‰è§†é¢‘æˆ–åªæœ‰ä¸€å¼ å›¾ï¼‰æ—¶å±…ä¸­å±•ç¤º */
 .project-modal__media-grid--single {
   max-width: 600px;
   grid-template-columns: minmax(0, 1fr);
 }
 
-/* 单个媒体格子：不再可点击，只保留 hover 效果 */
+/* å•ä¸ªåª’ä½“æ ¼å­ï¼šä¸å†å¯ç‚¹å‡»ï¼Œåªä¿ç•™ hover æ•ˆæžœ */
 .project-modal__media-item {
   border-radius: 10px;
   overflow: hidden;
   position: relative;
-  background: #000;
+  background: linear-gradient(135deg, #161616, #0d0d0d);
+  min-height: 0;
+  padding: 0;
+  border: 1px solid rgba(0, 0, 0, 0.08);
 }
 
-/* 视频格子：内部用 iframe wrapper */
+/* è§†é¢‘æ ¼å­ï¼šå†…éƒ¨ç”¨ iframe wrapper */
 .project-modal__media-item--video {
   display: flex;
   flex-direction: column;
@@ -323,12 +367,12 @@
   opacity: 0.8;
 }
 
-/* 图片格子：只有 hover 缩放，没有点击 */
+/* å›¾ç‰‡æ ¼å­ï¼šåªæœ‰ hover ç¼©æ”¾ï¼Œæ²¡æœ‰ç‚¹å‡» */
 .project-modal__media-item--image img {
   width: 100%;
-  height: 100%;
+  height: auto;
   display: block;
-  object-fit: cover;
+  object-fit: contain;
   transition: transform 0.18s ease, box-shadow 0.18s ease;
 }
 
@@ -337,7 +381,7 @@
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.45);
 }
 
-/* 外链按钮 */
+/* å¤–é“¾æŒ‰é’® */
 .project-modal__video-link {
   margin-top: 10px;
 }
@@ -352,7 +396,7 @@
   text-decoration: underline;
 }
 
-/* 响应式：小屏幕媒体单列 */
+/* å“åº”å¼ï¼šå°å±å¹•åª’ä½“å•åˆ— */
 @media (max-width: 768px) {
   .project-section {
     margin-top: 60px;
@@ -371,3 +415,5 @@
     grid-template-columns: minmax(0, 1fr);
   }
 }
+
+

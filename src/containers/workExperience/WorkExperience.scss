@@ -65,8 +65,7 @@
   backdrop-filter: blur(5px);
   z-index: 998;
 }
-
-/* 放大的卡片：用更高优先级覆盖 .experience-card 里的 position/margin */
+/* �"_�?�?� position/margin */
 .experience-card.exp-expanded-card {
   position: fixed !important;
   top: 50% !important;
@@ -77,11 +76,19 @@
   max-width: 80%;
   width: 90vw;
   max-height: 95vh;
-  overflow-y: auto;
-  margin: 0 !important;         /* 覆盖原来的 margin: 20px auto 之类的 */
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  min-height: 0;
+  margin: 0 !important;         /* ��+�>-�ZY�?��s, margin: 20px auto �1<��s, */
   transition:
     opacity 0.2s ease,
     transform 0.2s ease;
+}
+
+.experience-card.exp-expanded-card .experience-banner {
+  flex-shrink: 0;
+  min-height: 5rem;
 }
 
 /* 动画结束态 */
@@ -93,6 +100,9 @@
 /* 正文额外间距等，保留原来那几段 */
 .exp-expanded-content {
   padding-bottom: 20px;
+  flex: 1 1 auto;
+  overflow-y: auto;
+  min-height: 0;
 }
 
 .exp-expanded-paragraph {
@@ -160,6 +170,15 @@
 .exp-expanded-technologies {
   margin-top: 10px;
   font-size: 0.9rem;
+  background: #f7f9fb;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+.experience-card-dark .exp-expanded-technologies {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.08);
 }
 
 .exp-expanded-close {
@@ -174,10 +193,13 @@
 }
 
 @media (max-width: 768px) {
-  .experience-card.exp-expanded-card {
-    width: 94vw;
-    max-height: 88vh;
-  }
+  
+
+.experience-card.exp-expanded-card .experience-banner {
+  flex-shrink: 0;
+  min-height: 5rem;
+}
+
 }
 
 /* =====================  媒体区：视频 + 图片统一 Grid  ===================== */
@@ -274,3 +296,6 @@
     grid-template-columns: minmax(0, 1fr);
   }
 }
+
+
+

@@ -476,28 +476,64 @@ const bigProjectShowcaseArt = {
   subtitle: "3D Modeling Practice in SCAD",
   projects: [
     {
-      id: "swarm-system",
-      bannerTitle: "UE5 Prototype",
-      bannerColor: "#6b4ce6",
-      logo: "/images/swarm-logo.png",
-      title: "AI Swarm Stealth System",
-      subtitle: "3D stealth gameplay prototype with multi-layer AI.",
-      coverImage: "/images/swarm-cover.gif", // 卡片上的主图 / GIF
+      id: "casino-floor",
+      bannerTitle: "UE5 + Maya",
+      bannerColor: "#c0483c",
+      logo: "/images/casino-logo.png",
+      title: "3D Modeling - Casino Interior Environment",
+      subtitle: "UE5 interior scene with a slot machine hero asset modeled in Maya.",
+      coverImage: "/images/casino-cover.gif", // 卡片上的主图 / GIF
       details: {
-        title: "AI Swarm Stealth System",
+        title: "Casino Interior Environment",
         overview: [
-          "Short intro paragraph 1",
-          "Short intro paragraph 2"
+          "Built a casino-themed interior in UE5 using props and modular pieces modeled in Maya.",
+          "This is the SCAD Learning Record in Game 720 : Virtual World Building. Learn how to use Maya and UE5. This is the final project. ",
         ],
-        bullets: [
-          "What you did / contributions ...",
-          "Another key bullet ..."
-        ],
-        technologies: "Unreal Engine 5, C++, Behavior Tree",
-        youtubeUrl: "https://www.youtube.com/watch?v=XXXXXXXXXXX",
+        // bullets: [
+        //   "Modeled and UVed the slot machine and supporting props in Maya before importing to UE5.",
+        //   "Set dressed, lit, and optimized the scene in UE5 to showcase the hero asset."
+        // ],
+        technologies: "Unreal Engine 5, Maya",
+        youtubeUrl: "https://youtu.be/Fgf8uY6jmCc",
         images: [
-          "/images/swarm-shot-1.png",
-          "/images/swarm-shot-2.png"
+          "/images/projectshowcase-art-1.png",
+          "/images/projectshowcase-art-2.png",
+          "/images/projectshowcase-art-3.png",
+          "/images/projectshowcase-art-4.png",
+          "/images/projectshowcase-art-5.png",
+          "/images/projectshowcase-art-6.png",
+          "/images/projectshowcase-art-7.png"
+        ]
+      }
+    },
+    {
+      id: "casino-floor",
+      bannerTitle: "UE5 + Maya",
+      bannerColor: "#c0483c",
+      logo: "/images/casino-logo.png",
+      title: "3D Modeling - Casino Interior Environment",
+      subtitle: "UE5 interior scene with a slot machine hero asset modeled in Maya.",
+      coverImage: "/images/casino-cover.gif", // 卡片上的主图 / GIF
+      details: {
+        title: "Casino Interior Environment",
+        overview: [
+          "Built a casino-themed interior in UE5 using props and modular pieces modeled in Maya.",
+          "This is the SCAD Learning Record in Game 720 : Virtual World Building. Learn how to use Maya and UE5. This is the final project. ",
+        ],
+        // bullets: [
+        //   "Modeled and UVed the slot machine and supporting props in Maya before importing to UE5.",
+        //   "Set dressed, lit, and optimized the scene in UE5 to showcase the hero asset."
+        // ],
+        technologies: "Unreal Engine 5, Maya",
+        youtubeUrl: "https://youtu.be/Fgf8uY6jmCc",
+        images: [
+          "/images/projectshowcase-art-1.png",
+          "/images/projectshowcase-art-2.png",
+          "/images/projectshowcase-art-3.png",
+          "/images/projectshowcase-art-4.png",
+          "/images/projectshowcase-art-5.png",
+          "/images/projectshowcase-art-6.png",
+          "/images/projectshowcase-art-7.png"
         ]
       }
     }

@@ -162,22 +162,13 @@ function SingleProjectSection({ config, sectionId }) {
                   >
                     <div className="project-card__banner-text">
                       <span className="project-card__banner-title">
-                        {project.bannerTitle || ""}
+                        {project.title || ""}
                       </span>
                     </div>
-
-                    {project.logo && (
-                      <img
-                        src={project.logo}
-                        alt={project.title}
-                        className="project-card__logo"
-                      />
-                    )}
                   </div>
 
                   {/* 标题 + 一行描述 + 封面图/GIF */}
                   <div className="project-card__body">
-                    <h3 className="project-card__title">{project.title}</h3>
                     {project.subtitle && (
                       <p className="project-card__subtitle">
                         {project.subtitle}
@@ -228,17 +219,9 @@ function SingleProjectSection({ config, sectionId }) {
                 <div className="project-modal__banner-inner">
                   <div className="project-modal__banner-text">
                     <span className="project-modal__company">
-                      {activeProject.bannerTitle}
+                      {activeProject.title}
                     </span>
                   </div>
-
-                  {activeProject.logo && (
-                    <img
-                      src={activeProject.logo}
-                      alt={activeProject.title}
-                      className="project-modal__logo"
-                    />
-                  )}
                 </div>
               </div>
 
