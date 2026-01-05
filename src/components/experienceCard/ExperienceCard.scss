@@ -27,8 +27,8 @@
   height: 5rem;
   background: #333; // 如果 ColorThief 失败就用默认
   display: flex;
-  align-items: flex-end;
-  padding: 0 24px 18px;
+  align-items: center;
+  padding: 0 24px;
 }
 
 .experience-blurred_div {
@@ -137,3 +137,4 @@
     padding: 8px 12px 14px;
   }
 }
+

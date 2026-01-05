@@ -482,7 +482,7 @@ const bigProjectShowcaseArt = {
       logo: "/images/casino-logo.png",
       title: "3D Modeling - Casino Interior Environment",
       subtitle: "UE5 interior scene with a slot machine hero asset modeled in Maya.",
-      coverImage: "/images/casino-cover.gif", // 卡片上的主图 / GIF
+      coverImage: "/images/projectshowcase-art-3.png", // 卡片上的主图 / GIF
       details: {
         title: "Casino Interior Environment",
         overview: [
