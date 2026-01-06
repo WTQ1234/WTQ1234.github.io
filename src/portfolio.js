@@ -555,8 +555,6 @@ const bigProjectShowcaseArt = {
         images: [
           "/images/projectshowcase-art-2-1.png",
           "/images/projectshowcase-art-2-2.png",
-          "/images/projectshowcase-art-2-3.png",
-          "/images/projectshowcase-art-2-4.png",
         ]
       }
     }

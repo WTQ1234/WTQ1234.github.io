@@ -306,12 +306,22 @@ function SingleProjectSection({ config, sectionId }) {
                                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                   allowFullScreen
                                   loading="lazy"
-                                />
-                              </div>
-                              <p className="project-modal__video-caption">
-                                Gameplay / trailer
-                              </p>
+                              />
                             </div>
+                            <p className="project-modal__video-caption">
+                              {details?.youtubeUrl ? (
+                                <a
+                                  href={details.youtubeUrl}
+                                  target="_blank"
+                                  rel="noreferrer"
+                                >
+                                  ▶ Open this video on YouTube
+                                </a>
+                              ) : (
+                                "Gameplay / trailer"
+                              )}
+                            </p>
+                          </div>
                           );
                         }
 
@@ -333,17 +343,7 @@ function SingleProjectSection({ config, sectionId }) {
                     </div>
 
                     {/* 保留一个外链按钮到 YouTube */}
-                    {details?.youtubeUrl && (
-                      <div className="project-modal__video-link">
-                        <a
-                          href={details.youtubeUrl}
-                          target="_blank"
-                          rel="noreferrer"
-                        >
-                          ▶ Open this video on YouTube
-                        </a>
-                      </div>
-                    )}
+                    
                   </section>
                 )}
               </div>
@@ -384,6 +384,7 @@ export default function ProjectShowcase() {
     </>
   );
 }
+
 
 
 

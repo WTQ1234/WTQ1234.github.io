@@ -346,7 +346,7 @@
   border-radius: 10px;
   overflow: hidden;
   position: relative;
-  background: linear-gradient(135deg, #161616, #0d0d0d);
+  background: transparent;
   min-height: 0;
   padding: 0;
   border: 1px solid rgba(0, 0, 0, 0.08);
@@ -364,7 +364,7 @@
   padding-top: 56.25%; /* 16:9 */
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.5);
+  background: #fff;
 }
 
 .project-modal__video-wrapper iframe {
