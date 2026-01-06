@@ -313,25 +313,24 @@
 /* ===================== åª’ä½“åŒºï¼šè§†é¢‘ + å›¾ç‰‡ç»Ÿä¸€ Grid ===================== */
 
 .project-modal__media-section {
-  margin-top: 12px;
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
-  padding-top: 14px;
-  background: #fafafa;
-  border-radius: 14px;
-  padding: 16px;
+  margin-top: 8px;
+  border-top: none;
+  padding: 0;
+  background: transparent;
+  border-radius: 0;
 }
 
 .project-modal--dark .project-modal__media-section {
-  background: rgba(255, 255, 255, 0.03);
-  border-color: rgba(255, 255, 255, 0.05);
+  background: transparent;
+  border-color: transparent;
 }
 
 .project-modal__media-grid {
-  max-width: 900px;
-  margin: 8px auto 0;
+  max-width: 100%;
+  margin: 0;
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 12px;
+  gap: 8px;
   align-items: start;
 }
 
