@@ -481,7 +481,7 @@ const bigProjectShowcaseArt = {
       bannerColor: "#c0483c",
       logo: "/images/casino-logo.png",
       title: "3D Modeling - Casino Interior Environment",
-      subtitle: "UE5 interior scene with a slot machine hero asset modeled in Maya.",
+      subtitle: "UE5 interior scene with assets modeled in Maya.",
       coverImage: "/images/projectshowcase-art-3.png", // 卡片上的主图 / GIF
       details: {
         title: "Casino Interior Environment",
@@ -513,7 +513,7 @@ const bigProjectShowcaseArt = {
       logo: "/images/casino-logo.png",
       title: "3D Modeling - Casino Interior Environment",
       subtitle: "UE5 interior scene with a slot machine hero asset modeled in Maya.",
-      coverImage: "/images/casino-cover.gif", // 卡片上的主图 / GIF
+      coverImage: "/images/projectshowcase-art-2-1.png", // 卡片上的主图 / GIF
       details: {
         title: "Casino Interior Environment",
         overview: [
@@ -525,15 +525,40 @@ const bigProjectShowcaseArt = {
         //   "Set dressed, lit, and optimized the scene in UE5 to showcase the hero asset."
         // ],
         technologies: "Unreal Engine 5, Maya",
-        youtubeUrl: "https://youtu.be/Fgf8uY6jmCc",
+        youtubeUrl: "https://youtu.be/cs-WZdRJp3I",
         images: [
-          "/images/projectshowcase-art-1.png",
-          "/images/projectshowcase-art-2.png",
-          "/images/projectshowcase-art-3.png",
-          "/images/projectshowcase-art-4.png",
-          "/images/projectshowcase-art-5.png",
-          "/images/projectshowcase-art-6.png",
-          "/images/projectshowcase-art-7.png"
+          "/images/projectshowcase-art-2-1.png",
+          "/images/projectshowcase-art-2-2.png",
+          "/images/projectshowcase-art-2-3.png",
+          "/images/projectshowcase-art-2-4.png",
+        ]
+      }
+    },
+    {
+      id: "UI-Design",
+      bannerTitle: "UI Design Figma",
+      bannerColor: "#c0483c",
+      logo: "/images/casino-logo.png",
+      title: "3D Modeling - Casino Interior Environment",
+      subtitle: "UE5 interior scene with a slot machine hero asset modeled in Maya.",
+      coverImage: "/images/projectshowcase-art-2-1.png", // 卡片上的主图 / GIF
+      details: {
+        title: "Casino Interior Environment",
+        overview: [
+          "Built a casino-themed interior in UE5 using props and modular pieces modeled in Maya.",
+          "This is the SCAD Learning Record in Game 720 : Virtual World Building. Learn how to use Maya and UE5. This is the final project. ",
+        ],
+        // bullets: [
+        //   "Modeled and UVed the slot machine and supporting props in Maya before importing to UE5.",
+        //   "Set dressed, lit, and optimized the scene in UE5 to showcase the hero asset."
+        // ],
+        technologies: "Unreal Engine 5, Maya",
+        youtubeUrl: "https://youtu.be/7QMiYqriyoI",
+        images: [
+          "/images/projectshowcase-art-2-1.png",
+          "/images/projectshowcase-art-2-2.png",
+          "/images/projectshowcase-art-2-3.png",
+          "/images/projectshowcase-art-2-4.png",
         ]
       }
     }

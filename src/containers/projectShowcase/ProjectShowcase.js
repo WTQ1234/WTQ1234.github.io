@@ -143,34 +143,42 @@ function SingleProjectSection({ config, sectionId }) {
           <div className="project-grid">
             {config.projects &&
               config.projects.map((project) => (
-                <button
+                <div
                   key={project.id}
-                  type="button"
                   className={
-                    "project-card " + (isDark ? "project-card--dark" : "")
+                    isDark
+                      ? "experience-card experience-card-dark"
+                      : "experience-card"
                   }
                   onClick={() => handleCardClick(project)}
                 >
                   {/* 顶部 banner */}
                   <div
-                    className="project-card__banner"
+                    className="experience-banner"
                     style={{
                       background:
                         project.bannerColor ||
                         "linear-gradient(135deg, #f97373, #fbbf77)",
                     }}
                   >
-                    <div className="project-card__banner-text">
-                      <span className="project-card__banner-title">
+                    <div className="experience-blurred_div" />
+                    <div className="experience-div-company">
+                      <h5 className="experience-text-company">
                         {project.title || ""}
-                      </span>
+                      </h5>
                     </div>
                   </div>
 
                   {/* 标题 + 一行描述 + 封面图/GIF */}
-                  <div className="project-card__body">
+                  <div className="experience-text-details project-preview-body">
                     {project.subtitle && (
-                      <p className="project-card__subtitle">
+                      <p
+                        className={
+                          isDark
+                            ? "subTitle experience-text-desc dark-mode-text"
+                            : "subTitle experience-text-desc"
+                        }
+                      >
                         {project.subtitle}
                       </p>
                     )}
@@ -186,7 +194,7 @@ function SingleProjectSection({ config, sectionId }) {
                       </div>
                     )}
                   </div>
-                </button>
+                </div>
               ))}
           </div>
         </div>
@@ -376,3 +384,7 @@ export default function ProjectShowcase() {
     </>
   );
 }
+
+
+
+

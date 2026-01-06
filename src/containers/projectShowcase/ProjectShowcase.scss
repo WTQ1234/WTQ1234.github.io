@@ -34,7 +34,7 @@
 .project-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1.4rem;
+  gap: 2rem 0;
 }
 
 @media (max-width: 768px) {
@@ -57,7 +57,11 @@
   padding: 0;
   text-align: left;
   transition: transform 0.18s ease, box-shadow 0.18s ease;
+  width: 90%;
+  margin: 0 auto;
 }
+
+/* Showcase cards reuse experience-card structure but isolated class names */
 
 .project-card--dark {
   background: #181818;
@@ -65,15 +69,15 @@
 }
 
 .project-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.3);
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.28);
 }
 
 /* é¡¶éƒ¨ banner åŒºï¼Œå›ºå®šé«˜åº¦ */
 .project-card__banner {
   position: relative;
-  height: 3rem;
-  padding: 18px 24px;
+  height: 5rem;
+  padding: 0 24px;
   display: flex;
   align-items: center;
   justify-content: space-between;
