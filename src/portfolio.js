@@ -473,13 +473,12 @@ const bigProjectShowcaseProgramming = {
 const bigProjectShowcaseArt = {
   display: true,
   title: "Personal Projects – Art",
-  subtitle: "3D Modeling Practice in SCAD",
+  // subtitle: " ",
+  subtitle: "3D Modeling / UI Design in SCAD",
   projects: [
     {
       id: "casino-floor",
-      bannerTitle: "UE5 + Maya",
       bannerColor: "#c0483c",
-      logo: "/images/casino-logo.png",
       title: "3D Modeling - Casino Interior Environment",
       subtitle: "UE5 interior scene with assets modeled in Maya.",
       coverImage: "/images/projectshowcase-art-3.png", // 卡片上的主图 / GIF
@@ -507,22 +506,21 @@ const bigProjectShowcaseArt = {
       }
     },
     {
-      id: "casino-floor",
-      bannerTitle: "UE5 + Maya",
+      id: "titan-wreckage",
       bannerColor: "#c0483c",
-      logo: "/images/casino-logo.png",
-      title: "3D Modeling - Casino Interior Environment",
-      subtitle: "UE5 interior scene with a slot machine hero asset modeled in Maya.",
+      title: "3D Environment - Titan Wreckage",
+      subtitle: "Alien-world outdoor scene of Titan battle debris built in UE5.",
       coverImage: "/images/projectshowcase-art-2-1.png", // 卡片上的主图 / GIF
       details: {
-        title: "Casino Interior Environment",
+        title: "Titan Wreckage Environment",
         overview: [
-          "Built a casino-themed interior in UE5 using props and modular pieces modeled in Maya.",
-          "This is the SCAD Learning Record in Game 720 : Virtual World Building. Learn how to use Maya and UE5. This is the final project. ",
+          'This is the SCAD learning record for Game 740: "Game Art: Direction/Look Dev".',
+          "I learned Maya and UE5 to build this alien-world outdoor scene featuring Titan battle debris, completed independently.",
+          "This art scene also feeds into my later UI design and level design projects."
         ],
         // bullets: [
-        //   "Modeled and UVed the slot machine and supporting props in Maya before importing to UE5.",
-        //   "Set dressed, lit, and optimized the scene in UE5 to showcase the hero asset."
+        //   "Modeled and UVed hero props/debris in Maya, then assembled in UE5.",
+        //   "Lit and optimized the scene for atmosphere and readability."
         // ],
         technologies: "Unreal Engine 5, Maya",
         youtubeUrl: "https://youtu.be/cs-WZdRJp3I",

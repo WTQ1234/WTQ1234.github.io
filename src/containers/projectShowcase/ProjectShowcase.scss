@@ -108,6 +108,16 @@
   padding: 18px 22px 20px;
 }
 
+/* Dedicated tweaks for showcase preview content (avoids affecting experience cards) */
+.project-preview-body {
+  padding: 10px 12px 12px;
+}
+
+.project-preview-body .project-card__cover-wrapper {
+  width: 100%;
+  margin-top: 8px;
+}
+
 .project-card__title {
   font-size: 1.1rem;
   margin: 2px 0 6px;
