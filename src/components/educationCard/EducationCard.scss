@@ -140,3 +140,12 @@
     margin: auto;
   }
 }
+
+.dark-mode .education-text-desc {
+  color: $textColorDark !important;
+}
+
+.dark-mode .education-text-bullets li {
+  color: $textColorDark !important;
+}
+

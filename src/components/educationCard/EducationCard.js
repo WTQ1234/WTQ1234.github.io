@@ -6,10 +6,10 @@ import StyleContext from "../../contexts/StyleContext";
 export default function EducationCard({school}) {
   const imgRef = createRef();
 
-  const GetDescBullets = ({descBullets}) => {
+  const GetDescBullets = ({descBullets, isDark}) => {
     return descBullets
       ? descBullets.map((item, i) => (
-          <li key={i} className="subTitle">
+          <li key={i} className={isDark ? "subTitle dark-mode-text" : "subTitle"}>
             {item}
           </li>
         ))
@@ -54,10 +54,21 @@ export default function EducationCard({school}) {
               >
                 {school.duration}
               </p>
-              <p className="education-text-desc">{school.desc}</p>
+              <p
+                className={
+                  isDark
+                    ? "education-text-desc dark-mode-text"
+                    : "education-text-desc"
+                }
+              >
+                {school.desc}
+              </p>
               <div className="education-text-bullets">
                 <ul>
-                  <GetDescBullets descBullets={school.descBullets} />
+                  <GetDescBullets
+                    descBullets={school.descBullets}
+                    isDark={isDark}
+                  />
                 </ul>
               </div>
             </div>

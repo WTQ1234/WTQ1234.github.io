@@ -339,3 +339,16 @@
   cursor: zoom-out;
 }
 
+
+.experience-card-dark.exp-expanded-card {
+  color: $textColorDark;
+}
+
+
+
+.dark-mode .experience-text-desc,
+.dark-mode .experience-text-details li,
+.dark-mode .exp-expanded-paragraph,
+.dark-mode .exp-expanded-section li {
+  color: $textColorDark !important;
+}

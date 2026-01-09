@@ -24,7 +24,7 @@ const greeting = {
   subTitle: emoji(
     `        A passionate video game developer with 3 years of experience. 🎮
         Specializes in gameplay features programming, performance optimization 🛡️, and live-service bug fixing. ⚔️ 
-        Strong team player who boosts productivity with plugins, tools, and clear documentation. 🎶
+        Flexible, innovative, and logical team player who boosts productivity with plugins, tools, and clear documentation. 🎶
         My goal: Game programmer 🤖 & Technical Designer 🛠️`
   ),
   resumeLink:
@@ -336,21 +336,22 @@ const workExperiences = {
       company: "BOE Technology Group",
       companylogo: require("./assets/images/BOELogo.png"),
       date: "Jun 2019 - Oct 2019",
-      desc: `KF Flooring Internal Web System`,
+      desc: `Real-time Adjustable Digital Human Body Model`,
       descBullets: [
-        "Built and maintained an internal web system for cabinet trading and shipping.",
-        "Developed admin tools for order, inventory, and delivery management.",
+        "Built a real-time adjustable digital human body model system in Unity (C#).",
+        "Implemented body-parameter interpolation (height/weight/waist) across multiple humanoid models and displayed in the Digital Human App.",
       ],
       // ------- 详情配置 -------
       details: {
-        projectName: "Internal Web System",
+        projectName: "Digital Human Body Model System",
         overview: [
-          "Built and maintained an internal web system for cabinet trading and shipping."
+          "Unity-based digital human model system developed in a professor–industry collaboration with BOE."
         ],
         responsibilities: [
-          "Developed admin tools for order, inventory, and delivery management to support daily back-office operations."
+          "Implemented UI logic and batch-processed models/materials/textures in Unity.",
+          "Wrote C++ .so libraries for server calls and binary data read/write for network transmission."
         ],
-        technologies: "C++, Unity, C#, Linux",
+        technologies: `C++, Unity, C#, Linux, "Binary I/O"`,
         youtubeUrl: "https://youtu.be/kKinkCXZ7O4", // 如果有视频，填完整链接，例如 "https://www.youtube.com/watch?v=XXXXXXXX"
         images: [
           // 可选：放几张截图路径（public 下）
@@ -402,7 +403,7 @@ const bigProjects = {
 };
 
 
-// TODO 需要GIF作为coverImage
+// TODO 需要GIF作为coverImage 需要加上狂暴2的GM指令截图
 const bigProjectShowcaseDesign = {
   display: true,
   columnCount: 3,

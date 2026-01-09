@@ -193,7 +193,13 @@ export default function WorkExperience() {
                 {expanded.card.date}
               </h5>
 
-              <p className="subTitle experience-text-desc">
+              <p
+                className={
+                  isDark
+                    ? "subTitle experience-text-desc dark-mode-text"
+                    : "subTitle experience-text-desc"
+                }
+              >
                 {expanded.card.details?.projectName || expanded.card.desc}
               </p>
 
@@ -203,7 +209,11 @@ export default function WorkExperience() {
                 currentDetails.overview.map((p, idx) => (
                   <p
                     key={`ov-${idx}`}
-                    className="exp-expanded-paragraph"
+                    className={
+                      isDark
+                        ? "exp-expanded-paragraph dark-mode-text"
+                        : "exp-expanded-paragraph"
+                    }
                   >
                     {p}
                   </p>
@@ -217,7 +227,12 @@ export default function WorkExperience() {
                     <h4>Key responsibilities</h4>
                     <ul>
                       {currentDetails.responsibilities.map((item, idx) => (
-                        <li key={`resp-${idx}`}>{item}</li>
+                        <li
+                          key={`resp-${idx}`}
+                          className={isDark ? "dark-mode-text" : ""}
+                        >
+                          {item}
+                        </li>
                       ))}
                     </ul>
                   </section>
@@ -237,7 +252,12 @@ export default function WorkExperience() {
                   <h4>Highlights</h4>
                   <ul>
                     {expanded.card.descBullets.map((b, i) => (
-                      <li key={`hb-${i}`}>{b}</li>
+                      <li
+                        key={`hb-${i}`}
+                        className={isDark ? "dark-mode-text" : ""}
+                      >
+                        {b}
+                      </li>
                     ))}
                   </ul>
                 </section>

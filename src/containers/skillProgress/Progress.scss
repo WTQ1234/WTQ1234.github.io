@@ -39,6 +39,10 @@
   color: $subTitle !important;
 }
 
+.dark-mode .skills-bar-name {
+  color: $textColorDark !important;
+}
+
 .Proficiency-heading {
   font-size: 2rem;
   line-height: 1.1rem;
@@ -97,3 +101,5 @@
     order: 2;
   }
 }
+
+
