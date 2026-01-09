@@ -23,7 +23,7 @@
     "predeploy": "npm run build",
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "deploy": "gh-pages -b gh-pages -d build",
+    "deploy": "gh-pages -d build -b gh-pages --repo https://github.com/WTQ1234/WTQ1234.github.io.git -m \"deploy\"",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "format": "prettier --write \"./**/*.{js,css,json,scss}\"",
