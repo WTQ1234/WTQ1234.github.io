@@ -402,7 +402,7 @@ const bigProjects = {
 };
 
 
-// TODO 需要GIF作为coverImage，需要加上设计文档，并且将设计文档的链接改成超链接
+// TODO 需要GIF作为coverImage  TODO 需要把日期都改成英文格式
 const bigProjectShowcaseDesign = {
   display: true,
   columnCount: 3,
@@ -418,8 +418,9 @@ const bigProjectShowcaseDesign = {
         title: "FPS Level Design: Star Scrapper - Abandoned High-Tech Battlefield",
         overview: [
           "A first-person combat level where the player searches for critical items while being hunted by robotic enemies.",
-          "Route-based decision-making and interactive environment elements support hiding, delaying, and tactical evasion.",
-          "Level Design Docs: https://docs.google.com/document/d/1kQjjFPPUeMAFwG1AWDUj_Hk32sRvQiTuw5rhWiCv8l8/edit?usp=sharing",
+          `Design an immersive, time-limited, first-person shooting combat level in 10 minutes. Build a fast-paced and strategic combat.`,
+          `In an abandoned high-tech battlefield, the player is an agent, who is trying to survive from robotic enemies while searching for critical items.`,
+          "Level Design Docs: [Star Scrapper Level Design Doc](https://docs.google.com/document/d/1kQjjFPPUeMAFwG1AWDUj_Hk32sRvQiTuw5rhWiCv8l8/edit?usp=sharing)",
         ],
         technologies: "Game Level Design, Unreal Engine 5, C++, Blueprint",
         youtubeUrl: "https://youtu.be/09J0FSA5tyI",
@@ -461,7 +462,7 @@ const bigProjectShowcaseDesign = {
           "A system design demo for a high-tech stealth game on Windows, built around keyboard-and-mouse input.",
           "Core hook: strategically spend limited resources to hack interactable targets.",
           "Different hacking levels unlock different effects while maintaining stealth against patrols and alerts.",
-          "System Design Docs: https://docs.google.com/document/d/1djM5SWgBn8UYgEypzFlpSe6MYYWwlE7Tb7Uy0GVJdJM/edit?usp=sharing",
+          "System Design Docs: [Hacking System Design Doc](https://docs.google.com/document/d/1djM5SWgBn8UYgEypzFlpSe6MYYWwlE7Tb7Uy0GVJdJM/edit?usp=sharing)",
         ],
         technologies: "Game System Design, Unreal Engine 5, C++, Blueprint",
         youtubeUrl: "https://youtu.be/HAjogNEsCbM",
@@ -482,7 +483,7 @@ const bigProjectShowcaseDesign = {
   ]
 }
 
-// TODO 需要GIF作为coverImage，需要把这里面的链接改成超链接，程序这个有点多，考虑换成四个一排，考虑把Unity的打包成Web版本，放到静态网页里，注意懒加载
+// TODO 需要GIF作为coverImage，考虑把Unity的打包成Web版本，放到静态网页里，注意懒加载
 const bigProjectShowcaseProgramming = {
   display: true,
   columnCount: 4,
@@ -491,107 +492,100 @@ const bigProjectShowcaseProgramming = {
   projects: [
     {
       id: "754",
-      bannerColor: "#1d5d7aff",
-      title: "Deep Dive Dream By Unity",
-      coverImage: "/images/projectshowcase-programming-8-1.png", // 卡片上的主图 / GIF
+      bannerColor: "rgb(99, 60, 33)",
+      title: "Autoscopy By UE5",
+      coverImage: "/images/projectshowcase-programming-12-1.png", // 卡片上的主图 / GIF
       details: {
-        title: "Deep Dive Dream, 2025 48H Global Game Jam",
+        title: "Autoscopy: FPS Hacking Project, SCAD Team Project",
         overview: [
-          `"Deep Dive Dream" is a 2D platform pve game, like "Ultimate Chicken Horse" or "Stick Fight: The Game".`,
-          `Made in the 48h GIGA game jam, 2023/9/20-2023/10/11, online.`,
-          `The gamejam title is "Unfair Randomness".`,
-          `6 people in the game jam team: 2 2D-artist, 1 animator(Spine), 1 3D-artist, 1 musician, 2 programmer.`,
-          `I'm the programmer and also responsible for the foundational design of game mechanics`,
+          `"Autoscopy" is a 3D FPS hacking game.`,
+          `Created as a SCAD learning record for Game 754 : Game Design: Professional Production Pipeline.`,
+          `This is a team work, with 2 programmer, I am one of the programmer.`,
         ],
-        technologies: "Unity, C#",
-        youtubeUrl: "https://youtu.be/4kN-ubTmGEM",
+        technologies: "UE5, C++, Blueprint, Perforce",
+        youtubeUrl: "https://youtu.be/K6Wz9jcuSUU",
         images: [
           // "/images/projectshowcase-programming-7-1.png",
-          "/images/projectshowcase-programming-8-2.png",
-          "/images/projectshowcase-programming-8-3.png",
-          "/images/projectshowcase-programming-8-4.png",
-          "/images/projectshowcase-programming-8-5.png",
+          "/images/projectshowcase-programming-12-2.png",
+          // "/images/projectshowcase-programming-12-3.png",
+          // "/images/projectshowcase-programming-12-4.png",
+          // "/images/projectshowcase-programming-12-5.png",
         ]
       }
     },
     {
       id: "748 Tech Reel",
-      bannerColor: "#1d5d7aff",
-      title: "Deep Dive Dream By Unity",
-      coverImage: "/images/projectshowcase-programming-8-1.png", // 卡片上的主图 / GIF
+      bannerColor: "#85317eff",
+      title: "Star Scrapper By UE5",
+      coverImage: "/images/projectshowcase-programming-11-1.png", // 卡片上的主图 / GIF
       details: {
-        title: "Deep Dive Dream, 2025 48H Global Game Jam",
+        title: "Star Scrapper: FPS Combat Project, SCAD Final Project",
         overview: [
-          `"Deep Dive Dream" is a 2D platform pve game, like "Ultimate Chicken Horse" or "Stick Fight: The Game".`,
-          `Made in the 48h GIGA game jam, 2023/9/20-2023/10/11, online.`,
-          `The gamejam title is "Unfair Randomness".`,
-          `6 people in the game jam team: 2 2D-artist, 1 animator(Spine), 1 3D-artist, 1 musician, 2 programmer.`,
-          `I'm the programmer and also responsible for the foundational design of game mechanics`,
+          `A first-person combat level where the player searches for critical items while being hunted by robotic enemies.`,
+          `Built An immersive, time-limited, first-person shooting combat level in 10 minutes. Build a fast-paced and strategic combat.`,
+          `This is the Tech Reel for the SCAD Graduate Final Project - a level design project.`
         ],
-        technologies: "Unity, C#",
-        youtubeUrl: "https://youtu.be/4kN-ubTmGEM",
+        technologies: "UE5, C++, Blueprint, Git",
+        youtubeUrl: "https://youtu.be/MRh7-Ju7nJk",
         images: [
-          // "/images/projectshowcase-programming-7-1.png",
-          "/images/projectshowcase-programming-8-2.png",
-          "/images/projectshowcase-programming-8-3.png",
-          "/images/projectshowcase-programming-8-4.png",
-          "/images/projectshowcase-programming-8-5.png",
+          "/images/projectshowcase-programming-11-1.png",
+          "/images/projectshowcase-programming-11-2.png",
+          "/images/projectshowcase-programming-11-3.png",
+          "/images/projectshowcase-programming-11-4.png",
         ]
       }
     },
     {
-      id: "Deep Dive Dream",
+      id: "DeepDiveDream",
       bannerColor: "#1d5d7aff",
       title: "Deep Dive Dream By Unity",
-      coverImage: "/images/projectshowcase-programming-8-1.png", // 卡片上的主图 / GIF
+      coverImage: "/images/projectshowcase-programming-10-1.png", // 卡片上的主图 / GIF
       details: {
         title: "Deep Dive Dream, 2025 48H Global Game Jam",
         overview: [
-          `"Deep Dive Dream" is a 2D platform pve game, like "Ultimate Chicken Horse" or "Stick Fight: The Game".`,
-          `Made in the 48h GIGA game jam, 2023/9/20-2023/10/11, online.`,
-          `The gamejam title is "Unfair Randomness".`,
-          `6 people in the game jam team: 2 2D-artist, 1 animator(Spine), 1 3D-artist, 1 musician, 2 programmer.`,
+          `"Deep Dive Dream" is a 2D platform pve game. Act as a spider with different abilities`,
+          `Made in the 48h GIGA game jam, 01/27/2025 - 01/28/2025, at SCAD, Savannah, GA.`,
+          `The gamejam title is "Bubble".`,
           `I'm the programmer and also responsible for the foundational design of game mechanics`,
         ],
         technologies: "Unity, C#",
-        youtubeUrl: "https://youtu.be/4kN-ubTmGEM",
+        youtubeUrl: "https://youtu.be/3EqoXR28RhM",
         images: [
           // "/images/projectshowcase-programming-7-1.png",
-          "/images/projectshowcase-programming-8-2.png",
-          "/images/projectshowcase-programming-8-3.png",
-          "/images/projectshowcase-programming-8-4.png",
-          "/images/projectshowcase-programming-8-5.png",
+          "/images/projectshowcase-programming-10-4.png",
+          "/images/projectshowcase-programming-10-5.png",
+          "/images/projectshowcase-programming-10-6.png",
+          "/images/projectshowcase-programming-10-7.png",
+          "/images/projectshowcase-programming-10-2.png",
+          "/images/projectshowcase-programming-10-3.png",
         ]
       }
     },
     {
       id: "CatchSheep",
-      bannerColor: "#1d5d7aff",
+      bannerColor: "rgb(31, 87, 48)",
       title: "Catch Sheep By Unity",
-      coverImage: "/images/projectshowcase-programming-8-1.png", // 卡片上的主图 / GIF
+      coverImage: "/images/projectshowcase-programming-9-1.png", // 卡片上的主图 / GIF
       details: {
         title: "Catch Sheep, 2024 48H Global Game Jam",
         overview: [
           `"Catch Sheep" is a 2D top-down pve game, The player works together with their dog, use a rope to catch sheep.`,
-          `Made in the 48h GIGA game jam, 2023/9/20-2023/10/11, online.`,
-          `The gamejam title is "Unfair Randomness".`,
-          `6 people in the game jam team: 2 2D-artist, 1 animator(Spine), 1 3D-artist, 1 musician, 2 programmer.`,
-          `I'm the programmer and also responsible for the foundational design of game mechanics`,
+          `Made in the 48h Global Game Jam, 2024/01/26-2024/01/28, online.`,
+          `The gamejam title is "Make Me Laugh".`,
         ],
         technologies: "Unity, C#",
         youtubeUrl: "https://youtu.be/3GCezneDy18",
         images: [
-          // "/images/projectshowcase-programming-7-1.png",
-          "/images/projectshowcase-programming-8-2.png",
-          "/images/projectshowcase-programming-8-3.png",
-          "/images/projectshowcase-programming-8-4.png",
-          "/images/projectshowcase-programming-8-5.png",
+          // "/images/projectshowcase-programming-9-1.png",
+          "/images/projectshowcase-programming-9-2.png",
+          "/images/projectshowcase-programming-9-3.png",
+          "/images/projectshowcase-programming-9-4.png",
         ]
       }
     },
     {
       id: "DiceFight2D",
-      bannerColor: "#1d5d7aff",
+      bannerColor: "rgb(31, 82, 107)",
       title: "Dice Fight By Unity",
       coverImage: "/images/projectshowcase-programming-8-1.png", // 卡片上的主图 / GIF
       details: {
@@ -616,7 +610,7 @@ const bigProjectShowcaseProgramming = {
     },
     {
       id: "Touch ⠞⠕⠥⠉⠓",
-      bannerColor: "#1d5d7aff",
+      bannerColor: "rgb(69, 49, 133)",
       title: "Touch ⠞⠕⠥⠉⠓ By Unity",
       coverImage: "/images/projectshowcase-programming-7-1.png", // 卡片上的主图 / GIF
       details: {
@@ -640,7 +634,7 @@ const bigProjectShowcaseProgramming = {
     },
     {
       id: "Zuma Card",
-      bannerColor: "#1d5d7aff",
+      bannerColor: "rgb(122, 29, 29)",
       title: "Zuma Card By Unity",
       coverImage: "/images/projectshowcase-programming-6.png", // 卡片上的主图 / GIF
       details: {
@@ -745,7 +739,7 @@ const bigProjectShowcaseProgramming = {
   ]
 }
 
-// TODO 需要GIF作为coverImage，TODO 把710的Set Dressing 和 Level Sequence也放上去吧 TODO 记得改一下Header就是上面悬浮的标题，都弄完就能开始投简历了
+// TODO 需要GIF作为coverImage
 const bigProjectShowcaseArt = {
   display: true,
   title: "Personal Projects – Art",
@@ -761,7 +755,7 @@ const bigProjectShowcaseArt = {
         overview: [
           "A casino-themed interior scene.",
           "Built in UE5 using props and modular pieces modeled in Maya.",
-          "Created as a SCAD learning record for Game 720 : Virtual World Building.",
+          "Created as a SCAD learning record for Game 720 : Game Art - Virtual World Building.",
         ],
         // bullets: [
         //   "Modeled and UVed the slot machine and supporting props in Maya before importing to UE5.",
@@ -790,7 +784,7 @@ const bigProjectShowcaseArt = {
         overview: [
           'A alien-world outdoor scene featuring Titan battle debris.',
           "Built in UE5 using props and modular pieces modeled in Maya.",
-          'Created as a SCAD learning record for Game 740 : Game Art: Direction/Look Dev.',
+          'Created as a SCAD learning record for Game 740 : Game Art - Art Direction and Look Development.',
           "This art scene also feeds into my later UI design and level design projects."
         ],
         // bullets: [
@@ -819,7 +813,7 @@ const bigProjectShowcaseArt = {
         title: "FPS UI Design Demo — Alien Battlefield, Robot Enemies, Titan Salvage",
         overview: [
           "A UI design demo for a classic FPS experience set on an alien world, featuring robot enemies and a Titan-wreckage salvage theme.",
-          "Created as a SCAD learning record for IXDS 724 (Visual Hierarchies & Affordances).",
+          "Created as a SCAD learning record for IXDS 724: UI Design - Visual Hierarchies & Affordances.",
         ],
         technologies: "Game UI Design, Figma, Photoshop",
         youtubeUrl: "https://youtu.be/7QMiYqriyoI",
@@ -839,7 +833,56 @@ const bigProjectShowcaseArt = {
           "/images/projectshowcase-art-3-13.png",
         ]
       }
-    }
+    },
+    {
+      id: "710_SetDressing",
+      bannerColor: "rgb(75, 85, 101)",
+      title: "SetDressing: Rainning night",
+      coverImage: "/images/projectshowcase-art-4-4.png", // 卡片上的主图 / GIF
+      details: {
+        title: "SetDressing: Rainning night",
+        overview: [
+          "A Setdressing for a rainning night.",
+          "The models is from Internet.",
+          "Model Credit: Fantastic Village Pack, Isometric - Interiors, Mega Scans",
+          "Created as a SCAD learning record for GAME 710: Game Art: Engine Pipeline and Practices.",
+        ],
+        technologies: "Unreal Engine 5",
+        youtubeUrl: "https://youtu.be/rLbGvqY5xKk",
+        images: [
+          "/images/projectshowcase-art-4-1.png",
+          "/images/projectshowcase-art-4-2.png",
+          "/images/projectshowcase-art-4-3.png",
+          "/images/projectshowcase-art-4-4.png",
+          "/images/projectshowcase-art-4-5.png",
+        ]
+      }
+    },
+    {
+      id: "710_LevelSequence",
+      bannerColor: "rgb(104, 29, 29)",
+      title: "Level Sequence: Demon Summoning",
+      coverImage: "/images/projectshowcase-art-5-6.png", // 卡片上的主图 / GIF
+      details: {
+        title: "Level Sequence: Demon Summoning",
+        overview: [
+          "A Setdressing and Level Sequence for a demon summoning scene.",
+          "The models is from UE and Unity Asset Store, Video is form Scorn.",
+          "Created as a SCAD learning record for GAME 710: Game Art: Engine Pipeline and Practices.",
+          "This is the final project of that class.",
+        ],
+        technologies: "Unreal Engine 5",
+        youtubeUrl: "https://youtu.be/2v_TW-HG_Vc",
+        images: [
+          "/images/projectshowcase-art-5-1.png",
+          "/images/projectshowcase-art-5-2.png",
+          "/images/projectshowcase-art-5-3.png",
+          "/images/projectshowcase-art-5-4.png",
+          "/images/projectshowcase-art-5-5.png",
+          "/images/projectshowcase-art-5-6.png",
+        ]
+      }
+    },
   ]
 }
 

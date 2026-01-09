@@ -62,38 +62,106 @@ function getYoutubeEmbedUrl(youtubeUrl) {
 }
 
 const urlPattern = /(https?:\/\/[^\s]+)/g;
+const markdownLinkPattern = /\[([^\]]+)\]\((https?:\/\/[^\s)]+)\)/g;
 
-function linkifyText(text) {
-  if (!text) {
-    return text;
-  }
+function appendPlainTextWithUrls(parts, text, keyPrefix) {
+  if (!text) return;
 
-  const parts = [];
+  const urlRegex = new RegExp(urlPattern);
   let lastIndex = 0;
-  const regex = new RegExp(urlPattern);
   let match;
+  let segmentIndex = 0;
 
-  while ((match = regex.exec(text))) {
+  while ((match = urlRegex.exec(text))) {
     const before = text.slice(lastIndex, match.index);
     if (before) {
       parts.push(before);
     }
-    const url = match[0];
+
     parts.push(
-      <a key={`link-${match.index}-${url}`} href={url} target="_blank" rel="noreferrer">
-        {url}
+      <a
+        key={`link-auto-${keyPrefix}-${segmentIndex}-${match.index}`}
+        href={match[0]}
+        target="_blank"
+        rel="noreferrer"
+      >
+        {match[0]}
       </a>
     );
-    lastIndex = match.index + url.length;
-  }
 
-  if (lastIndex === 0) {
-    return text;
+    segmentIndex += 1;
+    lastIndex = match.index + match[0].length;
   }
 
   const remaining = text.slice(lastIndex);
   if (remaining) {
     parts.push(remaining);
+  }
+}
+
+function linkifyText(text) {
+  if (!text || typeof text !== "string") {
+    return text;
+  }
+
+  const tokens = [];
+  let lastIndex = 0;
+  const regex = new RegExp(markdownLinkPattern);
+  let match;
+
+  while ((match = regex.exec(text))) {
+    if (match.index > lastIndex) {
+      tokens.push({
+        type: "text",
+        value: text.slice(lastIndex, match.index),
+      });
+    }
+
+    tokens.push({
+      type: "customLink",
+      label: match[1],
+      url: match[2],
+    });
+
+    lastIndex = match.index + match[0].length;
+  }
+
+  if (lastIndex < text.length) {
+    tokens.push({
+      type: "text",
+      value: text.slice(lastIndex),
+    });
+  }
+
+  if (tokens.length === 0) {
+    const fallback = [];
+    appendPlainTextWithUrls(fallback, text, "fallback");
+    if (fallback.length === 1 && typeof fallback[0] === "string") {
+      return fallback[0];
+    }
+    return fallback;
+  }
+
+  const parts = [];
+  tokens.forEach((token, tokenIndex) => {
+    if (token.type === "customLink") {
+      parts.push(
+        <a
+          key={`link-md-${tokenIndex}-${token.url}`}
+          href={token.url}
+          target="_blank"
+          rel="noreferrer"
+        >
+          {token.label}
+        </a>
+      );
+    } else if (token.value) {
+      appendPlainTextWithUrls(parts, token.value, tokenIndex);
+    }
+  });
+
+  if (parts.length === 1 && typeof parts[0] === "string") {
+    return parts[0];
   }
 
   return parts;
@@ -416,4 +484,3 @@ export default function ProjectShowcase() {
     </>
   );
 }
-

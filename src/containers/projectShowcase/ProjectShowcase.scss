@@ -203,8 +203,8 @@
 .project-modal__banner {
   flex: 0 0 auto;
   flex-shrink: 0;
-  height: 5rem;
-  min-height: 5rem;
+  height: 4.5rem;
+  min-height: 4.5rem;
   box-shadow: 0 10px 32px rgba(0, 0, 0, 0.15);
 }
 
@@ -261,7 +261,7 @@
 /* æ­£æ–‡æ»šåŠ¨åŒºåŸŸ */
 .project-modal__body {
   flex: 1 1 auto;
-  padding: 28px 32px 22px;
+  padding: 10px 32px 22px;
   overflow-y: auto;
   display: grid;
   gap: 12px;

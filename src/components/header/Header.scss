@@ -27,6 +27,13 @@
   margin: 0px auto;
 }
 
+.header--force-hidden {
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-120%);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
 .header ul {
   margin: 0;
   padding: 0;

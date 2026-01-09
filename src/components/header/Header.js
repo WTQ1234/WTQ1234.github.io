@@ -1,4 +1,4 @@
-import React, {useContext} from "react";
+import React, {useContext, useEffect, useRef, useState} from "react";
 import Headroom from "react-headroom";
 import "./Header.scss";
 import ToggleSwitch from "../ToggleSwitch/ToggleSwitch";
@@ -16,6 +16,8 @@ import {
 
 function Header() {
   const {isDark} = useContext(StyleContext);
+  const [forceHide, setForceHide] = useState(false);
+  const hideTimeoutRef = useRef(null);
   const viewExperience = workExperiences.display;
   const viewOpenSource = openSource.display;
   const viewSkills = skillsSection.display;
@@ -24,9 +26,33 @@ function Header() {
   const viewTalks = talkSection.display;
   const viewResume = resumeSection.display;
 
+  const handleNavClick = () => {
+    setForceHide(true);
+    if (hideTimeoutRef.current) {
+      clearTimeout(hideTimeoutRef.current);
+    }
+    hideTimeoutRef.current = setTimeout(() => {
+      setForceHide(false);
+      hideTimeoutRef.current = null;
+    }, 450);
+  };
+
+  useEffect(() => {
+    return () => {
+      if (hideTimeoutRef.current) {
+        clearTimeout(hideTimeoutRef.current);
+      }
+    };
+  }, []);
+
   return (
     <Headroom>
-      <header className={isDark ? "dark-menu header" : "header"}>
+      <header
+        className={
+          (isDark ? "dark-menu header" : "header") +
+          (forceHide ? " header--force-hidden" : "")
+        }
+      >
         <a href="/" className="logo">
           <span className="grey-color"> &lt;</span>
           <span className="logo-name">{greeting.username}</span>
@@ -41,43 +67,74 @@ function Header() {
           <span className={isDark ? "navicon navicon-dark" : "navicon"}></span>
         </label>
         <ul className={isDark ? "dark-menu menu" : "menu"}>
-          {viewSkills && (
+          {viewResume && (
             <li>
-              <a href="#skills">Skills</a>
+              <a href="#resume" onClick={handleNavClick}>
+                Resume
+              </a>
             </li>
           )}
+          {viewSkills && (
+            <li>
+              <a href="#skills" onClick={handleNavClick}>
+                Skills
+              </a>
+            </li>
+          )},
+          {true && (
+            <li>
+              <a href="#education" onClick={handleNavClick}>
+                Education
+              </a>
+            </li>
+          )},
           {viewExperience && (
             <li>
-              <a href="#experience">Work Experiences</a>
+              <a href="#experience" onClick={handleNavClick}>
+                Work Exp
+              </a>
             </li>
           )}
           {viewOpenSource && (
             <li>
-              <a href="#opensource">Open Source</a>
+              <a href="#opensource" onClick={handleNavClick}>
+                Open Source
+              </a>
             </li>
           )}
           {viewAchievement && (
             <li>
-              <a href="#achievements">Achievements</a>
+              <a href="#achievements" onClick={handleNavClick}>
+                Achievements
+              </a>
             </li>
           )}
           {viewBlog && (
             <li>
-              <a href="#blogs">Blogs</a>
+              <a href="#blogs" onClick={handleNavClick}>
+                Blogs
+              </a>
             </li>
           )}
           {viewTalks && (
             <li>
-              <a href="#talks">Talks</a>
+              <a href="#talks" onClick={handleNavClick}>
+                Talks
+              </a>
             </li>
           )}
-          {viewResume && (
+
+          {
             <li>
-              <a href="#resume">Resume</a>
+              <a href="#big-projects-programming" onClick={handleNavClick}>
+                Projects
+              </a>
             </li>
-          )}
+          }
           <li>
-            <a href="#contact">Contact Me</a>
+            <a href="#contact" onClick={handleNavClick}>
+              Contact Me
+            </a>
           </li>
           <li>
             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
