@@ -328,6 +328,9 @@ const workExperiences = {
         images: [
           // 可选：放几张截图路径（public 下）
           "/images/WorkExp1.png",
+          "/images/WorkExp1_3.png",
+          "/images/WorkExp1_2.png",
+          "/images/WorkExp1_1.png",
         ]
       }
     },
@@ -403,7 +406,7 @@ const bigProjects = {
 };
 
 
-// TODO 需要GIF作为coverImage 需要加上狂暴2的GM指令截图
+// TODO 需要GIF作为coverImage
 const bigProjectShowcaseDesign = {
   display: true,
   columnCount: 3,
