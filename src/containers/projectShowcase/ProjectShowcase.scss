@@ -133,7 +133,7 @@
 .project-card__cover-wrapper {
   position: relative;
   width: 100%;
-  border-radius: 14px;
+  border-radius:  0 0 14px 14px; // 左上右上直角，左右下圆角
   overflow: hidden;
 }
 

@@ -70,16 +70,17 @@
   position: fixed !important;
   top: 50% !important;
   left: 50% !important;
-  transform: translate(-50%, -50%) scale(0.9);
+  transform: translate(-50%, -50%) scale(0.96);
   opacity: 0;
   z-index: 999;
-  max-width: 80%;
   width: 90vw;
-  max-height: 95vh;
+  max-width: 1100px;
+  max-height: 90vh;
   display: flex;
   flex-direction: column;
   overflow: hidden;
   min-height: 0;
+  border-radius: 20px;
   margin: 0 !important;         /* ��+�>-�ZY�?��s, margin: 20px auto �1<��s, */
   transition:
     opacity 0.2s ease,
@@ -205,17 +206,19 @@
 /* =====================  媒体区：视频 + 图片统一 Grid  ===================== */
 
 .exp-expanded-media-section {
-  margin-top: 18px;
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
-  padding-top: 14px;
+  margin-top: 8px;
+  border-top: none;
+  padding-top: 0;
+  background: transparent;
+  border-radius: 0;
 }
 
 .exp-expanded-media-grid {
   max-width: 100%;
-  margin: 0px auto 0;
+  margin: 0;
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  // gap: 2rem;
+  gap: 8px;
   align-items: start; 
 }
 
@@ -230,11 +233,8 @@
   border-radius: 10px;
   overflow: hidden;
   position: relative;
-
-  width: 90%;
+  width: 100%;
   height: auto;
-  // max-height: 10rem;
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -257,6 +257,7 @@
   padding-top: 56.25%; /* 16:9 */
   border-radius: 10px;
   overflow: hidden;
+  background: #fff;
 }
 
 .exp-expanded-video-wrapper iframe {
@@ -269,9 +270,8 @@
 
 /* 图片格子：只有 hover 缩放，没有点击 */
 .exp-expanded-media-item--image img {
-  width: auto;
-  // height: 100%;
-  max-height: 25rem;
+  width: 100%;
+  height: auto;
   display: block;
   object-fit: contain;
   transition: transform 0.18s ease, box-shadow 0.18s ease;
@@ -299,3 +299,20 @@
 
 
 
+
+
+
+
+
+/* Override modal sizing to align with project showcase */
+.experience-card.exp-expanded-card {
+  width: 90vw;
+  max-width: 1100px;
+  max-height: 90vh;
+  transform: translate(-50%, -50%) scale(0.96);
+  border-radius: 20px;
+}
+
+.experience-card.exp-expanded-card.exp-expanded-card--visible {
+  transform: translate(-50%, -50%) scale(1);
+}

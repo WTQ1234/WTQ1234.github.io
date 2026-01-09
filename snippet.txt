@@ -1,0 +1,44 @@
+                  >
+                    {mediaItems.map((item, index) => {
+                      if (item.type === "video") {
+                        return (
+                          <div
+                            key={item.key}
+                            className="exp-expanded-media-item exp-expanded-media-item--video"
+                          >
+                            <div className="exp-expanded-video-wrapper">
+                              <iframe
+                                src={youtubeEmbedUrl}
+                                title={
+                                  currentDetails?.projectName ||
+                                  expanded.card.company
+                                }
+                                frameBorder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowFullScreen
+                                loading="lazy"
+                              />
+                            </div>
+                            {/* å¤–é“¾æŒ‰é’®ï¼šæ‰“å¼€ YouTubeï¼ˆå¯é€‰ï¼‰ */}
+                            {currentDetails?.youtubeUrl && (
+                              <div className="exp-expanded-video-link">
+                                <a
+                                  href={currentDetails.youtubeUrl}
+                                  target="_blank"
+                                  rel="noreferrer"
+                                >
+                                  â–¶ Open this video on YouTube
+                                </a>
+                              </div>
+                            )}
+                          </div>
+
+                          </div>
+                        );
+                      }
+
+                      return (
+                        <div
+                          key={item.key}
+                          className="exp-expanded-media-item exp-expanded-media-item--image"
+                        >

@@ -61,6 +61,44 @@ function getYoutubeEmbedUrl(youtubeUrl) {
   }
 }
 
+const urlPattern = /(https?:\/\/[^\s]+)/g;
+
+function linkifyText(text) {
+  if (!text) {
+    return text;
+  }
+
+  const parts = [];
+  let lastIndex = 0;
+  const regex = new RegExp(urlPattern);
+  let match;
+
+  while ((match = regex.exec(text))) {
+    const before = text.slice(lastIndex, match.index);
+    if (before) {
+      parts.push(before);
+    }
+    const url = match[0];
+    parts.push(
+      <a key={`link-${match.index}-${url}`} href={url} target="_blank" rel="noreferrer">
+        {url}
+      </a>
+    );
+    lastIndex = match.index + url.length;
+  }
+
+  if (lastIndex === 0) {
+    return text;
+  }
+
+  const remaining = text.slice(lastIndex);
+  if (remaining) {
+    parts.push(remaining);
+  }
+
+  return parts;
+}
+
 /**
  * 单个大项目 Section，可复用三次
  */
@@ -140,7 +178,12 @@ function SingleProjectSection({ config, sectionId }) {
           )}
 
           {/* 卡片网格 */}
-          <div className="project-grid">
+          <div
+            className="project-grid"
+            style={{
+              gridTemplateColumns: `repeat(${config.columnCount || 3}, minmax(0, 1fr))`,
+            }}
+          >
             {config.projects &&
               config.projects.map((project) => (
                 <div
@@ -170,30 +213,19 @@ function SingleProjectSection({ config, sectionId }) {
                   </div>
 
                   {/* 标题 + 一行描述 + 封面图/GIF */}
-                  <div className="experience-text-details project-preview-body">
-                    {project.subtitle && (
-                      <p
-                        className={
-                          isDark
-                            ? "subTitle experience-text-desc dark-mode-text"
-                            : "subTitle experience-text-desc"
-                        }
-                      >
-                        {project.subtitle}
-                      </p>
-                    )}
 
-                    {project.coverImage && (
-                      <div className="project-card__cover-wrapper">
-                        <img
-                          src={project.coverImage}
-                          alt={project.title}
-                          className="project-card__cover"
-                          loading="lazy"
-                        />
-                      </div>
-                    )}
-                  </div>
+
+
+                  {project.coverImage && (
+                    <div className="project-card__cover-wrapper">
+                      <img
+                        src={project.coverImage}
+                        alt={project.title}
+                        className="project-card__cover"
+                        loading="lazy"
+                      />
+                    </div>
+                  )}
                 </div>
               ))}
           </div>
@@ -253,14 +285,14 @@ function SingleProjectSection({ config, sectionId }) {
                   </p>
                 )}
 
-                {overview.map((p, idx) => (
-                  <p
-                    key={`ov-${idx}`}
-                    className="project-modal__paragraph"
-                  >
-                    {p}
-                  </p>
-                ))}
+                    {overview.map((p, idx) => (
+                      <p
+                        key={`ov-${idx}`}
+                        className="project-modal__paragraph"
+                      >
+                        {linkifyText(p)}
+                      </p>
+                    ))}
 
                 {bullets.length > 0 && (
                   <section className="project-modal__section">
@@ -384,8 +416,4 @@ export default function ProjectShowcase() {
     </>
   );
 }
-
-
-
-
 

@@ -402,91 +402,366 @@ const bigProjects = {
 };
 
 
-
+// TODO 需要GIF作为coverImage，需要加上设计文档，并且将设计文档的链接改成超链接
 const bigProjectShowcaseDesign = {
   display: true,
+  columnCount: 3,
   title: "Personal Projects – Design",
-  subtitle: "Personal Gameplay / System / Level Design and Prototypes.",
+  subtitle: "Personal System / Level Design and Prototypes.",
   projects: [
     {
-      id: "swarm-system",
-      bannerTitle: "SIFI Hacking System",
-      bannerColor: "#6b4ce6",
-      logo: "/images/WorkExp3.png",
-      // title: "SIFI Hacking System with Swarm Stealth Mini Game",
-      // subtitle: "3D stealth gameplay prototype with multi-layer AI.",
-      coverImage: "/images/WorkExp3.png", // 卡片上的主图 / GIF
+      id: "level-design-754",
+      bannerColor: "#3f378bff",
+      title: "FPS Level Design - Star Scrapper",
+      coverImage: "/images/748_e1_3.png", // 卡片上的主图 / GIF
       details: {
-        title: "SIFI Hacking System with Swarm Stealth Mini Game",
+        title: "FPS Level Design: Star Scrapper - Abandoned High-Tech Battlefield",
         overview: [
-          "Short intro paragraph 1",
-          "Short intro paragraph 2"
+          "A first-person combat level where the player searches for critical items while being hunted by robotic enemies.",
+          "Route-based decision-making and interactive environment elements support hiding, delaying, and tactical evasion.",
+          "Level Design Docs: https://docs.google.com/document/d/1kQjjFPPUeMAFwG1AWDUj_Hk32sRvQiTuw5rhWiCv8l8/edit?usp=sharing",
         ],
-        bullets: [
-          "Design the system",
-          "Do it in the UE5 with C++ and Blueprint"
-        ],
-        technologies: "Unreal Engine 5, C++, Blueprint, Git",
-        youtubeUrl: "",
+        technologies: "Game Level Design, Unreal Engine 5, C++, Blueprint",
+        youtubeUrl: "https://youtu.be/09J0FSA5tyI",
         images: [
-          "/images/WorkExp3.png",
-          "/images/WorkExp3.png",
+          "/images/748_all_1.png",
+
+          "/images/748_e1_3.png",
+          // "/images/748_e1_2.png",
+          "/images/748_e1_1.png",
+          // "/images/748_e1_4.png",
+          "/images/748_e2_3.png",
+          // "/images/748_e2_2.png",
+          "/images/748_e2_1.png",
+          // "/images/748_e2_4.png",          
+          "/images/748_e3_3.png",
+          // "/images/748_e3_2.png",
+          "/images/748_e3_1.png",
+          // "/images/748_e3_4.png",
+          "/images/748_e4_3.png",
+          // "/images/748_e4_2.png",
+          "/images/748_e4_1.png",
+          // "/images/748_e4_4.png",
+          
+          // "/images/748_all_2.png",
+          "/images/748_all_3.png",
+          "/images/748_all_4.png",
+          "/images/748_all_5.png",
+        ]
+      }
+    },
+    {
+      id: "system-design-734",
+      bannerColor: "#378b50ff",
+      title: "Hacking System Design with Mini Game",
+      coverImage: "/images/734_10.png", // 卡片上的主图 / GIF
+      details: {
+        title: "Hacking System Design: Hacking Loop with Mini Game and Resource Strategy",
+        overview: [
+          "A system design demo for a high-tech stealth game on Windows, built around keyboard-and-mouse input.",
+          "Core hook: strategically spend limited resources to hack interactable targets.",
+          "Different hacking levels unlock different effects while maintaining stealth against patrols and alerts.",
+          "System Design Docs: https://docs.google.com/document/d/1djM5SWgBn8UYgEypzFlpSe6MYYWwlE7Tb7Uy0GVJdJM/edit?usp=sharing",
+        ],
+        technologies: "Game System Design, Unreal Engine 5, C++, Blueprint",
+        youtubeUrl: "https://youtu.be/HAjogNEsCbM",
+        images: [
+          "/images/734_9.png",
+          "/images/734_10.png",
+          "/images/734_1.png",
+          "/images/734_2.png",
+          "/images/734_3.png",
+          "/images/734_4.png",
+          "/images/734_5.png",
+          "/images/734_6.png",
+          "/images/734_7.png",
+          "/images/734_8.png",
         ]
       }
     }
   ]
 }
 
+// TODO 需要GIF作为coverImage，需要把这里面的链接改成超链接，程序这个有点多，考虑换成四个一排，考虑把Unity的打包成Web版本，放到静态网页里，注意懒加载
 const bigProjectShowcaseProgramming = {
   display: true,
+  columnCount: 4,
   title: "Personal Projects – Programming",
-  subtitle: "Programming examples in game jam",
+  subtitle: "Programming examples, some are from game jam",
   projects: [
     {
-      id: "swarm-system",
-      bannerTitle: "AI Swarm Stealth System",
-      bannerColor: "#6b4ce6",
-      title: "",
-      subtitle: "",
-      coverImage: "/images/WorkExp3.png", // 卡片上的主图 / GIF
+      id: "754",
+      bannerColor: "#1d5d7aff",
+      title: "Deep Dive Dream By Unity",
+      coverImage: "/images/projectshowcase-programming-8-1.png", // 卡片上的主图 / GIF
       details: {
-        title: "AI Swarm Stealth System",
+        title: "Deep Dive Dream, 2025 48H Global Game Jam",
         overview: [
-          "Short intro paragraph 1",
-          "Short intro paragraph 2"
+          `"Deep Dive Dream" is a 2D platform pve game, like "Ultimate Chicken Horse" or "Stick Fight: The Game".`,
+          `Made in the 48h GIGA game jam, 2023/9/20-2023/10/11, online.`,
+          `The gamejam title is "Unfair Randomness".`,
+          `6 people in the game jam team: 2 2D-artist, 1 animator(Spine), 1 3D-artist, 1 musician, 2 programmer.`,
+          `I'm the programmer and also responsible for the foundational design of game mechanics`,
         ],
-        bullets: [
-          "What you did / contributions ...",
-          "Another key bullet ..."
-        ],
-        technologies: "Unreal Engine 5, C++, Behavior Tree",
-        youtubeUrl: "https://www.youtube.com/watch?v=XXXXXXXXXXX",
+        technologies: "Unity, C#",
+        youtubeUrl: "https://youtu.be/4kN-ubTmGEM",
         images: [
-          "/images/WorkExp3.png",
-          "/images/swarm-shot-2.png"
+          // "/images/projectshowcase-programming-7-1.png",
+          "/images/projectshowcase-programming-8-2.png",
+          "/images/projectshowcase-programming-8-3.png",
+          "/images/projectshowcase-programming-8-4.png",
+          "/images/projectshowcase-programming-8-5.png",
         ]
       }
-    }
+    },
+    {
+      id: "748 Tech Reel",
+      bannerColor: "#1d5d7aff",
+      title: "Deep Dive Dream By Unity",
+      coverImage: "/images/projectshowcase-programming-8-1.png", // 卡片上的主图 / GIF
+      details: {
+        title: "Deep Dive Dream, 2025 48H Global Game Jam",
+        overview: [
+          `"Deep Dive Dream" is a 2D platform pve game, like "Ultimate Chicken Horse" or "Stick Fight: The Game".`,
+          `Made in the 48h GIGA game jam, 2023/9/20-2023/10/11, online.`,
+          `The gamejam title is "Unfair Randomness".`,
+          `6 people in the game jam team: 2 2D-artist, 1 animator(Spine), 1 3D-artist, 1 musician, 2 programmer.`,
+          `I'm the programmer and also responsible for the foundational design of game mechanics`,
+        ],
+        technologies: "Unity, C#",
+        youtubeUrl: "https://youtu.be/4kN-ubTmGEM",
+        images: [
+          // "/images/projectshowcase-programming-7-1.png",
+          "/images/projectshowcase-programming-8-2.png",
+          "/images/projectshowcase-programming-8-3.png",
+          "/images/projectshowcase-programming-8-4.png",
+          "/images/projectshowcase-programming-8-5.png",
+        ]
+      }
+    },
+    {
+      id: "Deep Dive Dream",
+      bannerColor: "#1d5d7aff",
+      title: "Deep Dive Dream By Unity",
+      coverImage: "/images/projectshowcase-programming-8-1.png", // 卡片上的主图 / GIF
+      details: {
+        title: "Deep Dive Dream, 2025 48H Global Game Jam",
+        overview: [
+          `"Deep Dive Dream" is a 2D platform pve game, like "Ultimate Chicken Horse" or "Stick Fight: The Game".`,
+          `Made in the 48h GIGA game jam, 2023/9/20-2023/10/11, online.`,
+          `The gamejam title is "Unfair Randomness".`,
+          `6 people in the game jam team: 2 2D-artist, 1 animator(Spine), 1 3D-artist, 1 musician, 2 programmer.`,
+          `I'm the programmer and also responsible for the foundational design of game mechanics`,
+        ],
+        technologies: "Unity, C#",
+        youtubeUrl: "https://youtu.be/4kN-ubTmGEM",
+        images: [
+          // "/images/projectshowcase-programming-7-1.png",
+          "/images/projectshowcase-programming-8-2.png",
+          "/images/projectshowcase-programming-8-3.png",
+          "/images/projectshowcase-programming-8-4.png",
+          "/images/projectshowcase-programming-8-5.png",
+        ]
+      }
+    },
+    {
+      id: "CatchSheep",
+      bannerColor: "#1d5d7aff",
+      title: "Catch Sheep By Unity",
+      coverImage: "/images/projectshowcase-programming-8-1.png", // 卡片上的主图 / GIF
+      details: {
+        title: "Catch Sheep, 2024 48H Global Game Jam",
+        overview: [
+          `"Catch Sheep" is a 2D top-down pve game, The player works together with their dog, use a rope to catch sheep.`,
+          `Made in the 48h GIGA game jam, 2023/9/20-2023/10/11, online.`,
+          `The gamejam title is "Unfair Randomness".`,
+          `6 people in the game jam team: 2 2D-artist, 1 animator(Spine), 1 3D-artist, 1 musician, 2 programmer.`,
+          `I'm the programmer and also responsible for the foundational design of game mechanics`,
+        ],
+        technologies: "Unity, C#",
+        youtubeUrl: "https://youtu.be/3GCezneDy18",
+        images: [
+          // "/images/projectshowcase-programming-7-1.png",
+          "/images/projectshowcase-programming-8-2.png",
+          "/images/projectshowcase-programming-8-3.png",
+          "/images/projectshowcase-programming-8-4.png",
+          "/images/projectshowcase-programming-8-5.png",
+        ]
+      }
+    },
+    {
+      id: "DiceFight2D",
+      bannerColor: "#1d5d7aff",
+      title: "Dice Fight By Unity",
+      coverImage: "/images/projectshowcase-programming-8-1.png", // 卡片上的主图 / GIF
+      details: {
+        title: "Dice Fight, 2023 48H GIGA Game Jam",
+        overview: [
+          `"Dice Fight" is a 2D platform pvp game, like "Ultimate Chicken Horse" or "Stick Fight: The Game".`,
+          `Made in the 3 Weeks Booom Game Jam, 2023/9/20-2023/10/11, online.`,
+          `The gamejam title is "Unfair Randomness".`,
+          `6 people in the game jam team: 2 2D-artist, 1 animator(Spine), 1 3D-artist, 1 musician, 2 programmer.`,
+          `I'm the programmer and also responsible for the foundational design of game mechanics`,
+        ],
+        technologies: "Unity, C#",
+        youtubeUrl: "https://youtu.be/4kN-ubTmGEM",
+        images: [
+          // "/images/projectshowcase-programming-7-1.png",
+          "/images/projectshowcase-programming-8-2.png",
+          "/images/projectshowcase-programming-8-3.png",
+          "/images/projectshowcase-programming-8-4.png",
+          "/images/projectshowcase-programming-8-5.png",
+        ]
+      }
+    },
+    {
+      id: "Touch ⠞⠕⠥⠉⠓",
+      bannerColor: "#1d5d7aff",
+      title: "Touch ⠞⠕⠥⠉⠓ By Unity",
+      coverImage: "/images/projectshowcase-programming-7-1.png", // 卡片上的主图 / GIF
+      details: {
+        title: "Touch ⠞⠕⠥⠉⠓, 2023 48H GIGA Game Jam",
+        overview: [
+          `"Touch ⠞⠕⠥⠉⠓" is a 2D top-down, narrative-driven maze exploration game. ⠞⠕⠥⠉⠓ represents "Touch" in Braille.`,
+          `Made in the 48h GIGA game jam, 2023/7/7-2023/7/9, in China GuangZhou-TianHe.`,
+          `The gamejam title is "Touch", this project achieved third place in the game jam site.`,
+          `5 people in the game jam team. 2 artist, 1 programmer, 1 musician, 1 level designer.`,
+          `I'm the programmer and also responsible for the foundational design of game mechanics`,
+        ],
+        technologies: "Unity, C#",
+        youtubeUrl: "https://youtu.be/aUhSHy8n0fw",
+        images: [
+          // "/images/projectshowcase-programming-7-1.png",
+          "/images/projectshowcase-programming-7-2.png",
+          "/images/projectshowcase-programming-7-3.png",
+          "/images/projectshowcase-programming-7-4.png",
+        ]
+      }
+    },
+    {
+      id: "Zuma Card",
+      bannerColor: "#1d5d7aff",
+      title: "Zuma Card By Unity",
+      coverImage: "/images/projectshowcase-programming-6.png", // 卡片上的主图 / GIF
+      details: {
+        title: "Zuma Card By Unity",
+        overview: [
+          "Get this project source code: https://github.com/WTQ1234/Personal_Game_Project_4_ZumaCard.git",
+        ],
+        technologies: "Unity, C#",
+        youtubeUrl: "https://youtu.be/2WfUHhO6nis",
+        images: [
+          "/images/projectshowcase-programming-6.png"
+        ]
+      }
+    },
+    {
+      id: "Flying Axe",
+      bannerColor: "#2d293bff",
+      title: "Flying Axe By Unity",
+      coverImage: "/images/projectshowcase-programming-5.png", // 卡片上的主图 / GIF
+      details: {
+        title: "Flying Axe By Unity",
+        overview: [
+          "Get this project source code: https://github.com/WTQ1234/Personal_Game_Project_3_FlyingAxe.git"
+        ],
+        technologies: "Unity, C#",
+        youtubeUrl: "https://youtu.be/DgpGetbsz1g",
+        images: [
+          "/images/projectshowcase-programming-5.png",
+          "/images/projectshowcase-programming-5-1.png",
+        ]
+      }
+    },
+    {
+      id: "ElasticBall",
+      bannerColor: "#90913dff",
+      title: "ElasticBall By Unity",
+      coverImage: "/images/projectshowcase-programming-4.png", // 卡片上的主图 / GIF
+      details: {
+        title: "ElasticBall By Unity",
+        overview: [
+          "Get this project source code: https://github.com/WTQ1234/Practice_Unity_ElasticBall.git"
+        ],
+        technologies: "Unity, C#",
+        youtubeUrl: "https://youtu.be/E51xdROWx2Q",
+        images: [
+          "/images/projectshowcase-programming-4.png"
+        ]
+      }
+    },
+    {
+      id: "SheepChess",
+      bannerColor: "#173958ff",
+      title: "SheepChess By Unity",
+      coverImage: "/images/projectshowcase-programming-3.png", // 卡片上的主图 / GIF
+      details: {
+        title: "SheepChess By Unity",
+        overview: [
+          "Get this project source code: https://github.com/WTQ1234/Practice_Unity_SheepChess.git"
+        ],
+        technologies: "Unity, C#",
+        youtubeUrl: "https://youtu.be/z5AX1iuLOAg",
+        images: [
+          "/images/projectshowcase-programming-3.png"
+        ]
+      }
+    },
+    {
+      id: "TicTacToe",
+      bannerColor: "#175658ff",
+      title: "TicTacToe By Unity",
+      coverImage: "/images/projectshowcase-programming-2.png", // 卡片上的主图 / GIF
+      details: {
+        title: "TicTacToe By Unity",
+        overview: [
+          "Get this project source code: https://github.com/WTQ1234/Practice_Unity_TicTacToe.git"
+        ],
+        technologies: "Unity, C#",
+        youtubeUrl: "https://youtu.be/zCOcAH6YAc4",
+        images: [
+          "/images/projectshowcase-programming-2.png"
+        ]
+      }
+    },
+    {
+      id: "2048",
+      bannerColor: "#1d5d7aff",
+      title: "2048 By Unity",
+      coverImage: "/images/projectshowcase-programming-1.png", // 卡片上的主图 / GIF
+      details: {
+        title: "2048 By Unity",
+        overview: [
+          "Get this project source code: https://github.com/WTQ1234/Practice_Unity_2048.git"
+        ],
+        technologies: "Unity, C#",
+        youtubeUrl: "https://youtu.be/SAitsRjwNuw",
+        images: [
+          "/images/projectshowcase-programming-1.png"
+        ]
+      }
+    },
+
   ]
 }
 
+// TODO 需要GIF作为coverImage，TODO 把710的Set Dressing 和 Level Sequence也放上去吧 TODO 记得改一下Header就是上面悬浮的标题，都弄完就能开始投简历了
 const bigProjectShowcaseArt = {
   display: true,
   title: "Personal Projects – Art",
-  // subtitle: " ",
   subtitle: "3D Modeling / UI Design in SCAD",
   projects: [
     {
       id: "casino-floor",
-      bannerColor: "#c0483c",
-      title: "3D Modeling - Casino Interior Environment",
-      subtitle: "UE5 interior scene with assets modeled in Maya.",
+      bannerColor: "#94332aff",
+      title: "3D Modeling - Casino Interior",
       coverImage: "/images/projectshowcase-art-3.png", // 卡片上的主图 / GIF
       details: {
         title: "Casino Interior Environment",
         overview: [
-          "Built a casino-themed interior in UE5 using props and modular pieces modeled in Maya.",
-          "This is the SCAD Learning Record in Game 720 : Virtual World Building. Learn how to use Maya and UE5. This is the final project. ",
+          "A casino-themed interior scene.",
+          "Built in UE5 using props and modular pieces modeled in Maya.",
+          "Created as a SCAD learning record for Game 720 : Virtual World Building.",
         ],
         // bullets: [
         //   "Modeled and UVed the slot machine and supporting props in Maya before importing to UE5.",
@@ -507,15 +782,15 @@ const bigProjectShowcaseArt = {
     },
     {
       id: "titan-wreckage",
-      bannerColor: "#c0483c",
+      bannerColor: "#1d5d7aff",
       title: "3D Environment - Titan Wreckage",
-      subtitle: "Alien-world outdoor scene of Titan battle debris built in UE5.",
       coverImage: "/images/projectshowcase-art-2-1.png", // 卡片上的主图 / GIF
       details: {
         title: "Titan Wreckage Environment",
         overview: [
-          'This is the SCAD learning record for Game 740: "Game Art: Direction/Look Dev".',
-          "I learned Maya and UE5 to build this alien-world outdoor scene featuring Titan battle debris, completed independently.",
+          'A alien-world outdoor scene featuring Titan battle debris.',
+          "Built in UE5 using props and modular pieces modeled in Maya.",
+          'Created as a SCAD learning record for Game 740 : Game Art: Direction/Look Dev.',
           "This art scene also feeds into my later UI design and level design projects."
         ],
         // bullets: [
@@ -529,32 +804,39 @@ const bigProjectShowcaseArt = {
           "/images/projectshowcase-art-2-2.png",
           "/images/projectshowcase-art-2-3.png",
           "/images/projectshowcase-art-2-4.png",
+          "/images/projectshowcase-art-2-5.png",
+          "/images/projectshowcase-art-2-6.png",
+          "/images/projectshowcase-art-2-7.png",
         ]
       }
     },
     {
       id: "UI-Design",
-      bannerTitle: "UI Design Figma",
-      bannerColor: "#c0483c",
-      logo: "/images/casino-logo.png",
-      title: "3D Modeling - Casino Interior Environment",
-      subtitle: "UE5 interior scene with a slot machine hero asset modeled in Maya.",
-      coverImage: "/images/projectshowcase-art-2-1.png", // 卡片上的主图 / GIF
+      bannerColor: "#85317eff",
+      title: "FPS UI Design: Titan Salvage",
+      coverImage: "/images/projectshowcase-art-3-cover.png", // 卡片上的主图 / GIF
       details: {
-        title: "Casino Interior Environment",
+        title: "FPS UI Design Demo — Alien Battlefield, Robot Enemies, Titan Salvage",
         overview: [
-          "Built a casino-themed interior in UE5 using props and modular pieces modeled in Maya.",
-          "This is the SCAD Learning Record in Game 720 : Virtual World Building. Learn how to use Maya and UE5. This is the final project. ",
+          "A UI design demo for a classic FPS experience set on an alien world, featuring robot enemies and a Titan-wreckage salvage theme.",
+          "Created as a SCAD learning record for IXDS 724 (Visual Hierarchies & Affordances).",
         ],
-        // bullets: [
-        //   "Modeled and UVed the slot machine and supporting props in Maya before importing to UE5.",
-        //   "Set dressed, lit, and optimized the scene in UE5 to showcase the hero asset."
-        // ],
-        technologies: "Unreal Engine 5, Maya",
+        technologies: "Game UI Design, Figma, Photoshop",
         youtubeUrl: "https://youtu.be/7QMiYqriyoI",
         images: [
-          "/images/projectshowcase-art-2-1.png",
-          "/images/projectshowcase-art-2-2.png",
+          "/images/projectshowcase-art-3-1.png",
+          "/images/projectshowcase-art-3-2.png",
+          "/images/projectshowcase-art-3-3.png",
+          "/images/projectshowcase-art-3-4.png",
+          "/images/projectshowcase-art-3-5.png",
+          "/images/projectshowcase-art-3-6.png",
+          "/images/projectshowcase-art-3-7.png",
+          "/images/projectshowcase-art-3-8.png",
+          "/images/projectshowcase-art-3-9.png",
+          "/images/projectshowcase-art-3-10.png",
+          "/images/projectshowcase-art-3-11.png",
+          "/images/projectshowcase-art-3-12.png",
+          "/images/projectshowcase-art-3-13.png",
         ]
       }
     }

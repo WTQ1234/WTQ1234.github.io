@@ -239,10 +239,9 @@ export default function WorkExperience() {
                         : "")
                     }
                   >
-                    {mediaItems.map((item, index) => {
+                                        {mediaItems.map((item, index) => {
                       if (item.type === "video") {
                         return (
-                          <div className='exp-expanded-media-itemlink'>
                           <div
                             key={item.key}
                             className="exp-expanded-media-item exp-expanded-media-item--video"
@@ -260,7 +259,6 @@ export default function WorkExperience() {
                                 loading="lazy"
                               />
                             </div>
-                            {/* 外链按钮：打开 YouTube（可选） */}
                             {currentDetails?.youtubeUrl && (
                               <div className="exp-expanded-video-link">
                                 <a
@@ -268,12 +266,10 @@ export default function WorkExperience() {
                                   target="_blank"
                                   rel="noreferrer"
                                 >
-                                  ▶ Open this video on YouTube
+                                  ? Open this video on YouTube
                                 </a>
                               </div>
                             )}
-                          </div>
-
                           </div>
                         );
                       }
@@ -287,15 +283,13 @@ export default function WorkExperience() {
                             src={item.src}
                             alt={
                               currentDetails?.projectName ||
-                              `${expanded.card.company} screenshot ${
-                                index
-                              }`
+                              `${expanded.card.company} screenshot ${index}`
                             }
                             loading="lazy"
                           />
                         </div>
                       );
-                    })}
+                    })}}
                   </div>
                 </section>
               )}
@@ -313,3 +307,7 @@ export default function WorkExperience() {
     </div>
   );
 }
+
+
+
+
