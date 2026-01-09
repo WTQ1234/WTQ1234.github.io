@@ -305,7 +305,7 @@ const workExperiences = {
     {
       role: "Mobile Game Development Engineer",
       company: "Fancy Guo Games",
-      companylogo: require("./assets/images/QingGuoLogo.gif"),
+      companylogo: require("./assets/images/QingGuoLogo.png"),
       date: "Jun 2020 - Apr 2022",
       desc: `"Dark Nemesis: Infinite Quest" - 3D MMO ARPG Mobile Game`,
       descBullets: [
@@ -402,7 +402,7 @@ const bigProjects = {
 };
 
 
-// TODO 需要GIF作为coverImage  TODO 需要把日期都改成英文格式
+// TODO 需要GIF作为coverImage
 const bigProjectShowcaseDesign = {
   display: true,
   columnCount: 3,
@@ -479,11 +479,35 @@ const bigProjectShowcaseDesign = {
           "/images/734_8.png",
         ]
       }
-    }
+    },
+    {
+      id: "level-design-Match-3",
+      bannerColor: "#3f378bff",
+      title: "Match-3 game level design",
+      coverImage: "/images/projectshowcase-design-3-5.png", // 卡片上的主图 / GIF
+      details: {
+        title: "Match-3 Level Design (Internship) - Unity Mobile + UGC",
+        overview: [
+          "A mobile match-3 game project featuring UGC content and story-driven progression.",
+          "Built with Unity and released/played on cell phones (mobile platform).",
+          "Role: Level Designer (Internship) — designed and balanced match-3 levels for 2 months in Summer 2018.",
+          "The game combines match-3 gameplay with UGC features, and includes diverse stories and art styles."
+        ],
+        technologies: "Game Level Design",
+        youtubeUrl: "https://youtu.be/Y_POUzCw0Ps",
+        images: [
+          "/images/projectshowcase-design-3-1.png",
+          "/images/projectshowcase-design-3-2.png",
+          "/images/projectshowcase-design-3-3.png",
+          "/images/projectshowcase-design-3-4.png",
+          // "/images/projectshowcase-design-3-5.png",
+        ]
+      }
+    },
   ]
 }
 
-// TODO 需要GIF作为coverImage，考虑把Unity的打包成Web版本，放到静态网页里，注意懒加载
+// TODO 需要GIF作为coverImage，TODO 尝试把Unity的打包成Web版本，放到静态网页里，注意懒加载
 const bigProjectShowcaseProgramming = {
   display: true,
   columnCount: 4,
@@ -544,7 +568,7 @@ const bigProjectShowcaseProgramming = {
         title: "Deep Dive Dream, 2025 48H Global Game Jam",
         overview: [
           `"Deep Dive Dream" is a 2D platform pve game. Act as a spider with different abilities`,
-          `Made in the 48h GIGA game jam, 01/27/2025 - 01/28/2025, at SCAD, Savannah, GA.`,
+          `Made in the 48h GIGA game jam, Jan 27-28, 2025, at SCAD, Savannah, GA.`,
           `The gamejam title is "Bubble".`,
           `I'm the programmer and also responsible for the foundational design of game mechanics`,
         ],
@@ -570,7 +594,7 @@ const bigProjectShowcaseProgramming = {
         title: "Catch Sheep, 2024 48H Global Game Jam",
         overview: [
           `"Catch Sheep" is a 2D top-down pve game, The player works together with their dog, use a rope to catch sheep.`,
-          `Made in the 48h Global Game Jam, 2024/01/26-2024/01/28, online.`,
+          `Made in the 48h Global Game Jam, Jan 26-28, 2024, online.`,
           `The gamejam title is "Make Me Laugh".`,
         ],
         technologies: "Unity, C#",
@@ -592,7 +616,7 @@ const bigProjectShowcaseProgramming = {
         title: "Dice Fight, 2023 48H GIGA Game Jam",
         overview: [
           `"Dice Fight" is a 2D platform pvp game, like "Ultimate Chicken Horse" or "Stick Fight: The Game".`,
-          `Made in the 3 Weeks Booom Game Jam, 2023/9/20-2023/10/11, online.`,
+          `Made in the 3 Weeks Booom Game Jam, Sep 20-Oct 11, 2023, online.`,
           `The gamejam title is "Unfair Randomness".`,
           `6 people in the game jam team: 2 2D-artist, 1 animator(Spine), 1 3D-artist, 1 musician, 2 programmer.`,
           `I'm the programmer and also responsible for the foundational design of game mechanics`,
@@ -617,7 +641,7 @@ const bigProjectShowcaseProgramming = {
         title: "Touch ⠞⠕⠥⠉⠓, 2023 48H GIGA Game Jam",
         overview: [
           `"Touch ⠞⠕⠥⠉⠓" is a 2D top-down, narrative-driven maze exploration game. ⠞⠕⠥⠉⠓ represents "Touch" in Braille.`,
-          `Made in the 48h GIGA game jam, 2023/7/7-2023/7/9, in China GuangZhou-TianHe.`,
+          `Made in the 48h GIGA game jam, Jul 7-9, 2023, in China GuangZhou-TianHe.`,
           `The gamejam title is "Touch", this project achieved third place in the game jam site.`,
           `5 people in the game jam team. 2 artist, 1 programmer, 1 musician, 1 level designer.`,
           `I'm the programmer and also responsible for the foundational design of game mechanics`,

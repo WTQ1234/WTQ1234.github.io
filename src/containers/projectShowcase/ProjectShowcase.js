@@ -174,6 +174,7 @@ function SingleProjectSection({ config, sectionId }) {
   const { isDark } = useContext(StyleContext);
   const [activeProject, setActiveProject] = useState(null);
   const [showModal, setShowModal] = useState(false);
+  const [lightboxImage, setLightboxImage] = useState(null);
 
   // 打开时触发淡入动画
   useEffect(() => {
@@ -192,6 +193,12 @@ function SingleProjectSection({ config, sectionId }) {
     }
   }, [showModal, activeProject]);
 
+  useEffect(() => {
+    if (!activeProject) {
+      setLightboxImage(null);
+    }
+  }, [activeProject]);
+
   if (!config || !config.display) return null;
 
   const handleCardClick = (project) => {
@@ -200,6 +207,14 @@ function SingleProjectSection({ config, sectionId }) {
 
   const handleCloseModal = () => {
     setShowModal(false);
+  };
+
+  const handleBackdropClick = () => {
+    if (lightboxImage) {
+      setLightboxImage(null);
+      return;
+    }
+    handleCloseModal();
   };
 
   const details = activeProject?.details || null;
@@ -305,7 +320,7 @@ function SingleProjectSection({ config, sectionId }) {
         <>
           <div
             className="project-modal__backdrop"
-            onClick={handleCloseModal}
+            onClick={handleBackdropClick}
           />
           <div
             className={
@@ -436,6 +451,7 @@ function SingleProjectSection({ config, sectionId }) {
                                 index
                               }`}
                               loading="lazy"
+                              onClick={() => setLightboxImage(item.src)}
                             />
                           </div>
                         );
@@ -450,6 +466,20 @@ function SingleProjectSection({ config, sectionId }) {
             </div>
           </div>
         </>
+      )}
+
+      {lightboxImage && (
+        <div
+          className="project-modal__lightbox"
+          onClick={() => setLightboxImage(null)}
+        >
+          <img
+            src={lightboxImage}
+            alt="Expanded view"
+            className="project-modal__lightbox-image"
+            onClick={(event) => event.stopPropagation()}
+          />
+        </div>
       )}
     </section>
   );

@@ -30,6 +30,7 @@ export default function WorkExperience() {
   // 展开中的卡片 & 是否播放“显示动画”
   const [expanded, setExpanded] = useState(null); // { card, bannerColor }
   const [showExpanded, setShowExpanded] = useState(false);
+  const [lightboxImage, setLightboxImage] = useState(null);
 
   // 控制动画的出现/消失
   useEffect(() => {
@@ -51,6 +52,12 @@ export default function WorkExperience() {
     }
   }, [showExpanded, expanded]);
 
+  useEffect(() => {
+    if (!expanded) {
+      setLightboxImage(null);
+    }
+  }, [expanded]);
+
   // ❗ 注意：Hooks 一定要写在 return 之前
   if (!workExperiences.display) {
     return null;
@@ -66,6 +73,14 @@ export default function WorkExperience() {
   const handleCloseDetails = () => {
     // 先触发缩小动画，真正卸载由上面的 useEffect 处理
     setShowExpanded(false);
+  };
+
+  const handleBackdropClick = () => {
+    if (lightboxImage) {
+      setLightboxImage(null);
+      return;
+    }
+    handleCloseDetails();
   };
 
   // 当前展开卡片的详情 & 媒体信息
@@ -137,7 +152,7 @@ export default function WorkExperience() {
         <>
           <div
             className="exp-expanded-backdrop"
-            onClick={handleCloseDetails}
+            onClick={handleBackdropClick}
           />
 
           <div
@@ -286,10 +301,11 @@ export default function WorkExperience() {
                               `${expanded.card.company} screenshot ${index}`
                             }
                             loading="lazy"
+                            onClick={() => setLightboxImage(item.src)}
                           />
                         </div>
                       );
-                    })}}
+                    })}
                   </div>
                 </section>
               )}
@@ -304,10 +320,22 @@ export default function WorkExperience() {
           </div>
         </>
       )}
+      {lightboxImage && (
+        <div
+          className="exp-lightbox"
+          onClick={() => setLightboxImage(null)}
+        >
+          <img
+            src={lightboxImage}
+            alt="Expanded view"
+            className="exp-lightbox__image"
+            onClick={(event) => event.stopPropagation()}
+          />
+        </div>
+      )}
     </div>
   );
 }
-
 
 
 

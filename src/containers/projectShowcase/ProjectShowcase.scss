@@ -387,6 +387,7 @@
   display: block;
   object-fit: contain;
   transition: transform 0.18s ease, box-shadow 0.18s ease;
+  cursor: zoom-in;
 }
 
 .project-modal__media-item--image:hover img {
@@ -429,4 +430,26 @@
   }
 }
 
+
+
+.project-modal__lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1100;
+  padding: 24px;
+}
+
+.project-modal__lightbox-image {
+  max-width: 60vw;
+  max-height: 60vh;
+  width: auto;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
+  cursor: zoom-out;
+}
 
