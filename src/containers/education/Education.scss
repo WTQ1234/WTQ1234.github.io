@@ -14,6 +14,24 @@
   margin: 0px auto;
 }
 
+.education-content {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.education-image-div {
+  flex: 0 0 35%;
+  max-width: 35%;
+  display: flex;
+  justify-content: center;
+}
+
+.education-image-div > img {
+  max-width: 100%;
+  height: auto;
+}
+
 .education-section > *:not(:last-child) {
   flex: 1;
   margin-bottom: 1rem;
@@ -35,6 +53,7 @@
 }
 
 .education-card-container {
+  flex: 1 1 60%;
   display: flex;
   flex-direction: column;
   padding-top: 20px;
@@ -54,6 +73,9 @@
 }
 
 @media (max-width: 768px) {
+  .education-content {
+    flex-direction: column;
+  }
   .education-card-container {
     padding-top: 0px;
   }

@@ -23,7 +23,7 @@ const greeting = {
   title: "Hi all, I'm Taiqi",
   subTitle: emoji(
     `        A passionate video game developer with 3 years of experience. 🎮
-        Specializes in gameplay features programming, performance optimization 🛡️, and live-service bug fixing. ⚔️ 
+        Specializes in gameplay features programming, performance optimization, and live-service bug fixing. ⚔️ 
         Flexible, innovative, and logical team player who boosts productivity with plugins, tools, and clear documentation. 🎶
         My goal: Game programmer 🤖 & Technical Designer 🛠️`
   ),
@@ -154,6 +154,11 @@ const skillsSection = {
 // Education Section
 const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
+  displayGif: true, // Set true to show an image/GIF on the right
+  gifPath: "/images/SCADBee.gif",
+  gifStyle: {
+    width: "50%"
+  },
   schools: [
     {
       schoolName: "Savannah College of Art and Design",
@@ -342,7 +347,7 @@ const workExperiences = {
       desc: `Real-time Adjustable Digital Human Body Model`,
       descBullets: [
         "Built a real-time adjustable digital human body model system in Unity (C#).",
-        "Implemented body-parameter interpolation (height/weight/waist) across multiple humanoid models and displayed in the Digital Human App.",
+        "Implemented body-parameter interpolation (height / weight / waist) across multiple humanoid models and displayed in the Digital Human App.",
       ],
       // ------- 详情配置 -------
       details: {
@@ -351,7 +356,7 @@ const workExperiences = {
           "Unity-based digital human model system developed in a professor–industry collaboration with BOE."
         ],
         responsibilities: [
-          "Implemented UI logic and batch-processed models/materials/textures in Unity.",
+          "Implemented UI logic and batch-processed models / materials / textures in Unity.",
           "Wrote C++ .so libraries for server calls and binary data read/write for network transmission."
         ],
         technologies: `C++, Unity, C#, Linux, "Binary I/O"`,
