@@ -44,7 +44,8 @@ export default function Greeting() {
                   <div className="resume-download-group">
                     <a
                       href={require("./resume_onepage.pdf")}
-                      download="Resume_TaiqiWang_1Page.pdf"
+                      target="_blank"
+                      rel="noreferrer"
                       className="download-link-button"
                     >
                       <Button text="Resume (1 Page)" />
@@ -52,7 +53,8 @@ export default function Greeting() {
 
                     <a
                       href={require("./resume_full.pdf")}
-                      download="Resume_TaiqiWang_2Pages_Detailed.pdf"
+                      target="_blank"
+                      rel="noreferrer"
                       className="download-link-button"
                     >
                       <Button text="Resume (2 Pages, Detailed)" />
