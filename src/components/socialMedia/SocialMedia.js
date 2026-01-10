@@ -72,7 +72,7 @@ export default function socialMedia() {
           rel="noopener noreferrer"
         >
           <img
-            src="/logos/artstation.png"   // 你的 logo 路径
+            src="/logos/Artstation.png"   // 你的 logo 路径
             alt="artstation"
             className="icon-img"
           />
